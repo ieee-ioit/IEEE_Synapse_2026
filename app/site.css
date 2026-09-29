@@ -12,6 +12,49 @@
   --panel: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.012));
 }
 
+/* Golden Hours palette (Release 1). New tokens only: the tokens above and in landing.css are unchanged.
+   Landing, SkyScene and future event modules read these; components never hard-code colours. */
+:root {
+  --gold: #f5b544;
+  --gold-soft: #ffd98a;
+  --blue: #5b8def;
+  --indigo: #8f98ff;
+
+  /* Sky gradient (top / middle / bottom) at each chapter's time of day. Kept dark enough for white text. */
+  --sky-sunrise-top: #060a1c;
+  --sky-sunrise-mid: #4a2f61;
+  --sky-sunrise-bottom: #f0894e;
+  --sky-morning-top: #0d1c45;
+  --sky-morning-mid: #2f5f9e;
+  --sky-morning-bottom: #f1c08a;
+  --sky-midday-top: #0c2a63;
+  --sky-midday-mid: #1f57b3;
+  --sky-midday-bottom: #6fa8e8;
+  --sky-afternoon-top: #0b2554;
+  --sky-afternoon-mid: #2a5aa0;
+  --sky-afternoon-bottom: #e2b878;
+  --sky-golden-top: #0d1330;
+  --sky-golden-mid: #6b3f4f;
+  --sky-golden-bottom: #f5a83e;
+  --sky-dusk-top: #04061a;
+  --sky-dusk-mid: #14174a;
+  --sky-dusk-bottom: #3b2d78;
+
+  --sun-core: #fff4d6;
+  --sun-warm: #ff9a3d;
+  --sun-glow: rgba(255, 190, 90, 0.5);
+  --star: #ffffff;
+
+  /* Particle ridge tint: white at sunrise, gold at golden hour, indigo at dusk. */
+  --ridge-sunrise: #ffffff;
+  --ridge-gold: var(--gold-soft);
+  --ridge-dusk: var(--indigo);
+
+  --ground: #03040c;
+  --scrim: rgba(6, 8, 20, 0.74);
+  --scrim-border: rgba(255, 255, 255, 0.14);
+}
+
 .mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-size: 0.94em; letter-spacing: 0; }
 .muted { color: var(--muted); }
 .nowrap { white-space: nowrap; }
