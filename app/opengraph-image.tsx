@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { event } from "@/lib/event";
+import { formatDateRange } from "@/lib/format";
 
 export const alt = `${event.name} — ${event.shortTagline}`;
 export const size = { width: 1200, height: 630 };
@@ -34,10 +35,10 @@ export default function OpengraphImage() {
           </svg>
           {event.name}
         </div>
-        <div style={{ display: "flex", flexDirection: "column", fontSize: 76, fontWeight: 500, letterSpacing: -3, lineHeight: 1.1 }}>
+        <div style={{ display: "flex", flexDirection: "column", fontSize: 62, fontWeight: 500, letterSpacing: -2, lineHeight: 1.15 }}>
           <div style={{ display: "flex" }}>
             {line1.before}
-            <span style={{ color: "#9a9a9a", fontStyle: "italic", margin: "0 18px" }}>{line1.em}</span>
+            <span style={{ color: "#9a9a9a", fontStyle: "italic", margin: "0 0 0 14px" }}>{line1.em}</span>
             {line1.after}
           </div>
           <div style={{ display: "flex" }}>{line2}</div>
@@ -53,7 +54,7 @@ export default function OpengraphImage() {
             color: "#f2f2f2",
           }}
         >
-          {event.shortTagline} · {event.venue}
+          {event.shortTagline} · {formatDateRange(event.defaults.eventStart, event.defaults.eventStart)}
         </div>
       </div>
     ),
