@@ -22,7 +22,7 @@ export default async function AboutPage() {
           About the event
         </span>
         <h1 className="page-title">
-          Twenty-four hours to <em>build it for real</em>
+          One day to <em>build it for real</em>
         </h1>
         <p className="page-lede">{event.about.intro}</p>
       </div>
