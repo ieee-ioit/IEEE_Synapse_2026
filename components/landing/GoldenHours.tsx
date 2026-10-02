@@ -55,6 +55,7 @@ export default function GoldenHours({ scene, children }: { scene: ReactNode; chi
       if (p === last) return;
       last = p;
       target.style.setProperty("--progress", p.toFixed(4));
+      rootEl.style.setProperty("--progress", p.toFixed(4));
     };
     const schedule = () => {
       if (!frame) frame = requestAnimationFrame(write);
@@ -83,6 +84,9 @@ export default function GoldenHours({ scene, children }: { scene: ReactNode; chi
 
   return (
     <div ref={root} className="gh">
+      <div className="gh-progress-bar" aria-hidden="true">
+        <div className="gh-progress-bar-fill" />
+      </div>
       <div ref={sceneEl} className="gh-scene" aria-hidden="true">
         {scene}
       </div>

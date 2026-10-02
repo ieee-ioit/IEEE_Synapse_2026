@@ -28,28 +28,22 @@ export default async function AboutPage() {
       </div>
 
       <section className="section">
-        <div className="section-label">Theme</div>
-        {revealed ? (
-          <div className="theme-reveal">
-            <div className="panel-title">Theme</div>
-            <div className="theme-reveal-title">{s.themeTitle}</div>
-            {s.themeDescription && <p>{s.themeDescription}</p>}
-          </div>
-        ) : (
-          <div className="theme-reveal">
-            <div className="theme-locked">
-              <Lock />
-              <div>
-                <div className="section-title" style={{ margin: 0 }}>
-                  Revealed at <em>kick-off</em>
-                </div>
-                <p className="muted" style={{ marginTop: 4 }}>
-                  The theme drops at {formatDateTime(s.eventStart)}. Everyone hears it at the same time.
-                </p>
+        <div className="section-label">Theme &amp; Tracks</div>
+        <div className="theme-reveal">
+          <div className="panel-title">Theme</div>
+          <div className="theme-reveal-title">Build Beyond Code</div>
+          <p style={{ marginTop: 8, color: "#d8d8d8" }}>
+            Build Intelligent. Build Secure. Build for the Real World. Identify a Problem &rarr; Design a Solution &rarr; Build a Functional Prototype &rarr; Demonstrate its Impact.
+          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 14, marginTop: 20 }}>
+            {event.tracks.map((t) => (
+              <div key={t.title} style={{ padding: 14, borderRadius: 8, background: "rgba(255, 255, 255, 0.04)", border: "1px solid rgba(255, 255, 255, 0.08)" }}>
+                <strong style={{ display: "block", color: "var(--gold-soft)", fontSize: 15, marginBottom: 4 }}>{t.title}</strong>
+                <p style={{ margin: 0, fontSize: 13.5, color: "#bfbfcb", lineHeight: 1.45 }}>{t.description}</p>
               </div>
-            </div>
+            ))}
           </div>
-        )}
+        </div>
       </section>
 
       <section className="section">

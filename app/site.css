@@ -118,8 +118,35 @@
   border-radius: 10px;
   border: 1px solid rgba(198, 198, 198, 0.4);
   background: var(--metal);
+  transition: transform 0.2s ease, border-color 0.2s ease;
 }
-.prize:first-child { border-color: rgba(235, 235, 235, 0.85); background: var(--metal-bright); box-shadow: 0 0 22px rgba(200, 210, 230, 0.14); }
+/* 1st Prize: Gold (clean matte metallic) */
+.prize:nth-child(1) {
+  border: 1px solid rgba(245, 181, 68, 0.35);
+  background: linear-gradient(145deg, rgba(245, 181, 68, 0.08) 0%, rgba(255, 255, 255, 0.015) 100%);
+  box-shadow: none;
+}
+.prize:nth-child(1) .prize-place { color: #f5b544; font-weight: 500; }
+.prize:nth-child(1) .prize-reward { color: #fff; text-shadow: none; }
+
+/* 2nd Prize: Silver / Clean Steel */
+.prize:nth-child(2) {
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+  box-shadow: none;
+}
+.prize:nth-child(2) .prize-place { color: #d4d4d8; font-weight: 500; }
+.prize:nth-child(2) .prize-reward { color: #fff; }
+
+/* 3rd Prize: Bronze / Muted Warm Copper */
+.prize:nth-child(3) {
+  border: 1px solid rgba(234, 138, 86, 0.28);
+  background: linear-gradient(145deg, rgba(234, 138, 86, 0.07) 0%, rgba(255, 255, 255, 0.01) 100%);
+  box-shadow: none;
+}
+.prize:nth-child(3) .prize-place { color: #ea8a56; font-weight: 500; }
+.prize:nth-child(3) .prize-reward { color: #fff; }
+
 .prize-place { color: #cfcfcf; font-size: 13px; letter-spacing: -0.01em; }
 .prize-reward { margin-top: 10px; font-size: 30px; font-weight: 500; letter-spacing: -0.04em; }
 

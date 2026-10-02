@@ -52,6 +52,31 @@ html, body {
   background: var(--bg, #000000);
   color: #ffffff;
   color: var(--text, #ffffff);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.gh-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 100;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.06);
+}
+.gh-progress-bar-fill {
+  height: 100%;
+  width: calc(var(--progress, 0) * 100%);
+  background: linear-gradient(90deg, #f5b544 0%, #ffd98a 50%, #8f98ff 100%);
+  box-shadow: 0 0 10px rgba(245, 181, 68, 0.4);
+  transition: width 0.05s linear;
+  will-change: width;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -638,7 +663,33 @@ body.menu-open .burger-bar:nth-child(3) { transform: translateY(-6.5px) rotate(-
   border: 1px solid rgba(255, 217, 138, 0.28);
   background: rgba(255, 217, 138, 0.06);
 }
-.gh-prize:first-child { border-color: rgba(255, 217, 138, 0.7); background: rgba(255, 217, 138, 0.12); }
+/* 1st Place: Gold (Clean metallic gradient, no neon glow) */
+.gh-prize:nth-child(1) {
+  border: 1px solid rgba(245, 181, 68, 0.32);
+  background: linear-gradient(145deg, rgba(245, 181, 68, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  box-shadow: none;
+}
+.gh-prize:nth-child(1) .gh-prize-place { color: #f5b544; font-weight: 500; }
+.gh-prize:nth-child(1) .gh-prize-reward { color: #ffffff; }
+
+/* 2nd Place: Silver / Subtle Neutral */
+.gh-prize:nth-child(2) {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+  box-shadow: none;
+}
+.gh-prize:nth-child(2) .gh-prize-place { color: #d4d4d8; font-weight: 500; }
+.gh-prize:nth-child(2) .gh-prize-reward { color: #ffffff; }
+
+/* 3rd Place: Bronze / Muted Warm */
+.gh-prize:nth-child(3) {
+  border: 1px solid rgba(234, 138, 86, 0.28);
+  background: linear-gradient(145deg, rgba(234, 138, 86, 0.07) 0%, rgba(255, 255, 255, 0.01) 100%);
+  box-shadow: none;
+}
+.gh-prize:nth-child(3) .gh-prize-place { color: #f97316; font-weight: 500; }
+.gh-prize:nth-child(3) .gh-prize-reward { color: #ffffff; }
+
 .gh-prize-place { color: #dcdce8; font-size: 14px; }
 .gh-prize-reward { font-size: 26px; font-weight: 500; letter-spacing: -0.03em; }
 

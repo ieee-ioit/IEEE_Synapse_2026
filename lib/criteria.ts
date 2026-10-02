@@ -4,10 +4,13 @@ import { db, hasDatabase } from "./db";
 export type Criterion = { id: string; name: string; weight: number; position: number };
 
 const FALLBACK: Criterion[] = [
-  { id: "innovation", name: "Innovation", weight: 25, position: 1 },
-  { id: "execution", name: "Execution", weight: 30, position: 2 },
-  { id: "design", name: "Design", weight: 20, position: 3 },
-  { id: "problem-fit", name: "Problem Fit", weight: 25, position: 4 },
+  { id: "innovation", name: "Innovation", weight: 20, position: 1 },
+  { id: "technical-implementation", name: "Technical Implementation", weight: 25, position: 2 },
+  { id: "functionality", name: "Functionality", weight: 20, position: 3 },
+  { id: "problem-relevance", name: "Problem Relevance", weight: 15, position: 4 },
+  { id: "creativity", name: "Creativity", weight: 10, position: 5 },
+  { id: "demo-explanation", name: "Demo & Explanation", weight: 5, position: 6 },
+  { id: "overall-impact", name: "Overall Impact", weight: 5, position: 7 },
 ];
 
 export async function getCriteria(): Promise<Criterion[]> {

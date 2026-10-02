@@ -15,7 +15,6 @@ export default function SiteFooter({ dates }: { dates?: string }) {
         <a href={event.whatsappUrl} target="_blank" rel="noopener noreferrer">
           WhatsApp
         </a>
-        <Link href="/team/login">Team login</Link>
       </nav>
     </footer>
   );

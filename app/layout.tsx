@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl()),
   title: { default: title, template: `%s — ${event.name}` },
   description: event.description,
-  icons: { icon: FAVICON },
+  icons: { icon: "/synapse-logo.jpeg" },
   openGraph: { type: "website", siteName: event.name, title, description: event.description },
   twitter: { card: "summary_large_image", title, description: event.description },
 };

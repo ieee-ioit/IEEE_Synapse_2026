@@ -173,10 +173,7 @@ export function Chapters() {
             <p className="gh-lede">Registrations close {closeLabel}.</p>
           </PhaseOnly>
           <CtaRow id="final-actions" content="final" />
-          {/* UNCLEAR: the plan asks for a contact line here and in the footer, but lib/event.ts has no contact
-              field and the plan allows no structural change to that file. A neutral placeholder is shown.
-              Needs a decision: add `contact` (and `organisers`, `sponsors`) to lib/event.ts. */}
-          <p className="gh-note">Questions? Contact details to be announced.</p>
+          <p className="gh-note">Questions? Reach out on WhatsApp or email ieeecon@aissmsioit.org</p>
         </div>
       </section>
     </main>
@@ -200,7 +197,7 @@ export function LandingFooter() {
             <span className="logo-suffix">{event.wordmark.suffix}</span>
           </span>
         </div>
-        <p className="gh-foot-line">Organised by the IEEE Student Branch.</p>
+        <p className="gh-foot-line">Organised by the IEEE Student Branch, AISSMS IOIT Pune.</p>
         <dl className="gh-foot-facts">
           <div>
             <dt>Date</dt>
@@ -208,22 +205,30 @@ export function LandingFooter() {
           </div>
           <div>
             <dt>Venue</dt>
-            <dd>{tbc(event.venue, "To be announced")}</dd>
+            <dd>
+              <a href={event.venueUrl} target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "underline" }}>
+                {event.venue}
+              </a>
+            </dd>
           </div>
           <div>
-            <dt>Contact</dt>
-            <dd>To be announced</dd>
+            <dt>Contacts</dt>
+            <dd>
+              {event.contacts.map((c, i) => (
+                <span key={c.name || c.email}>
+                  {i > 0 && " · "}
+                  {c.name}: {c.phone ? `${c.phone} ` : ""}({c.email})
+                </span>
+              ))}
+            </dd>
           </div>
         </dl>
-        {/* Sponsor slot: reserved, no sponsors are named in lib/event.ts yet. */}
-        <div className="gh-sponsor">Sponsors to be announced</div>
         <nav className="gh-foot-nav" aria-label="Footer">
           {event.nav.map((item) => (
             <Link key={item.href} href={item.href}>
               {item.label}
             </Link>
           ))}
-          <Link href="/team/login">Team login</Link>
         </nav>
       </div>
     </footer>
