@@ -59,6 +59,16 @@ html, body {
 
 html { scroll-behavior: smooth; }
 
+/* Hide the page scrollbar. The page still scrolls with wheel, touch, keyboard and dragging. */
+html {
+  scrollbar-width: none; /* Firefox, Chrome 121+ */
+  -ms-overflow-style: none; /* old Edge */
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Safari and older Chrome */
+}
+
 body {
   font-family: var(--font-ui);
   -webkit-font-smoothing: antialiased;
