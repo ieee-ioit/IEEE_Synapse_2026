@@ -58,12 +58,25 @@ export async function inspectRepo(url: string, eventStartIso: string) {
   const times = [first?.author?.date, first?.committer?.date].filter(Boolean).map((d) => Date.parse(d!));
   if (!times.length) return { status: "review" as GithubStatus, firstCommitAt: null, note: "Could not read the first commit." };
 
+  // Check for README.md presence at repo root
+  let hasReadme = false;
+  try {
+    const readmeRes = await get(`https://api.github.com/repos/${parsed.owner}/${parsed.repo}/readme`);
+    hasReadme = readmeRes.ok;
+  } catch {}
+
   const firstCommitAt = new Date(Math.min(...times)).toISOString();
   const before = Date.parse(firstCommitAt) < Date.parse(eventStartIso);
+  const noteParts = [
+    before ? "First commit is before the event start." : "First commit is after event start.",
+    hasReadme ? "README.md present." : "README.md missing at root.",
+  ];
+
   return {
     status: (before ? "flagged" : "clean") as GithubStatus,
     firstCommitAt,
-    note: before ? "First commit is before the event start." : "First commit is after the event start.",
+    hasReadme,
+    note: noteParts.join(" "),
   };
 }
 

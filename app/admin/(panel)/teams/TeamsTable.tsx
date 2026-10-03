@@ -183,14 +183,22 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
                         </div>
                       </>
                     ) : (
-                      <span className="muted">—</span>
+                      <span className="muted">No repo</span>
+                    )}
+                    {t.demoVideoUrl && (
+                      <div style={{ marginTop: 4 }}>
+                        <a href={t.demoVideoUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 12, textDecoration: "underline" }}>
+                          🎬 Demo video
+                        </a>
+                      </div>
                     )}
                   </td>
                   <td className="mono nowrap">{formatDateTime(t.firstCommitAt)}</td>
                   <td className="nowrap">
                     <span className={`pill ${STATUS_PILL[t.status]}`}>{t.status}</span>
+                    {t.isFinalist && <span className="pill pill--ok" style={{ marginLeft: 6 }}>Finalist</span>}
                     <div className="muted mono" style={{ fontSize: 12, marginTop: 4 }}>
-                      {t.submittedAt ? formatDateTime(t.submittedAt) : ""}
+                      {t.firstSubmittedAt ? `1st: ${formatDateTime(t.firstSubmittedAt)}` : t.submittedAt ? formatDateTime(t.submittedAt) : ""}
                     </div>
                   </td>
                   <td>

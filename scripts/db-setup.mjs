@@ -23,9 +23,24 @@ const sql = postgres(url, {
 try {
   const schema = readFileSync(new URL("../db/schema.sql", import.meta.url), "utf8");
   await sql.unsafe(schema);
+
+  // Apply migrations if present
+  try {
+    const { readdirSync } = await import("node:fs");
+    const migrationsDir = new URL("../db/migrations", import.meta.url);
+    const files = readdirSync(migrationsDir).filter((f) => f.endsWith(".sql")).sort();
+    for (const file of files) {
+      const migSql = readFileSync(new URL(`../db/migrations/${file}`, import.meta.url), "utf8");
+      await sql.unsafe(migSql);
+      console.log(`  Applied migration: ${file}`);
+    }
+  } catch (mErr) {
+    if (mErr.code !== "ENOENT") console.warn("  Migration notice:", mErr.message);
+  }
+
   const [{ admins }] = await sql`select count(*)::int as admins from admins`;
   const [{ teams }] = await sql`select count(*)::int as teams from teams`;
-  console.log(`✓ Schema applied. ${teams} teams, ${admins} admins.`);
+  console.log(`✓ Schema & migrations applied. ${teams} teams, ${admins} admins.`);
   if (!admins) console.log("  Next: create an organizer login with `npm run admin:create`.");
 } catch (err) {
   console.error("✗ Schema failed:", err.message);

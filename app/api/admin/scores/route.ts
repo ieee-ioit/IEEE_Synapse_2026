@@ -2,17 +2,18 @@ import { getCriteria } from "@/lib/criteria";
 import { db } from "@/lib/db";
 import { adminRoute, fail, ok } from "@/lib/http";
 
-type Row = { teamNumber?: unknown; judge?: unknown; values?: Record<string, unknown>; notes?: unknown };
-type Body = { rows?: Row[]; dryRun?: boolean; replaceAll?: boolean };
+type Row = { teamNumber?: unknown; judge?: unknown; stage?: unknown; values?: Record<string, unknown>; notes?: unknown };
+type Body = { rows?: Row[]; stage?: number; dryRun?: boolean; replaceAll?: boolean };
 
 /**
- * Plan §9: judges' paper sheets → Excel template → upload. The browser parses the
- * workbook (SheetJS) and sends rows keyed by criterion id. One score per
- * (team, criterion, judge); re-importing a judge's sheet overwrites their scores.
+ * Judges' paper sheets → Excel template → upload.
+ * Supports stage 1 (preliminary) and stage 2 (live demo finalists).
  */
 export const POST = adminRoute<Body>(async (_admin, body) => {
   if (!Array.isArray(body.rows) || !body.rows.length) return fail(400, "No score rows found in the file.");
   if (body.rows.length > 5000) return fail(400, "Too many rows.");
+
+  const defaultStage = body.stage === 2 ? 2 : 1;
 
   const sql = db();
   const [criteria, teams] = await Promise.all([
@@ -27,6 +28,7 @@ export const POST = adminRoute<Body>(async (_admin, body) => {
     const team = Number.isInteger(teamNumber) ? teamByNumber.get(teamNumber) : undefined;
     const judge = String(r.judge ?? "").trim().slice(0, 80);
     const notes = String(r.notes ?? "").trim().slice(0, 1000);
+    const rowStage = r.stage === 2 ? 2 : r.stage === 1 ? 1 : defaultStage;
     const values: { criterionId: string; value: number }[] = [];
     const problems: string[] = [];
     for (const [cid, raw] of Object.entries(r.values ?? {})) {
@@ -38,7 +40,7 @@ export const POST = adminRoute<Body>(async (_admin, body) => {
     }
     if (!team) problems.unshift(`Team ${String(r.teamNumber ?? "?")} not found`);
     else if (!values.length && !problems.length) problems.push("No scores in this row");
-    return { index, teamNumber, teamName: team?.name ?? "", teamId: team?.id ?? null, judge, notes, values, problems };
+    return { index, teamNumber, teamName: team?.name ?? "", teamId: team?.id ?? null, judge, stage: rowStage, notes, values, problems };
   });
 
   const valid = checked.filter((r) => r.teamId && !r.problems.length);
@@ -59,16 +61,23 @@ export const POST = adminRoute<Body>(async (_admin, body) => {
   if (!valid.length) return fail(400, "No valid rows to import.");
 
   const records = valid.flatMap((r) =>
-    r.values.map((v) => ({ team_id: r.teamId!, criterion_id: v.criterionId, judge: r.judge, value: v.value, notes: r.notes })),
+    r.values.map((v) => ({ 
+      team_id: r.teamId!, 
+      criterion_id: v.criterionId, 
+      judge: r.judge, 
+      stage: r.stage,
+      value: v.value, 
+      notes: r.notes 
+    })),
   );
-  // Last row wins if the same team/criterion/judge appears twice in one file.
-  const deduped = [...new Map(records.map((x) => [`${x.team_id}|${x.criterion_id}|${x.judge}`, x])).values()];
+  // Last row wins if the same team/criterion/judge/stage appears twice in one file.
+  const deduped = [...new Map(records.map((x) => [`${x.team_id}|${x.criterion_id}|${x.judge}|${x.stage}`, x])).values()];
 
   await sql.begin(async (tx) => {
-    if (body.replaceAll) await tx`delete from scores`;
+    if (body.replaceAll) await tx`delete from scores where stage = ${defaultStage}`;
     await tx`
       insert into scores ${tx(deduped)}
-      on conflict (team_id, criterion_id, judge)
+      on conflict (team_id, criterion_id, judge, stage)
       do update set value = excluded.value, notes = excluded.notes, imported_at = now()`;
   });
 

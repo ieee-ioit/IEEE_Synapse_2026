@@ -12,13 +12,20 @@ export type TeamView = {
     leaderEmail: string;
     college: string;
     repoUrl: string | null;
+    demoVideoUrl: string | null;
     submittedAt: string | null;
+    firstSubmittedAt: string | null;
     status: "building" | "submitted" | "disqualified";
   };
   members: { name: string; email: string }[];
   eventStart: string;
   deadline: string;
-  result: null | { rank: number | null; ranked: number; score?: number | null };
+  result: null | {
+    rank: number | null;
+    ranked: number;
+    score?: number | null;
+    criteriaScores?: { criterionId: string; name: string; weight: number; score: number }[];
+  };
 };
 
 /** Everything the team dashboard shows. GitHub integrity status is admin-only (plan §9). */
@@ -33,10 +40,12 @@ export async function getTeamView(teamId: string): Promise<TeamView | null> {
       leader_email: string;
       college: string;
       github_repo_url: string | null;
+      demo_video_url: string | null;
       submitted_at: Date | null;
+      first_submitted_at: Date | null;
       submission_status: TeamView["team"]["status"];
     }[]
-  >`select id, team_number, name, leader_name, leader_email, college, github_repo_url, submitted_at, submission_status
+  >`select id, team_number, name, leader_name, leader_email, college, github_repo_url, demo_video_url, submitted_at, first_submitted_at, submission_status
     from teams where id = ${teamId}`;
   if (!t) return null;
 
@@ -47,12 +56,20 @@ export async function getTeamView(teamId: string): Promise<TeamView | null> {
 
   let result: TeamView["result"] = null;
   if (settings.leaderboardVisible && t.submission_status !== "disqualified") {
-    const { teams } = await getRanking();
-    const me = teams.find((x) => x.id === teamId);
+    const { teams } = await getRanking({ stage: 2 });
+    // If not in stage 2 or not scored in stage 2, fall back to stage 1 ranking
+    let me = teams.find((x) => x.id === teamId);
+    let allRanked = teams.filter((x) => x.rank != null);
+    if (!me || me.score == null) {
+      const stage1 = await getRanking({ stage: 1 });
+      me = stage1.teams.find((x) => x.id === teamId);
+      allRanked = stage1.teams.filter((x) => x.rank != null);
+    }
+
     result = {
       rank: me?.rank ?? null,
-      ranked: teams.filter((x) => x.rank != null).length,
-      ...(settings.scoresVisible ? { score: me?.score ?? null } : {}),
+      ranked: allRanked.length,
+      ...(settings.scoresVisible ? { score: me?.score ?? null, criteriaScores: me?.criteriaScores } : {}),
     };
   }
 
@@ -65,7 +82,9 @@ export async function getTeamView(teamId: string): Promise<TeamView | null> {
       leaderEmail: t.leader_email,
       college: t.college,
       repoUrl: t.github_repo_url,
+      demoVideoUrl: t.demo_video_url,
       submittedAt: iso(t.submitted_at),
+      firstSubmittedAt: iso(t.first_submitted_at ?? t.submitted_at),
       status: t.submission_status,
     },
     members: [...members],

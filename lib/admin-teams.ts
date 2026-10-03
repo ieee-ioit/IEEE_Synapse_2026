@@ -11,11 +11,15 @@ export type AdminTeam = {
   college: string;
   code: string | null;
   repoUrl: string | null;
+  demoVideoUrl: string | null;
+  isFinalist: boolean;
+  stage2Order: number | null;
   githubStatus: "clean" | "review" | "flagged" | null;
   githubNote: string | null;
   firstCommitAt: string | null;
   githubCheckedAt: string | null;
   submittedAt: string | null;
+  firstSubmittedAt: string | null;
   status: "building" | "submitted" | "disqualified";
   locked: boolean;
   credentialsSentAt: string | null;
@@ -33,11 +37,15 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
       college: string;
       login_code_enc: string;
       github_repo_url: string | null;
+      demo_video_url: string | null;
+      is_finalist: boolean;
+      stage2_order: number | null;
       github_status: AdminTeam["githubStatus"];
       github_note: string | null;
       first_commit_at: Date | null;
       github_checked_at: Date | null;
       submitted_at: Date | null;
+      first_submitted_at: Date | null;
       submission_status: AdminTeam["status"];
       locked: boolean;
       credentials_sent_at: Date | null;
@@ -45,8 +53,9 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
     }[]
   >`
     select t.id, t.team_number, t.name, t.leader_name, t.leader_email, t.college, t.login_code_enc,
-           t.github_repo_url, t.github_status, t.github_note, t.first_commit_at, t.github_checked_at,
-           t.submitted_at, t.submission_status, coalesce(t.locked_until > now(), false) as locked,
+           t.github_repo_url, t.demo_video_url, t.is_finalist, t.stage2_order,
+           t.github_status, t.github_note, t.first_commit_at, t.github_checked_at,
+           t.submitted_at, t.first_submitted_at, t.submission_status, coalesce(t.locked_until > now(), false) as locked,
            t.credentials_sent_at,
            coalesce(array_agg(m.name order by m.name) filter (where m.id is not null), '{}') as members
     from teams t left join members m on m.team_id = t.id
@@ -62,11 +71,15 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
     college: r.college,
     code: decryptCode(r.login_code_enc),
     repoUrl: r.github_repo_url,
+    demoVideoUrl: r.demo_video_url,
+    isFinalist: Boolean(r.is_finalist),
+    stage2Order: r.stage2_order,
     githubStatus: r.github_status,
     githubNote: r.github_note,
     firstCommitAt: iso(r.first_commit_at),
     githubCheckedAt: iso(r.github_checked_at),
     submittedAt: iso(r.submitted_at),
+    firstSubmittedAt: iso(r.first_submitted_at ?? r.submitted_at),
     status: r.submission_status,
     locked: r.locked,
     credentialsSentAt: iso(r.credentials_sent_at),

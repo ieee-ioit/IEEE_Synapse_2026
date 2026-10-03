@@ -20,17 +20,20 @@ export async function POST(req: Request) {
 
     const sql = db();
     const [row] = await sql<{ submitted_at: Date }[]>`
-      update teams set submitted_at = now(), submission_status = 'submitted'
-      where id = ${session.teamId} and submission_status = 'building' and github_repo_url is not null
+      update teams set 
+        submitted_at = coalesce(submitted_at, now()), 
+        first_submitted_at = coalesce(first_submitted_at, now()),
+        last_updated_at = now(),
+        submission_status = 'submitted'
+      where id = ${session.teamId} and submission_status <> 'disqualified' and github_repo_url is not null
       returning submitted_at`;
 
     if (!row) {
       const [t] = await sql<{ submission_status: string; github_repo_url: string | null }[]>`
         select submission_status, github_repo_url from teams where id = ${session.teamId}`;
       if (!t) return fail(401, "Team not found.");
-      if (t.submission_status === "submitted") return fail(409, "Already submitted.");
       if (t.submission_status === "disqualified") return fail(403, "This team can't submit.");
-      return fail(400, "Save your GitHub repo link first.");
+      return fail(400, "Save your GitHub repo link first before submitting.");
     }
 
     after(() => checkTeamRepo(session.teamId));
