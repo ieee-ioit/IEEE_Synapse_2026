@@ -38,6 +38,8 @@ export function clientInfo(req: Request) {
   };
 }
 
+import { logError } from "./logger";
+
 type AdminHandler<T> = (admin: AdminUser, body: T, req: Request) => Promise<Response>;
 
 /** Wraps an admin-only JSON endpoint: auth + CSRF + error handling. */
@@ -50,7 +52,12 @@ export function adminRoute<T>(handler: AdminHandler<T>) {
       if (body === null) return fail(400, "Expected a JSON request from this site.");
       return await handler(admin, body, req);
     } catch (err) {
-      console.error("[admin api]", err);
+      const { ip, userAgent } = clientInfo(req);
+      let endpoint = "admin_api";
+      try {
+        endpoint = new URL(req.url).pathname;
+      } catch {}
+      await logError(err, { endpoint, ip, userAgent });
       return fail(500, (err as Error).message || "Something went wrong.");
     }
   };

@@ -1,6 +1,7 @@
 import { getCriteria } from "@/lib/criteria";
 import { db } from "@/lib/db";
-import { adminRoute, fail, ok } from "@/lib/http";
+import { adminRoute, clientInfo, fail, ok } from "@/lib/http";
+import { logAudit } from "@/lib/logger";
 
 type Row = { teamNumber?: unknown; judge?: unknown; stage?: unknown; values?: Record<string, unknown>; notes?: unknown };
 type Body = { rows?: Row[]; stage?: number; dryRun?: boolean; replaceAll?: boolean };
@@ -9,7 +10,7 @@ type Body = { rows?: Row[]; stage?: number; dryRun?: boolean; replaceAll?: boole
  * Judges' paper sheets → Excel template → upload.
  * Supports stage 1 (preliminary) and stage 2 (live demo finalists).
  */
-export const POST = adminRoute<Body>(async (_admin, body) => {
+export const POST = adminRoute<Body>(async (admin, body, req) => {
   if (!Array.isArray(body.rows) || !body.rows.length) return fail(400, "No score rows found in the file.");
   if (body.rows.length > 5000) return fail(400, "Too many rows.");
 
@@ -79,6 +80,22 @@ export const POST = adminRoute<Body>(async (_admin, body) => {
       insert into scores ${tx(deduped)}
       on conflict (team_id, criterion_id, judge, stage)
       do update set value = excluded.value, notes = excluded.notes, imported_at = now()`;
+  });
+
+  const { ip, userAgent } = clientInfo(req);
+  await logAudit({
+    actorType: "admin",
+    actorId: admin.email,
+    action: "SCORES_IMPORT",
+    targetType: "scores",
+    details: {
+      stage: defaultStage,
+      importedScores: deduped.length,
+      teamsCount: summary.teams,
+      replaceAll: Boolean(body.replaceAll),
+    },
+    ip,
+    userAgent,
   });
 
   return ok({ summary, imported: deduped.length });

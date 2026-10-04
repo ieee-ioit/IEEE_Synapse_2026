@@ -1,10 +1,11 @@
 import { revalidatePath } from "next/cache";
-import { adminRoute, fail, ok } from "@/lib/http";
+import { adminRoute, clientInfo, fail, ok } from "@/lib/http";
+import { logAudit } from "@/lib/logger";
 import { getSettings, updateSettings, type Settings } from "@/lib/settings";
 
 const PUBLIC_PAGES = ["/", "/about", "/rules", "/schedule", "/leaderboard"];
 
-export const PUT = adminRoute<Partial<Settings>>(async (_admin, body) => {
+export const PUT = adminRoute<Partial<Settings>>(async (admin, body, req) => {
   const patch: Partial<Settings> = {};
 
   for (const k of ["eventStart", "submissionDeadline"] as const) {
@@ -30,6 +31,18 @@ export const PUT = adminRoute<Partial<Settings>>(async (_admin, body) => {
   }
 
   await updateSettings(patch);
+
+  const { ip, userAgent } = clientInfo(req);
+  await logAudit({
+    actorType: "admin",
+    actorId: admin.email,
+    action: "SETTINGS_UPDATE",
+    targetType: "settings",
+    details: patch as Record<string, unknown>,
+    ip,
+    userAgent,
+  });
+
   PUBLIC_PAGES.forEach((p) => revalidatePath(p));
   return ok({ settings: await getSettings() });
 });

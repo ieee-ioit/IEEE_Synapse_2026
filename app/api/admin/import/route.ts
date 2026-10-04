@@ -1,7 +1,8 @@
 import { newCredential } from "@/lib/codes";
 import { db } from "@/lib/db";
 import { event } from "@/lib/event";
-import { adminRoute, fail, ok } from "@/lib/http";
+import { adminRoute, clientInfo, fail, ok } from "@/lib/http";
+import { logAudit } from "@/lib/logger";
 
 type Member = { name: string; email: string };
 type IncomingTeam = {
@@ -39,7 +40,7 @@ function clean(t: IncomingTeam) {
  * login codes, optionally refreshes selected existing teams, never touches codes
  * or numbers of existing teams, and returns the plaintext codes once for printing.
  */
-export const POST = adminRoute<Body>(async (_admin, body) => {
+export const POST = adminRoute<Body>(async (_admin, body, req) => {
   if (!Array.isArray(body.teams) || !body.teams.length) return fail(400, "No teams in the upload.");
   if (body.teams.length > 1000) return fail(400, "That's more than 1,000 teams — split the file.");
   const teams = body.teams.map(clean);
@@ -139,6 +140,24 @@ export const POST = adminRoute<Body>(async (_admin, body) => {
     const created = fresh
       .map(({ t, teamNumber, cred }) => ({ teamNumber, name: t.name, leaderName: t.leaderName, leaderEmail: t.leaderEmail, code: cred.code }))
       .sort((a, b) => a.teamNumber - b.teamNumber);
+
+    if (!body.dryRun) {
+      const { ip, userAgent } = clientInfo(req);
+      await logAudit({
+        actorType: "admin",
+        actorId: _admin.email,
+        action: "TEAMS_IMPORT",
+        targetType: "teams",
+        details: {
+          freshCount: created.length,
+          updatedCount: updated,
+          totalSubmitted: teams.length,
+        },
+        ip,
+        userAgent,
+      });
+    }
+
     return { created, updated, summary: summarize(rows) };
   });
 
