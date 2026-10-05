@@ -84,7 +84,12 @@ export function Chapters() {
           <p className="gh-lede">{tbc(hero.lede)}</p>
           <CtaRow id="hero-actions" content="hero" />
           <PhaseOnly {...dates} when="pre">
-            <p className="gh-note">Registrations close {closeLabel}</p>
+            <p className="gh-note" style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", color: "var(--gold-soft)" }}>
+              <span className="badge" style={{ padding: "3px 9px", fontSize: 11, letterSpacing: "0.04em", background: "rgba(245, 181, 68, 0.15)", border: "1px solid rgba(245, 181, 68, 0.4)", color: "#f5b544" }}>
+                HOUSEFULL
+              </span>
+              Registrations closed early — participation exceeded expectations &amp; venue capacity!
+            </p>
           </PhaseOnly>
         </div>
       </section>
@@ -170,7 +175,9 @@ export function Chapters() {
             Last light. <Em>Save your spot.</Em>
           </h2>
           <PhaseOnly {...dates} when="pre">
-            <p className="gh-lede">Registrations close {closeLabel}.</p>
+            <p className="gh-lede">
+              Registrations are now closed early as participation has exceeded our expectations and venue capacity. Thank you for the incredible enthusiasm — see all registered teams on Oct 9!
+            </p>
           </PhaseOnly>
           <CtaRow id="final-actions" content="final" />
           <p className="gh-note">Questions? Reach out on WhatsApp or email ieeecon@aissmsioit.org</p>
