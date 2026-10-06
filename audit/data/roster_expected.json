@@ -1,0 +1,3206 @@
+{
+  "clean": [
+    {
+      "name": "Logic Minds 100",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Ninjas 101",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Builders 102",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Squad 103",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Ninjas 104",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Ninjas 105",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Wizards 106",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Squad 107",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Minds 108",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Minds 109",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Crew 110",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Wizards 111",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Ninjas 112",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Labs 113",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Builders 114",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Crew 115",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Wizards 116",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Builders 117",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Coders 118",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Coders 119",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Crew 120",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Crew 121",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Wizards 122",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Squad 123",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Forge 124",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Forge 125",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Crew 126",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Builders 127",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Coders 128",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Wizards 129",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Squad 130",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Wizards 131",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Coders 132",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Hackers 133",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Labs 134",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Crew 135",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Minds 136",
+      "expect": "accept"
+    },
+    {
+      "name": "Stack Minds 137",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Squad 138",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Builders 139",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Wizards 140",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Hackers 141",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Ninjas 142",
+      "expect": "accept"
+    },
+    {
+      "name": "Stack Coders 143",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Minds 144",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Coders 145",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Ninjas 146",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Minds 147",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Minds 148",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Squad 149",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Squad 150",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Hackers 151",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Hackers 152",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Minds 153",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Coders 154",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Labs 155",
+      "expect": "accept"
+    },
+    {
+      "name": "Stack Coders 156",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Minds 157",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Builders 158",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Ninjas 159",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Wizards 160",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Hackers 161",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Hackers 162",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Forge 163",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Crew 164",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Wizards 165",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Forge 166",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Labs 167",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Minds 168",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Builders 169",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Minds 170",
+      "expect": "accept"
+    },
+    {
+      "name": "Cipher Minds 171",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Labs 172",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Hackers 173",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Wizards 174",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Squad 175",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Hackers 176",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Forge 177",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Ninjas 178",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Forge 179",
+      "expect": "accept"
+    },
+    {
+      "name": "Stack Minds 180",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Forge 181",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Wizards 182",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Crew 183",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Squad 184",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Crew 185",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Crew 186",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Squad 187",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Coders 188",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Crew 189",
+      "expect": "accept"
+    },
+    {
+      "name": "Stack Wizards 190",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Forge 191",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Labs 192",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Crew 193",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Forge 194",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Labs 195",
+      "expect": "accept"
+    },
+    {
+      "name": "Stack Minds 196",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Ninjas 197",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Minds 198",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Labs 199",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Crew 200",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Crew 201",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Crew 202",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Coders 203",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Builders 204",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Wizards 205",
+      "expect": "accept"
+    },
+    {
+      "name": "Cipher Minds 206",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Squad 207",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Squad 208",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Crew 209",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Builders 210",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Hackers 211",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Hackers 212",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Coders 213",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Wizards 214",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Hackers 215",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Squad 216",
+      "expect": "accept"
+    },
+    {
+      "name": "Cipher Wizards 217",
+      "expect": "accept"
+    },
+    {
+      "name": "Cipher Coders 218",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Hackers 219",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Hackers 220",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Squad 221",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Hackers 222",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Forge 223",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Crew 224",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Wizards 225",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Wizards 226",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Wizards 227",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Forge 228",
+      "expect": "accept"
+    },
+    {
+      "name": "Cipher Forge 229",
+      "expect": "accept"
+    },
+    {
+      "name": "Byte Squad 230",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Wizards 231",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Coders 232",
+      "expect": "accept"
+    },
+    {
+      "name": "Kernel Crew 233",
+      "expect": "accept"
+    },
+    {
+      "name": "Orbit Hackers 234",
+      "expect": "accept"
+    },
+    {
+      "name": "Logic Wizards 235",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Coders 236",
+      "expect": "accept"
+    },
+    {
+      "name": "Pixel Builders 237",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Labs 238",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Coders 239",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Ninjas 240",
+      "expect": "accept"
+    },
+    {
+      "name": "Neural Minds 241",
+      "expect": "accept"
+    },
+    {
+      "name": "Nova Crew 242",
+      "expect": "accept"
+    },
+    {
+      "name": "Spark Labs 243",
+      "expect": "accept"
+    },
+    {
+      "name": "Echo Builders 244",
+      "expect": "accept"
+    },
+    {
+      "name": "Pulse Hackers 245",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Ninjas 246",
+      "expect": "accept"
+    },
+    {
+      "name": "Matrix Coders 247",
+      "expect": "accept"
+    },
+    {
+      "name": "Vector Ninjas 248",
+      "expect": "accept"
+    },
+    {
+      "name": "Quantum Crew 249",
+      "expect": "accept"
+    }
+  ],
+  "poison": [
+    {
+      "name": "Logic Minds 100",
+      "expect": "reject",
+      "why": "duplicate team name"
+    },
+    {
+      "name": "  NOVA NINJAS 101 ",
+      "expect": "reject",
+      "why": "same name differing by case/whitespace"
+    },
+    {
+      "name": "Dup Leader Email",
+      "expect": "reject",
+      "why": "leader email already used by another team"
+    },
+    {
+      "name": "Leader Is Member",
+      "expect": "reject-or-sanitise",
+      "why": "leader email equals member email"
+    },
+    {
+      "name": "Bad Email Team",
+      "expect": "reject",
+      "why": "invalid email format"
+    },
+    {
+      "name": "No Email Team",
+      "expect": "reject",
+      "why": "missing leader email (can't receive credentials)"
+    },
+    {
+      "name": "",
+      "expect": "reject",
+      "why": "empty team name"
+    },
+    {
+      "name": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+      "expect": "reject-or-sanitise",
+      "why": "300-char team name"
+    },
+    {
+      "name": "Five Members",
+      "expect": "reject",
+      "why": "team size 5 (max 4)"
+    },
+    {
+      "name": "टीम हैकर्स 🚀",
+      "expect": "accept",
+      "why": "Devanagari + emoji name"
+    },
+    {
+      "name": "Comma, \"Quote\"\nNewline",
+      "expect": "sanitise",
+      "why": "comma/quote/newline in name"
+    },
+    {
+      "name": "<script>alert(1)</script>",
+      "expect": "accept-escaped",
+      "why": "XSS payloads in name/college"
+    },
+    {
+      "name": "=HYPERLINK(\"http://evil\",\"x\")",
+      "expect": "accept-neutralised-on-export",
+      "why": "formula injection"
+    },
+    {
+      "name": "'; DROP TABLE teams;--",
+      "expect": "accept-as-text",
+      "why": "SQL-looking text"
+    },
+    {
+      "name": "Name\r\nBcc: victim@mock.example.test",
+      "expect": "sanitise",
+      "why": "header injection attempt (CR/LF)"
+    }
+  ],
+  "teams": [
+    {
+      "name": "Logic Minds 100",
+      "leaderName": "Rohan Deshmukh",
+      "leaderEmail": "t1.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Saanvi Rao",
+          "email": "t1.p1@mock.example.test"
+        },
+        {
+          "name": "Siddharth Patil",
+          "email": "t1.p2@mock.example.test"
+        },
+        {
+          "name": "Ananya Sharma",
+          "email": "t1.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Ninjas 101",
+      "leaderName": "Tanvi Chavan",
+      "leaderEmail": "t2.p0@mock.example.test",
+      "college": "PCCOE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Vihaan Shinde",
+          "email": "t2.p1@mock.example.test"
+        },
+        {
+          "name": "Yash Shinde",
+          "email": "t2.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Builders 102",
+      "leaderName": "Diya Gaikwad",
+      "leaderEmail": "t3.p0@mock.example.test",
+      "college": "PVG COET",
+      "track": "Social Impact & Sustainability",
+      "members": []
+    },
+    {
+      "name": "Spark Squad 103",
+      "leaderName": "Yash Shinde",
+      "leaderEmail": "t4.p0@mock.example.test",
+      "college": "Zeal COER",
+      "track": "Open Innovation",
+      "members": []
+    },
+    {
+      "name": "Quantum Ninjas 104",
+      "leaderName": "Siddharth Chavan",
+      "leaderEmail": "t5.p0@mock.example.test",
+      "college": "Trinity COE",
+      "track": "AI & Intelligent Systems",
+      "members": []
+    },
+    {
+      "name": "Vector Ninjas 105",
+      "leaderName": "Kavya Joshi",
+      "leaderEmail": "t6.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Myra Pawar",
+          "email": "t6.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Wizards 106",
+      "leaderName": "Vihaan Sharma",
+      "leaderEmail": "t7.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Om Chavan",
+          "email": "t7.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Squad 107",
+      "leaderName": "Ishaan Joshi",
+      "leaderEmail": "t8.p0@mock.example.test",
+      "college": "Dhole Patil COE",
+      "track": "Open Innovation",
+      "members": []
+    },
+    {
+      "name": "Spark Minds 108",
+      "leaderName": "Om Joshi",
+      "leaderEmail": "t9.p0@mock.example.test",
+      "college": "Sinhgad COE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Ananya Gaikwad",
+          "email": "t9.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Minds 109",
+      "leaderName": "Myra Iyer",
+      "leaderEmail": "t10.p0@mock.example.test",
+      "college": "GH Raisoni COE Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Pooja More",
+          "email": "t10.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Crew 110",
+      "leaderName": "Kabir Pawar",
+      "leaderEmail": "t11.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": []
+    },
+    {
+      "name": "Quantum Wizards 111",
+      "leaderName": "Riya Bhosale",
+      "leaderEmail": "t12.p0@mock.example.test",
+      "college": "Zeal COER",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Pooja Jadhav",
+          "email": "t12.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Ninjas 112",
+      "leaderName": "Om Pawar",
+      "leaderEmail": "t13.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Ishaan Iyer",
+          "email": "t13.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Labs 113",
+      "leaderName": "Rohan More",
+      "leaderEmail": "t14.p0@mock.example.test",
+      "college": "Marathwada Mitra Mandal COE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Byte Builders 114",
+      "leaderName": "Saanvi Iyer",
+      "leaderEmail": "t15.p0@mock.example.test",
+      "college": "MITAOE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Pooja Patil",
+          "email": "t15.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Crew 115",
+      "leaderName": "Aditi Rao",
+      "leaderEmail": "t16.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ananya Rao",
+          "email": "t16.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Wizards 116",
+      "leaderName": "Saanvi Nair",
+      "leaderEmail": "t17.p0@mock.example.test",
+      "college": "Marathwada Mitra Mandal COE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Yash Gaikwad",
+          "email": "t17.p1@mock.example.test"
+        },
+        {
+          "name": "Om Pawar",
+          "email": "t17.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Builders 117",
+      "leaderName": "Saanvi Chavan",
+      "leaderEmail": "t18.p0@mock.example.test",
+      "college": "COEP Technological University",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Tanvi Rao",
+          "email": "t18.p1@mock.example.test"
+        },
+        {
+          "name": "Ananya Sharma",
+          "email": "t18.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Coders 118",
+      "leaderName": "Tanvi Patil",
+      "leaderEmail": "t19.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Social Impact & Sustainability",
+      "members": []
+    },
+    {
+      "name": "Neural Coders 119",
+      "leaderName": "Reyansh Nair",
+      "leaderEmail": "t20.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Aarav Pawar",
+          "email": "t20.p1@mock.example.test"
+        },
+        {
+          "name": "Kavya Shinde",
+          "email": "t20.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Crew 120",
+      "leaderName": "Kavya Bhosale",
+      "leaderEmail": "t21.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Ishaan Gaikwad",
+          "email": "t21.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi Chavan",
+          "email": "t21.p2@mock.example.test"
+        },
+        {
+          "name": "Ananya Patil",
+          "email": "t21.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Crew 121",
+      "leaderName": "Pooja Iyer",
+      "leaderEmail": "t22.p0@mock.example.test",
+      "college": "Marathwada Mitra Mandal COE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Yash Patil",
+          "email": "t22.p1@mock.example.test"
+        },
+        {
+          "name": "Om Bhosale",
+          "email": "t22.p2@mock.example.test"
+        },
+        {
+          "name": "Om Bhosale",
+          "email": "t22.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Wizards 122",
+      "leaderName": "Arjun Pawar",
+      "leaderEmail": "t23.p0@mock.example.test",
+      "college": "PICT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Saanvi Pawar",
+          "email": "t23.p1@mock.example.test"
+        },
+        {
+          "name": "Rohan Nair",
+          "email": "t23.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Squad 123",
+      "leaderName": "Aarav Deshmukh",
+      "leaderEmail": "t24.p0@mock.example.test",
+      "college": "VIT Pune",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Sneha Patil",
+          "email": "t24.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Forge 124",
+      "leaderName": "Riya Iyer",
+      "leaderEmail": "t25.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Sneha Deshmukh",
+          "email": "t25.p1@mock.example.test"
+        },
+        {
+          "name": "Vihaan Rao",
+          "email": "t25.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Forge 125",
+      "leaderName": "Om Nair",
+      "leaderEmail": "t26.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Aarav Joshi",
+          "email": "t26.p1@mock.example.test"
+        },
+        {
+          "name": "Ananya Gaikwad",
+          "email": "t26.p2@mock.example.test"
+        },
+        {
+          "name": "Myra Rao",
+          "email": "t26.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Crew 126",
+      "leaderName": "Myra Patil",
+      "leaderEmail": "t27.p0@mock.example.test",
+      "college": "DY Patil IOT Pimpri",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ananya Patil",
+          "email": "t27.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Builders 127",
+      "leaderName": "Myra Chavan",
+      "leaderEmail": "t28.p0@mock.example.test",
+      "college": "Bharati Vidyapeeth COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Rohan Patil",
+          "email": "t28.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Coders 128",
+      "leaderName": "Tanvi Gaikwad",
+      "leaderEmail": "t29.p0@mock.example.test",
+      "college": "VIT Pune",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Aditi More",
+          "email": "t29.p1@mock.example.test"
+        },
+        {
+          "name": "Om Bhosale",
+          "email": "t29.p2@mock.example.test"
+        },
+        {
+          "name": "Ishaan Deshmukh",
+          "email": "t29.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Wizards 129",
+      "leaderName": "Ishaan Jadhav",
+      "leaderEmail": "t30.p0@mock.example.test",
+      "college": "Indira COE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Pulse Squad 130",
+      "leaderName": "Arjun Gaikwad",
+      "leaderEmail": "t31.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": []
+    },
+    {
+      "name": "Logic Wizards 131",
+      "leaderName": "Reyansh Joshi",
+      "leaderEmail": "t32.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Riya Chavan",
+          "email": "t32.p1@mock.example.test"
+        },
+        {
+          "name": "Diya Deshmukh",
+          "email": "t32.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Coders 132",
+      "leaderName": "Kavya Patil",
+      "leaderEmail": "t33.p0@mock.example.test",
+      "college": "Bharati Vidyapeeth COE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Aditi Joshi",
+          "email": "t33.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Hackers 133",
+      "leaderName": "Aarav Jadhav",
+      "leaderEmail": "t34.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Riya Iyer",
+          "email": "t34.p1@mock.example.test"
+        },
+        {
+          "name": "Kabir Kulkarni",
+          "email": "t34.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Echo Labs 134",
+      "leaderName": "Kavya Shinde",
+      "leaderEmail": "t35.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Kabir Rao",
+          "email": "t35.p1@mock.example.test"
+        },
+        {
+          "name": "Aarav Nair",
+          "email": "t35.p2@mock.example.test"
+        },
+        {
+          "name": "Riya Gaikwad",
+          "email": "t35.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Crew 135",
+      "leaderName": "Riya Patil",
+      "leaderEmail": "t36.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Vihaan Sharma",
+          "email": "t36.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha Gaikwad",
+          "email": "t36.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Minds 136",
+      "leaderName": "Aditi Kulkarni",
+      "leaderEmail": "t37.p0@mock.example.test",
+      "college": "GH Raisoni COE Pune",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Siddharth Sharma",
+          "email": "t37.p1@mock.example.test"
+        },
+        {
+          "name": "Ananya Iyer",
+          "email": "t37.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Stack Minds 137",
+      "leaderName": "Saanvi Kulkarni",
+      "leaderEmail": "t38.p0@mock.example.test",
+      "college": "Symbiosis Institute of Technology",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Rohan Sharma",
+          "email": "t38.p1@mock.example.test"
+        },
+        {
+          "name": "Rohan Chavan",
+          "email": "t38.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Squad 138",
+      "leaderName": "Reyansh Iyer",
+      "leaderEmail": "t39.p0@mock.example.test",
+      "college": "GH Raisoni COE Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Om Chavan",
+          "email": "t39.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Joshi",
+          "email": "t39.p2@mock.example.test"
+        },
+        {
+          "name": "Myra Iyer",
+          "email": "t39.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Builders 139",
+      "leaderName": "Rohan Kulkarni",
+      "leaderEmail": "t40.p0@mock.example.test",
+      "college": "Trinity COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Arjun Jadhav",
+          "email": "t40.p1@mock.example.test"
+        },
+        {
+          "name": "Tanvi Sharma",
+          "email": "t40.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Wizards 140",
+      "leaderName": "Vihaan Nair",
+      "leaderEmail": "t41.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Siddharth Bhosale",
+          "email": "t41.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi Patil",
+          "email": "t41.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Echo Hackers 141",
+      "leaderName": "Kavya Joshi",
+      "leaderEmail": "t42.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Kabir Nair",
+          "email": "t42.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Ninjas 142",
+      "leaderName": "Kabir Pawar",
+      "leaderEmail": "t43.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Aditi Sharma",
+          "email": "t43.p1@mock.example.test"
+        },
+        {
+          "name": "Arjun Bhosale",
+          "email": "t43.p2@mock.example.test"
+        },
+        {
+          "name": "Arjun Shinde",
+          "email": "t43.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Stack Coders 143",
+      "leaderName": "Kabir Nair",
+      "leaderEmail": "t44.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ishaan Bhosale",
+          "email": "t44.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Minds 144",
+      "leaderName": "Sneha Nair",
+      "leaderEmail": "t45.p0@mock.example.test",
+      "college": "Trinity COE",
+      "track": "AI & Intelligent Systems",
+      "members": []
+    },
+    {
+      "name": "Nova Coders 145",
+      "leaderName": "Yash Chavan",
+      "leaderEmail": "t46.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Diya More",
+          "email": "t46.p1@mock.example.test"
+        },
+        {
+          "name": "Ananya Patil",
+          "email": "t46.p2@mock.example.test"
+        },
+        {
+          "name": "Siddharth Deshmukh",
+          "email": "t46.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Ninjas 146",
+      "leaderName": "Siddharth Chavan",
+      "leaderEmail": "t47.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Rohan Iyer",
+          "email": "t47.p1@mock.example.test"
+        },
+        {
+          "name": "Om Shinde",
+          "email": "t47.p2@mock.example.test"
+        },
+        {
+          "name": "Aditi Iyer",
+          "email": "t47.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Minds 147",
+      "leaderName": "Sneha Sharma",
+      "leaderEmail": "t48.p0@mock.example.test",
+      "college": "MITAOE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Riya Chavan",
+          "email": "t48.p1@mock.example.test"
+        },
+        {
+          "name": "Om Jadhav",
+          "email": "t48.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Minds 148",
+      "leaderName": "Kavya Nair",
+      "leaderEmail": "t49.p0@mock.example.test",
+      "college": "Indira COE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Kavya Gaikwad",
+          "email": "t49.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Squad 149",
+      "leaderName": "Pooja Shinde",
+      "leaderEmail": "t50.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Ananya Joshi",
+          "email": "t50.p1@mock.example.test"
+        },
+        {
+          "name": "Arjun Shinde",
+          "email": "t50.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Squad 150",
+      "leaderName": "Rohan Pawar",
+      "leaderEmail": "t51.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Diya Iyer",
+          "email": "t51.p1@mock.example.test"
+        },
+        {
+          "name": "Rohan Iyer",
+          "email": "t51.p2@mock.example.test"
+        },
+        {
+          "name": "Diya More",
+          "email": "t51.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Hackers 151",
+      "leaderName": "Tanvi Jadhav",
+      "leaderEmail": "t52.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Tanvi Nair",
+          "email": "t52.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha More",
+          "email": "t52.p2@mock.example.test"
+        },
+        {
+          "name": "Tanvi Nair",
+          "email": "t52.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Hackers 152",
+      "leaderName": "Ananya Deshmukh",
+      "leaderEmail": "t53.p0@mock.example.test",
+      "college": "COEP Technological University",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Tanvi Pawar",
+          "email": "t53.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Minds 153",
+      "leaderName": "Kabir Joshi",
+      "leaderEmail": "t54.p0@mock.example.test",
+      "college": "KJ College of Engineering",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Siddharth Nair",
+          "email": "t54.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Patil",
+          "email": "t54.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Echo Coders 154",
+      "leaderName": "Aarav Nair",
+      "leaderEmail": "t55.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ananya Jadhav",
+          "email": "t55.p1@mock.example.test"
+        },
+        {
+          "name": "Yash Rao",
+          "email": "t55.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Labs 155",
+      "leaderName": "Sneha More",
+      "leaderEmail": "t56.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Kavya Patil",
+          "email": "t56.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Stack Coders 156",
+      "leaderName": "Diya Pawar",
+      "leaderEmail": "t57.p0@mock.example.test",
+      "college": "Trinity COE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Kabir Iyer",
+          "email": "t57.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Jadhav",
+          "email": "t57.p2@mock.example.test"
+        },
+        {
+          "name": "Ananya Patil",
+          "email": "t57.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Minds 157",
+      "leaderName": "Sneha Chavan",
+      "leaderEmail": "t58.p0@mock.example.test",
+      "college": "KJ College of Engineering",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Aditi Gaikwad",
+          "email": "t58.p1@mock.example.test"
+        },
+        {
+          "name": "Kabir More",
+          "email": "t58.p2@mock.example.test"
+        },
+        {
+          "name": "Sneha Patil",
+          "email": "t58.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Builders 158",
+      "leaderName": "Reyansh Joshi",
+      "leaderEmail": "t59.p0@mock.example.test",
+      "college": "Sinhgad COE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ishaan Patil",
+          "email": "t59.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Ninjas 159",
+      "leaderName": "Riya Nair",
+      "leaderEmail": "t60.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Aditi Gaikwad",
+          "email": "t60.p1@mock.example.test"
+        },
+        {
+          "name": "Riya Nair",
+          "email": "t60.p2@mock.example.test"
+        },
+        {
+          "name": "Saanvi Patil",
+          "email": "t60.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Wizards 160",
+      "leaderName": "Sneha Jadhav",
+      "leaderEmail": "t61.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": []
+    },
+    {
+      "name": "Pixel Hackers 161",
+      "leaderName": "Diya Patil",
+      "leaderEmail": "t62.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Arjun Rao",
+          "email": "t62.p1@mock.example.test"
+        },
+        {
+          "name": "Aarav Rao",
+          "email": "t62.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Hackers 162",
+      "leaderName": "Arjun Sharma",
+      "leaderEmail": "t63.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ananya Shinde",
+          "email": "t63.p1@mock.example.test"
+        },
+        {
+          "name": "Saanvi Jadhav",
+          "email": "t63.p2@mock.example.test"
+        },
+        {
+          "name": "Tanvi More",
+          "email": "t63.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Forge 163",
+      "leaderName": "Myra Pawar",
+      "leaderEmail": "t64.p0@mock.example.test",
+      "college": "Marathwada Mitra Mandal COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ishaan Pawar",
+          "email": "t64.p1@mock.example.test"
+        },
+        {
+          "name": "Vihaan Iyer",
+          "email": "t64.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Crew 164",
+      "leaderName": "Siddharth More",
+      "leaderEmail": "t65.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Myra Sharma",
+          "email": "t65.p1@mock.example.test"
+        },
+        {
+          "name": "Rohan Nair",
+          "email": "t65.p2@mock.example.test"
+        },
+        {
+          "name": "Saanvi Shinde",
+          "email": "t65.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Wizards 165",
+      "leaderName": "Myra Shinde",
+      "leaderEmail": "t66.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Myra Rao",
+          "email": "t66.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi Iyer",
+          "email": "t66.p2@mock.example.test"
+        },
+        {
+          "name": "Tanvi Rao",
+          "email": "t66.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Forge 166",
+      "leaderName": "Vihaan Pawar",
+      "leaderEmail": "t67.p0@mock.example.test",
+      "college": "COEP Technological University",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Aditi Shinde",
+          "email": "t67.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Labs 167",
+      "leaderName": "Pooja Shinde",
+      "leaderEmail": "t68.p0@mock.example.test",
+      "college": "MITAOE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Sneha Sharma",
+          "email": "t68.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Minds 168",
+      "leaderName": "Kavya Nair",
+      "leaderEmail": "t69.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Reyansh Joshi",
+          "email": "t69.p1@mock.example.test"
+        },
+        {
+          "name": "Arjun Pawar",
+          "email": "t69.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Builders 169",
+      "leaderName": "Tanvi Chavan",
+      "leaderEmail": "t70.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Siddharth Jadhav",
+          "email": "t70.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Minds 170",
+      "leaderName": "Tanvi Iyer",
+      "leaderEmail": "t71.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ishaan Kulkarni",
+          "email": "t71.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Cipher Minds 171",
+      "leaderName": "Aarav Chavan",
+      "leaderEmail": "t72.p0@mock.example.test",
+      "college": "VIT Pune",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Sneha More",
+          "email": "t72.p1@mock.example.test"
+        },
+        {
+          "name": "Saanvi Iyer",
+          "email": "t72.p2@mock.example.test"
+        },
+        {
+          "name": "Arjun Patil",
+          "email": "t72.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Labs 172",
+      "leaderName": "Ishaan Sharma",
+      "leaderEmail": "t73.p0@mock.example.test",
+      "college": "VIT Pune",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Rohan Gaikwad",
+          "email": "t73.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha Pawar",
+          "email": "t73.p2@mock.example.test"
+        },
+        {
+          "name": "Diya Nair",
+          "email": "t73.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Hackers 173",
+      "leaderName": "Vihaan Kulkarni",
+      "leaderEmail": "t74.p0@mock.example.test",
+      "college": "DY Patil COE Akurdi",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Echo Wizards 174",
+      "leaderName": "Riya More",
+      "leaderEmail": "t75.p0@mock.example.test",
+      "college": "PCCOE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Diya Patil",
+          "email": "t75.p1@mock.example.test"
+        },
+        {
+          "name": "Pooja More",
+          "email": "t75.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Squad 175",
+      "leaderName": "Aditi Jadhav",
+      "leaderEmail": "t76.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Diya Chavan",
+          "email": "t76.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Shinde",
+          "email": "t76.p2@mock.example.test"
+        },
+        {
+          "name": "Kabir Patil",
+          "email": "t76.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Hackers 176",
+      "leaderName": "Riya Pawar",
+      "leaderEmail": "t77.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Rohan Joshi",
+          "email": "t77.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Forge 177",
+      "leaderName": "Vihaan Jadhav",
+      "leaderEmail": "t78.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Aditi Deshmukh",
+          "email": "t78.p1@mock.example.test"
+        },
+        {
+          "name": "Om Deshmukh",
+          "email": "t78.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Ninjas 178",
+      "leaderName": "Ishaan Nair",
+      "leaderEmail": "t79.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Tanvi Jadhav",
+          "email": "t79.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Forge 179",
+      "leaderName": "Aarav Sharma",
+      "leaderEmail": "t80.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Om Sharma",
+          "email": "t80.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Iyer",
+          "email": "t80.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Stack Minds 180",
+      "leaderName": "Ananya Patil",
+      "leaderEmail": "t81.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Kavya Gaikwad",
+          "email": "t81.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Forge 181",
+      "leaderName": "Ishaan Deshmukh",
+      "leaderEmail": "t82.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Kernel Wizards 182",
+      "leaderName": "Ishaan Kulkarni",
+      "leaderEmail": "t83.p0@mock.example.test",
+      "college": "Dhole Patil COE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Siddharth Jadhav",
+          "email": "t83.p1@mock.example.test"
+        },
+        {
+          "name": "Vihaan Chavan",
+          "email": "t83.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Crew 183",
+      "leaderName": "Om More",
+      "leaderEmail": "t84.p0@mock.example.test",
+      "college": "Marathwada Mitra Mandal COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Arjun Deshmukh",
+          "email": "t84.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi Joshi",
+          "email": "t84.p2@mock.example.test"
+        },
+        {
+          "name": "Yash Sharma",
+          "email": "t84.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Squad 184",
+      "leaderName": "Yash Chavan",
+      "leaderEmail": "t85.p0@mock.example.test",
+      "college": "VIT Pune",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Ananya Bhosale",
+          "email": "t85.p1@mock.example.test"
+        },
+        {
+          "name": "Pooja Iyer",
+          "email": "t85.p2@mock.example.test"
+        },
+        {
+          "name": "Rohan Nair",
+          "email": "t85.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Crew 185",
+      "leaderName": "Tanvi Pawar",
+      "leaderEmail": "t86.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Arjun Patil",
+          "email": "t86.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha Joshi",
+          "email": "t86.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Crew 186",
+      "leaderName": "Myra Pawar",
+      "leaderEmail": "t87.p0@mock.example.test",
+      "college": "DY Patil IOT Pimpri",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Rohan Joshi",
+          "email": "t87.p1@mock.example.test"
+        },
+        {
+          "name": "Myra Joshi",
+          "email": "t87.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Squad 187",
+      "leaderName": "Ishaan Iyer",
+      "leaderEmail": "t88.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ishaan Iyer",
+          "email": "t88.p1@mock.example.test"
+        },
+        {
+          "name": "Diya Rao",
+          "email": "t88.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Coders 188",
+      "leaderName": "Kabir Gaikwad",
+      "leaderEmail": "t89.p0@mock.example.test",
+      "college": "PCCOE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Pooja Jadhav",
+          "email": "t89.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi More",
+          "email": "t89.p2@mock.example.test"
+        },
+        {
+          "name": "Siddharth Jadhav",
+          "email": "t89.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Crew 189",
+      "leaderName": "Reyansh More",
+      "leaderEmail": "t90.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Aditi More",
+          "email": "t90.p1@mock.example.test"
+        },
+        {
+          "name": "Om Iyer",
+          "email": "t90.p2@mock.example.test"
+        },
+        {
+          "name": "Om Bhosale",
+          "email": "t90.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Stack Wizards 190",
+      "leaderName": "Ishaan Rao",
+      "leaderEmail": "t91.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ananya Joshi",
+          "email": "t91.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi Kulkarni",
+          "email": "t91.p2@mock.example.test"
+        },
+        {
+          "name": "Diya Deshmukh",
+          "email": "t91.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Forge 191",
+      "leaderName": "Arjun Kulkarni",
+      "leaderEmail": "t92.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ananya Joshi",
+          "email": "t92.p1@mock.example.test"
+        },
+        {
+          "name": "Ananya Deshmukh",
+          "email": "t92.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Echo Labs 192",
+      "leaderName": "Rohan Pawar",
+      "leaderEmail": "t93.p0@mock.example.test",
+      "college": "Zeal COER",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Sneha Kulkarni",
+          "email": "t93.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Crew 193",
+      "leaderName": "Om Shinde",
+      "leaderEmail": "t94.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Riya Gaikwad",
+          "email": "t94.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Forge 194",
+      "leaderName": "Siddharth Jadhav",
+      "leaderEmail": "t95.p0@mock.example.test",
+      "college": "COEP Technological University",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Aditi Bhosale",
+          "email": "t95.p1@mock.example.test"
+        },
+        {
+          "name": "Riya Shinde",
+          "email": "t95.p2@mock.example.test"
+        },
+        {
+          "name": "Kabir Patil",
+          "email": "t95.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Labs 195",
+      "leaderName": "Ishaan Rao",
+      "leaderEmail": "t96.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Tanvi Joshi",
+          "email": "t96.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha Joshi",
+          "email": "t96.p2@mock.example.test"
+        },
+        {
+          "name": "Vihaan More",
+          "email": "t96.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Stack Minds 196",
+      "leaderName": "Om Shinde",
+      "leaderEmail": "t97.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Kabir Patil",
+          "email": "t97.p1@mock.example.test"
+        },
+        {
+          "name": "Rohan Jadhav",
+          "email": "t97.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Ninjas 197",
+      "leaderName": "Myra Sharma",
+      "leaderEmail": "t98.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Aarav Gaikwad",
+          "email": "t98.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Minds 198",
+      "leaderName": "Om Jadhav",
+      "leaderEmail": "t99.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Myra Jadhav",
+          "email": "t99.p1@mock.example.test"
+        },
+        {
+          "name": "Saanvi Iyer",
+          "email": "t99.p2@mock.example.test"
+        },
+        {
+          "name": "Om Jadhav",
+          "email": "t99.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Labs 199",
+      "leaderName": "Arjun Gaikwad",
+      "leaderEmail": "t100.p0@mock.example.test",
+      "college": "MITAOE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Myra Gaikwad",
+          "email": "t100.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Chavan",
+          "email": "t100.p2@mock.example.test"
+        },
+        {
+          "name": "Vihaan Rao",
+          "email": "t100.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Crew 200",
+      "leaderName": "Aditi Sharma",
+      "leaderEmail": "t101.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Tanvi Shinde",
+          "email": "t101.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Iyer",
+          "email": "t101.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Crew 201",
+      "leaderName": "Vihaan Joshi",
+      "leaderEmail": "t102.p0@mock.example.test",
+      "college": "KJ College of Engineering",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Matrix Crew 202",
+      "leaderName": "Aditi Pawar",
+      "leaderEmail": "t103.p0@mock.example.test",
+      "college": "Trinity COE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Riya Shinde",
+          "email": "t103.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Coders 203",
+      "leaderName": "Arjun Pawar",
+      "leaderEmail": "t104.p0@mock.example.test",
+      "college": "Dhole Patil COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Vihaan Kulkarni",
+          "email": "t104.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha Iyer",
+          "email": "t104.p2@mock.example.test"
+        },
+        {
+          "name": "Pooja Kulkarni",
+          "email": "t104.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Builders 204",
+      "leaderName": "Tanvi More",
+      "leaderEmail": "t105.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Arjun Rao",
+          "email": "t105.p1@mock.example.test"
+        },
+        {
+          "name": "Tanvi Deshmukh",
+          "email": "t105.p2@mock.example.test"
+        },
+        {
+          "name": "Saanvi Jadhav",
+          "email": "t105.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Wizards 205",
+      "leaderName": "Myra Chavan",
+      "leaderEmail": "t106.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Om Nair",
+          "email": "t106.p1@mock.example.test"
+        },
+        {
+          "name": "Sneha Patil",
+          "email": "t106.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Cipher Minds 206",
+      "leaderName": "Yash Jadhav",
+      "leaderEmail": "t107.p0@mock.example.test",
+      "college": "Indira COE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Myra Kulkarni",
+          "email": "t107.p1@mock.example.test"
+        },
+        {
+          "name": "Riya More",
+          "email": "t107.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Squad 207",
+      "leaderName": "Om More",
+      "leaderEmail": "t108.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Myra Patil",
+          "email": "t108.p1@mock.example.test"
+        },
+        {
+          "name": "Rohan Iyer",
+          "email": "t108.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Squad 208",
+      "leaderName": "Diya Pawar",
+      "leaderEmail": "t109.p0@mock.example.test",
+      "college": "DY Patil COE Akurdi",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Vihaan Patil",
+          "email": "t109.p1@mock.example.test"
+        },
+        {
+          "name": "Siddharth Joshi",
+          "email": "t109.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Crew 209",
+      "leaderName": "Ishaan Rao",
+      "leaderEmail": "t110.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Kavya Kulkarni",
+          "email": "t110.p1@mock.example.test"
+        },
+        {
+          "name": "Diya Chavan",
+          "email": "t110.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Builders 210",
+      "leaderName": "Ananya Kulkarni",
+      "leaderEmail": "t111.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Kabir Kulkarni",
+          "email": "t111.p1@mock.example.test"
+        },
+        {
+          "name": "Om Joshi",
+          "email": "t111.p2@mock.example.test"
+        },
+        {
+          "name": "Sneha Joshi",
+          "email": "t111.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Hackers 211",
+      "leaderName": "Kavya Deshmukh",
+      "leaderEmail": "t112.p0@mock.example.test",
+      "college": "Bharati Vidyapeeth COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Arjun Pawar",
+          "email": "t112.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Hackers 212",
+      "leaderName": "Myra Bhosale",
+      "leaderEmail": "t113.p0@mock.example.test",
+      "college": "Sinhgad COE",
+      "track": "AI & Intelligent Systems",
+      "members": []
+    },
+    {
+      "name": "Logic Coders 213",
+      "leaderName": "Om Shinde",
+      "leaderEmail": "t114.p0@mock.example.test",
+      "college": "PCCOE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Om Chavan",
+          "email": "t114.p1@mock.example.test"
+        },
+        {
+          "name": "Arjun Rao",
+          "email": "t114.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Wizards 214",
+      "leaderName": "Diya Rao",
+      "leaderEmail": "t115.p0@mock.example.test",
+      "college": "Dhole Patil COE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ishaan Bhosale",
+          "email": "t115.p1@mock.example.test"
+        },
+        {
+          "name": "Pooja Shinde",
+          "email": "t115.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Hackers 215",
+      "leaderName": "Ishaan Gaikwad",
+      "leaderEmail": "t116.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Reyansh Patil",
+          "email": "t116.p1@mock.example.test"
+        },
+        {
+          "name": "Yash Jadhav",
+          "email": "t116.p2@mock.example.test"
+        },
+        {
+          "name": "Sneha Pawar",
+          "email": "t116.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Squad 216",
+      "leaderName": "Tanvi Nair",
+      "leaderEmail": "t117.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Sneha Sharma",
+          "email": "t117.p1@mock.example.test"
+        },
+        {
+          "name": "Kavya Chavan",
+          "email": "t117.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Cipher Wizards 217",
+      "leaderName": "Ishaan More",
+      "leaderEmail": "t118.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Cipher Coders 218",
+      "leaderName": "Reyansh Kulkarni",
+      "leaderEmail": "t119.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Arjun Kulkarni",
+          "email": "t119.p1@mock.example.test"
+        },
+        {
+          "name": "Aditi Patil",
+          "email": "t119.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Echo Hackers 219",
+      "leaderName": "Tanvi Chavan",
+      "leaderEmail": "t120.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Myra Rao",
+          "email": "t120.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Hackers 220",
+      "leaderName": "Yash Joshi",
+      "leaderEmail": "t121.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Vihaan Joshi",
+          "email": "t121.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Squad 221",
+      "leaderName": "Tanvi Jadhav",
+      "leaderEmail": "t122.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Sneha Patil",
+          "email": "t122.p1@mock.example.test"
+        },
+        {
+          "name": "Vihaan Kulkarni",
+          "email": "t122.p2@mock.example.test"
+        },
+        {
+          "name": "Sneha Sharma",
+          "email": "t122.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Hackers 222",
+      "leaderName": "Tanvi Patil",
+      "leaderEmail": "t123.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Myra Joshi",
+          "email": "t123.p1@mock.example.test"
+        },
+        {
+          "name": "Kabir Pawar",
+          "email": "t123.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Forge 223",
+      "leaderName": "Kavya Kulkarni",
+      "leaderEmail": "t124.p0@mock.example.test",
+      "college": "Indira COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Diya Sharma",
+          "email": "t124.p1@mock.example.test"
+        },
+        {
+          "name": "Ishaan Jadhav",
+          "email": "t124.p2@mock.example.test"
+        },
+        {
+          "name": "Myra More",
+          "email": "t124.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Crew 224",
+      "leaderName": "Ishaan Jadhav",
+      "leaderEmail": "t125.p0@mock.example.test",
+      "college": "PICT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Vihaan Nair",
+          "email": "t125.p1@mock.example.test"
+        },
+        {
+          "name": "Kabir Gaikwad",
+          "email": "t125.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Wizards 225",
+      "leaderName": "Diya Kulkarni",
+      "leaderEmail": "t126.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Byte Wizards 226",
+      "leaderName": "Om Deshmukh",
+      "leaderEmail": "t127.p0@mock.example.test",
+      "college": "DY Patil COE Akurdi",
+      "track": "Social Impact & Sustainability",
+      "members": []
+    },
+    {
+      "name": "Logic Wizards 227",
+      "leaderName": "Tanvi Iyer",
+      "leaderEmail": "t128.p0@mock.example.test",
+      "college": "NBN Sinhgad",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ishaan Jadhav",
+          "email": "t128.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Forge 228",
+      "leaderName": "Myra Shinde",
+      "leaderEmail": "t129.p0@mock.example.test",
+      "college": "DY Patil COE Akurdi",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Diya Joshi",
+          "email": "t129.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Cipher Forge 229",
+      "leaderName": "Sneha Joshi",
+      "leaderEmail": "t130.p0@mock.example.test",
+      "college": "Marathwada Mitra Mandal COE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Om Pawar",
+          "email": "t130.p1@mock.example.test"
+        },
+        {
+          "name": "Kavya Patil",
+          "email": "t130.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Byte Squad 230",
+      "leaderName": "Aditi Rao",
+      "leaderEmail": "t131.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Saanvi Jadhav",
+          "email": "t131.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Wizards 231",
+      "leaderName": "Arjun Bhosale",
+      "leaderEmail": "t132.p0@mock.example.test",
+      "college": "MIT WPU",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Aarav Bhosale",
+          "email": "t132.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Coders 232",
+      "leaderName": "Tanvi Joshi",
+      "leaderEmail": "t133.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Om Deshmukh",
+          "email": "t133.p1@mock.example.test"
+        },
+        {
+          "name": "Tanvi Deshmukh",
+          "email": "t133.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Kernel Crew 233",
+      "leaderName": "Tanvi Shinde",
+      "leaderEmail": "t134.p0@mock.example.test",
+      "college": "COEP Technological University",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Vihaan Rao",
+          "email": "t134.p1@mock.example.test"
+        },
+        {
+          "name": "Ananya Kulkarni",
+          "email": "t134.p2@mock.example.test"
+        },
+        {
+          "name": "Kavya Pawar",
+          "email": "t134.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Orbit Hackers 234",
+      "leaderName": "Ananya Bhosale",
+      "leaderEmail": "t135.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Sneha Rao",
+          "email": "t135.p1@mock.example.test"
+        },
+        {
+          "name": "Kavya Patil",
+          "email": "t135.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Logic Wizards 235",
+      "leaderName": "Arjun Patil",
+      "leaderEmail": "t136.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Ishaan Chavan",
+          "email": "t136.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Coders 236",
+      "leaderName": "Arjun Rao",
+      "leaderEmail": "t137.p0@mock.example.test",
+      "college": "AIT Pune",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Ishaan Chavan",
+          "email": "t137.p1@mock.example.test"
+        },
+        {
+          "name": "Pooja Bhosale",
+          "email": "t137.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pixel Builders 237",
+      "leaderName": "Pooja Pawar",
+      "leaderEmail": "t138.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "Cybersecurity & Digital Trust",
+      "members": []
+    },
+    {
+      "name": "Echo Labs 238",
+      "leaderName": "Arjun Chavan",
+      "leaderEmail": "t139.p0@mock.example.test",
+      "college": "Trinity COE",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Yash Sharma",
+          "email": "t139.p1@mock.example.test"
+        },
+        {
+          "name": "Riya Gaikwad",
+          "email": "t139.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Coders 239",
+      "leaderName": "Vihaan Rao",
+      "leaderEmail": "t140.p0@mock.example.test",
+      "college": "Bharati Vidyapeeth COE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Sneha More",
+          "email": "t140.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Ninjas 240",
+      "leaderName": "Sneha Joshi",
+      "leaderEmail": "t141.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Reyansh Pawar",
+          "email": "t141.p1@mock.example.test"
+        },
+        {
+          "name": "Vihaan Patil",
+          "email": "t141.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Neural Minds 241",
+      "leaderName": "Saanvi Chavan",
+      "leaderEmail": "t142.p0@mock.example.test",
+      "college": "GH Raisoni COE Pune",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Kavya Deshmukh",
+          "email": "t142.p1@mock.example.test"
+        },
+        {
+          "name": "Myra Chavan",
+          "email": "t142.p2@mock.example.test"
+        },
+        {
+          "name": "Vihaan Nair",
+          "email": "t142.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Nova Crew 242",
+      "leaderName": "Sneha Chavan",
+      "leaderEmail": "t143.p0@mock.example.test",
+      "college": "VIIT Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ananya Sharma",
+          "email": "t143.p1@mock.example.test"
+        },
+        {
+          "name": "Om Rao",
+          "email": "t143.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Spark Labs 243",
+      "leaderName": "Saanvi Gaikwad",
+      "leaderEmail": "t144.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "Open Innovation",
+      "members": []
+    },
+    {
+      "name": "Echo Builders 244",
+      "leaderName": "Rohan Nair",
+      "leaderEmail": "t145.p0@mock.example.test",
+      "college": "Cummins College of Engineering",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Arjun Patil",
+          "email": "t145.p1@mock.example.test"
+        },
+        {
+          "name": "Vihaan Patil",
+          "email": "t145.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Pulse Hackers 245",
+      "leaderName": "Riya Pawar",
+      "leaderEmail": "t146.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Kavya Deshmukh",
+          "email": "t146.p1@mock.example.test"
+        },
+        {
+          "name": "Diya Nair",
+          "email": "t146.p2@mock.example.test"
+        },
+        {
+          "name": "Aarav Shinde",
+          "email": "t146.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Ninjas 246",
+      "leaderName": "Kabir Kulkarni",
+      "leaderEmail": "t147.p0@mock.example.test",
+      "college": "GH Raisoni COE Pune",
+      "track": "Social Impact & Sustainability",
+      "members": [
+        {
+          "name": "Ishaan Joshi",
+          "email": "t147.p1@mock.example.test"
+        },
+        {
+          "name": "Reyansh Iyer",
+          "email": "t147.p2@mock.example.test"
+        },
+        {
+          "name": "Siddharth Patil",
+          "email": "t147.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Matrix Coders 247",
+      "leaderName": "Arjun Patil",
+      "leaderEmail": "t148.p0@mock.example.test",
+      "college": "JSPM RSCOE",
+      "track": "Open Innovation",
+      "members": [
+        {
+          "name": "Aarav Deshmukh",
+          "email": "t148.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Vector Ninjas 248",
+      "leaderName": "Myra Joshi",
+      "leaderEmail": "t149.p0@mock.example.test",
+      "college": "KJ College of Engineering",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Ananya Iyer",
+          "email": "t149.p1@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Quantum Crew 249",
+      "leaderName": "Aditi Nair",
+      "leaderEmail": "t150.p0@mock.example.test",
+      "college": "PCCOE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Rohan Chavan",
+          "email": "t150.p1@mock.example.test"
+        },
+        {
+          "name": "Reyansh Bhosale",
+          "email": "t150.p2@mock.example.test"
+        }
+      ]
+    }
+  ],
+  "poisonTeams": [
+    {
+      "name": "Logic Minds 100",
+      "leaderName": "Rohan Deshmukh",
+      "leaderEmail": "t1.p0@mock.example.test",
+      "college": "AISSMS IOIT",
+      "track": "AI & Intelligent Systems",
+      "members": [
+        {
+          "name": "Saanvi Rao",
+          "email": "t1.p1@mock.example.test"
+        },
+        {
+          "name": "Siddharth Patil",
+          "email": "t1.p2@mock.example.test"
+        },
+        {
+          "name": "Ananya Sharma",
+          "email": "t1.p3@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "  NOVA NINJAS 101 ",
+      "leaderName": "Tanvi Chavan",
+      "leaderEmail": "t2.p0@mock.example.test",
+      "college": "PCCOE",
+      "track": "Cybersecurity & Digital Trust",
+      "members": [
+        {
+          "name": "Vihaan Shinde",
+          "email": "t2.p1@mock.example.test"
+        },
+        {
+          "name": "Yash Shinde",
+          "email": "t2.p2@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Dup Leader Email",
+      "leaderName": "X",
+      "leaderEmail": "t3.p0@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "Leader Is Member",
+      "leaderName": "Y",
+      "leaderEmail": "same@mock.example.test",
+      "college": "PICT",
+      "members": [
+        {
+          "name": "Y2",
+          "email": "same@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "Bad Email Team",
+      "leaderName": "Z",
+      "leaderEmail": "not-an-email",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "No Email Team",
+      "leaderName": "Z",
+      "leaderEmail": "",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "",
+      "leaderName": "Q",
+      "leaderEmail": "q@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+      "leaderName": "Long",
+      "leaderEmail": "long@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "Five Members",
+      "leaderName": "F",
+      "leaderEmail": "five@mock.example.test",
+      "college": "PICT",
+      "members": [
+        {
+          "name": "M1",
+          "email": "five1@mock.example.test"
+        },
+        {
+          "name": "M2",
+          "email": "five2@mock.example.test"
+        },
+        {
+          "name": "M3",
+          "email": "five3@mock.example.test"
+        },
+        {
+          "name": "M4",
+          "email": "five4@mock.example.test"
+        }
+      ]
+    },
+    {
+      "name": "टीम हैकर्स 🚀",
+      "leaderName": "देव",
+      "leaderEmail": "unicode@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "Comma, \"Quote\"\nNewline",
+      "leaderName": "C",
+      "leaderEmail": "comma@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "<script>alert(1)</script>",
+      "leaderName": "X",
+      "leaderEmail": "xss1@mock.example.test",
+      "college": "\"><img src=x onerror=alert(1)>",
+      "members": []
+    },
+    {
+      "name": "=HYPERLINK(\"http://evil\",\"x\")",
+      "leaderName": "@SUM(1+1)",
+      "leaderEmail": "formula@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "'; DROP TABLE teams;--",
+      "leaderName": "S",
+      "leaderEmail": "sqli@mock.example.test",
+      "college": "PICT",
+      "members": []
+    },
+    {
+      "name": "Name\r\nBcc: victim@mock.example.test",
+      "leaderName": "Hdr\r\nBcc: x@mock.example.test",
+      "leaderEmail": "hdr@mock.example.test",
+      "college": "PICT",
+      "members": []
+    }
+  ]
+}

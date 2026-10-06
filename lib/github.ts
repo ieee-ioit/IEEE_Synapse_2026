@@ -4,6 +4,9 @@ import { getSettings } from "./settings";
 
 export type GithubStatus = "clean" | "review" | "flagged";
 
+// Test seam (audit): point at a local mock GitHub. Defaults to the real API.
+const API = (process.env.GITHUB_API_BASE_URL || "https://api.github.com").replace(/\/$/, "");
+
 /** Accepts github.com/owner/repo in the usual forms and returns the canonical https URL. */
 export function parseRepoUrl(input: string) {
   const m = input
@@ -34,7 +37,7 @@ export async function inspectRepo(url: string, eventStartIso: string) {
   };
   if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
-  const base = `https://api.github.com/repos/${parsed.owner}/${parsed.repo}/commits?per_page=1`;
+  const base = `${API}/repos/${parsed.owner}/${parsed.repo}/commits?per_page=1`;
   const get = (u: string) => fetch(u, { headers, cache: "no-store", signal: AbortSignal.timeout(8000) });
 
   let res = await get(base);
@@ -61,7 +64,7 @@ export async function inspectRepo(url: string, eventStartIso: string) {
   // Check for README.md presence at repo root
   let hasReadme = false;
   try {
-    const readmeRes = await get(`https://api.github.com/repos/${parsed.owner}/${parsed.repo}/readme`);
+    const readmeRes = await get(`${API}/repos/${parsed.owner}/${parsed.repo}/readme`);
     hasReadme = readmeRes.ok;
   } catch {}
 

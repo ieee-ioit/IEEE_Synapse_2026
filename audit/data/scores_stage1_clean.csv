@@ -1,0 +1,3151 @@
+teamIndex,judge,criterion,value
+0,Dr. Rao,Innovation,7.6
+0,Dr. Rao,Technical Implementation,4.4
+0,Dr. Rao,Functionality,9.4
+0,Dr. Rao,Problem Relevance,7.4
+0,Dr. Rao,Creativity,6.9
+0,Dr. Rao,Demo & Explanation,9.0
+0,Dr. Rao,Overall Impact,5.8
+0,Prof. Kulkarni,Innovation,3.3
+0,Prof. Kulkarni,Technical Implementation,3.2
+0,Prof. Kulkarni,Functionality,6.8
+0,Prof. Kulkarni,Problem Relevance,8.0
+0,Prof. Kulkarni,Creativity,6.6
+0,Prof. Kulkarni,Demo & Explanation,6.2
+0,Prof. Kulkarni,Overall Impact,5.3
+0,Ms. Iyer,Innovation,3.5
+0,Ms. Iyer,Technical Implementation,6.3
+0,Ms. Iyer,Functionality,5.0
+0,Ms. Iyer,Problem Relevance,3.8
+0,Ms. Iyer,Creativity,4.0
+0,Ms. Iyer,Demo & Explanation,5.1
+0,Ms. Iyer,Overall Impact,5.9
+1,Dr. Rao,Innovation,3.8
+1,Dr. Rao,Technical Implementation,8.8
+1,Dr. Rao,Functionality,7.1
+1,Dr. Rao,Problem Relevance,9.2
+1,Dr. Rao,Creativity,7.8
+1,Dr. Rao,Demo & Explanation,7.4
+1,Dr. Rao,Overall Impact,6.9
+1,Prof. Kulkarni,Innovation,5.2
+1,Prof. Kulkarni,Technical Implementation,5.6
+1,Prof. Kulkarni,Functionality,9.4
+1,Prof. Kulkarni,Problem Relevance,9.1
+1,Prof. Kulkarni,Creativity,9.5
+1,Prof. Kulkarni,Demo & Explanation,3.7
+1,Prof. Kulkarni,Overall Impact,8.6
+1,Ms. Iyer,Innovation,8.2
+1,Ms. Iyer,Technical Implementation,6.3
+1,Ms. Iyer,Functionality,8.9
+1,Ms. Iyer,Problem Relevance,8.3
+1,Ms. Iyer,Creativity,8.7
+1,Ms. Iyer,Demo & Explanation,7.0
+1,Ms. Iyer,Overall Impact,4.6
+2,Dr. Rao,Innovation,5.8
+2,Dr. Rao,Technical Implementation,3.0
+2,Dr. Rao,Functionality,5.5
+2,Dr. Rao,Problem Relevance,3.0
+2,Dr. Rao,Creativity,8.4
+2,Dr. Rao,Demo & Explanation,7.1
+2,Dr. Rao,Overall Impact,9.1
+2,Prof. Kulkarni,Innovation,5.4
+2,Prof. Kulkarni,Technical Implementation,6.4
+2,Prof. Kulkarni,Functionality,5.5
+2,Prof. Kulkarni,Problem Relevance,6.1
+2,Prof. Kulkarni,Creativity,9.8
+2,Prof. Kulkarni,Demo & Explanation,4.8
+2,Prof. Kulkarni,Overall Impact,7.1
+2,Ms. Iyer,Innovation,7.1
+2,Ms. Iyer,Technical Implementation,6.2
+2,Ms. Iyer,Functionality,5.0
+2,Ms. Iyer,Problem Relevance,8.2
+2,Ms. Iyer,Creativity,5.2
+2,Ms. Iyer,Demo & Explanation,3.0
+2,Ms. Iyer,Overall Impact,7.3
+3,Dr. Rao,Innovation,5.7
+3,Dr. Rao,Technical Implementation,9.0
+3,Dr. Rao,Functionality,7.8
+3,Dr. Rao,Problem Relevance,8.5
+3,Dr. Rao,Creativity,9.6
+3,Dr. Rao,Demo & Explanation,5.5
+3,Dr. Rao,Overall Impact,5.8
+3,Prof. Kulkarni,Innovation,6.6
+3,Prof. Kulkarni,Technical Implementation,9.8
+3,Prof. Kulkarni,Functionality,8.3
+3,Prof. Kulkarni,Problem Relevance,5.5
+3,Prof. Kulkarni,Creativity,4.5
+3,Prof. Kulkarni,Demo & Explanation,8.0
+3,Prof. Kulkarni,Overall Impact,8.9
+3,Ms. Iyer,Innovation,8.8
+3,Ms. Iyer,Technical Implementation,4.6
+3,Ms. Iyer,Functionality,9.7
+3,Ms. Iyer,Problem Relevance,9.6
+3,Ms. Iyer,Creativity,5.1
+3,Ms. Iyer,Demo & Explanation,5.8
+3,Ms. Iyer,Overall Impact,6.8
+4,Dr. Rao,Innovation,6.5
+4,Dr. Rao,Technical Implementation,3.2
+4,Dr. Rao,Functionality,3.5
+4,Dr. Rao,Problem Relevance,6.9
+4,Dr. Rao,Creativity,9.3
+4,Dr. Rao,Demo & Explanation,5.2
+4,Dr. Rao,Overall Impact,9.4
+4,Prof. Kulkarni,Innovation,9.8
+4,Prof. Kulkarni,Technical Implementation,4.4
+4,Prof. Kulkarni,Functionality,5.4
+4,Prof. Kulkarni,Problem Relevance,4.4
+4,Prof. Kulkarni,Creativity,5.9
+4,Prof. Kulkarni,Demo & Explanation,9.5
+4,Prof. Kulkarni,Overall Impact,9.5
+4,Ms. Iyer,Innovation,5.6
+4,Ms. Iyer,Technical Implementation,4.4
+4,Ms. Iyer,Functionality,7.3
+4,Ms. Iyer,Problem Relevance,7.0
+4,Ms. Iyer,Creativity,9.6
+4,Ms. Iyer,Demo & Explanation,7.1
+4,Ms. Iyer,Overall Impact,5.4
+5,Dr. Rao,Innovation,4.2
+5,Dr. Rao,Technical Implementation,9.4
+5,Dr. Rao,Functionality,3.0
+5,Dr. Rao,Problem Relevance,5.4
+5,Dr. Rao,Creativity,5.9
+5,Dr. Rao,Demo & Explanation,9.3
+5,Dr. Rao,Overall Impact,4.5
+5,Prof. Kulkarni,Innovation,5.0
+5,Prof. Kulkarni,Technical Implementation,9.8
+5,Prof. Kulkarni,Functionality,4.3
+5,Prof. Kulkarni,Problem Relevance,6.6
+5,Prof. Kulkarni,Creativity,9.2
+5,Prof. Kulkarni,Demo & Explanation,3.3
+5,Prof. Kulkarni,Overall Impact,9.7
+5,Ms. Iyer,Innovation,5.1
+5,Ms. Iyer,Technical Implementation,8.2
+5,Ms. Iyer,Functionality,3.1
+5,Ms. Iyer,Problem Relevance,4.3
+5,Ms. Iyer,Creativity,7.3
+5,Ms. Iyer,Demo & Explanation,9.6
+5,Ms. Iyer,Overall Impact,7.9
+6,Dr. Rao,Innovation,4.0
+6,Dr. Rao,Technical Implementation,5.1
+6,Dr. Rao,Functionality,7.4
+6,Dr. Rao,Problem Relevance,6.9
+6,Dr. Rao,Creativity,7.7
+6,Dr. Rao,Demo & Explanation,7.5
+6,Dr. Rao,Overall Impact,3.0
+6,Prof. Kulkarni,Innovation,9.9
+6,Prof. Kulkarni,Technical Implementation,3.0
+6,Prof. Kulkarni,Functionality,8.7
+6,Prof. Kulkarni,Problem Relevance,3.8
+6,Prof. Kulkarni,Creativity,5.2
+6,Prof. Kulkarni,Demo & Explanation,7.7
+6,Prof. Kulkarni,Overall Impact,6.2
+6,Ms. Iyer,Innovation,9.0
+6,Ms. Iyer,Technical Implementation,7.1
+6,Ms. Iyer,Functionality,9.9
+6,Ms. Iyer,Problem Relevance,3.8
+6,Ms. Iyer,Creativity,5.7
+6,Ms. Iyer,Demo & Explanation,4.2
+6,Ms. Iyer,Overall Impact,7.5
+7,Dr. Rao,Innovation,9.7
+7,Dr. Rao,Technical Implementation,8.4
+7,Dr. Rao,Functionality,9.4
+7,Dr. Rao,Problem Relevance,9.5
+7,Dr. Rao,Creativity,5.3
+7,Dr. Rao,Demo & Explanation,3.1
+7,Dr. Rao,Overall Impact,8.1
+7,Prof. Kulkarni,Innovation,7.7
+7,Prof. Kulkarni,Technical Implementation,6.5
+7,Prof. Kulkarni,Functionality,3.9
+7,Prof. Kulkarni,Problem Relevance,6.5
+7,Prof. Kulkarni,Creativity,9.6
+7,Prof. Kulkarni,Demo & Explanation,8.8
+7,Prof. Kulkarni,Overall Impact,9.9
+7,Ms. Iyer,Innovation,7.3
+7,Ms. Iyer,Technical Implementation,6.5
+7,Ms. Iyer,Functionality,7.2
+7,Ms. Iyer,Problem Relevance,7.7
+7,Ms. Iyer,Creativity,6.9
+7,Ms. Iyer,Demo & Explanation,7.0
+7,Ms. Iyer,Overall Impact,6.4
+8,Dr. Rao,Innovation,4.1
+8,Dr. Rao,Technical Implementation,4.9
+8,Dr. Rao,Functionality,5.6
+8,Dr. Rao,Problem Relevance,9.8
+8,Dr. Rao,Creativity,9.1
+8,Dr. Rao,Demo & Explanation,9.3
+8,Dr. Rao,Overall Impact,7.7
+8,Prof. Kulkarni,Innovation,4.0
+8,Prof. Kulkarni,Technical Implementation,6.5
+8,Prof. Kulkarni,Functionality,3.3
+8,Prof. Kulkarni,Problem Relevance,7.8
+8,Prof. Kulkarni,Creativity,10.0
+8,Prof. Kulkarni,Demo & Explanation,6.8
+8,Prof. Kulkarni,Overall Impact,5.2
+8,Ms. Iyer,Innovation,3.4
+8,Ms. Iyer,Technical Implementation,7.2
+8,Ms. Iyer,Functionality,3.0
+8,Ms. Iyer,Problem Relevance,5.3
+8,Ms. Iyer,Creativity,3.0
+8,Ms. Iyer,Demo & Explanation,8.8
+8,Ms. Iyer,Overall Impact,3.7
+9,Dr. Rao,Innovation,9.1
+9,Dr. Rao,Technical Implementation,8.3
+9,Dr. Rao,Functionality,3.3
+9,Dr. Rao,Problem Relevance,5.7
+9,Dr. Rao,Creativity,4.6
+9,Dr. Rao,Demo & Explanation,3.3
+9,Dr. Rao,Overall Impact,6.0
+9,Prof. Kulkarni,Innovation,6.3
+9,Prof. Kulkarni,Technical Implementation,5.1
+9,Prof. Kulkarni,Functionality,3.1
+9,Prof. Kulkarni,Problem Relevance,8.2
+9,Prof. Kulkarni,Creativity,4.1
+9,Prof. Kulkarni,Demo & Explanation,5.4
+9,Prof. Kulkarni,Overall Impact,9.6
+9,Ms. Iyer,Innovation,5.9
+9,Ms. Iyer,Technical Implementation,4.2
+9,Ms. Iyer,Functionality,10.0
+9,Ms. Iyer,Problem Relevance,6.7
+9,Ms. Iyer,Creativity,10.0
+9,Ms. Iyer,Demo & Explanation,6.1
+9,Ms. Iyer,Overall Impact,5.1
+10,Dr. Rao,Innovation,7.0
+10,Dr. Rao,Technical Implementation,5.8
+10,Dr. Rao,Functionality,5.8
+10,Dr. Rao,Problem Relevance,6.0
+10,Dr. Rao,Creativity,8.3
+10,Dr. Rao,Demo & Explanation,8.8
+10,Dr. Rao,Overall Impact,5.6
+10,Prof. Kulkarni,Innovation,8.3
+10,Prof. Kulkarni,Technical Implementation,3.8
+10,Prof. Kulkarni,Functionality,6.7
+10,Prof. Kulkarni,Problem Relevance,5.3
+10,Prof. Kulkarni,Creativity,9.1
+10,Prof. Kulkarni,Demo & Explanation,6.0
+10,Prof. Kulkarni,Overall Impact,5.3
+10,Ms. Iyer,Innovation,4.4
+10,Ms. Iyer,Technical Implementation,3.3
+10,Ms. Iyer,Functionality,8.8
+10,Ms. Iyer,Problem Relevance,4.3
+10,Ms. Iyer,Creativity,4.6
+10,Ms. Iyer,Demo & Explanation,7.7
+10,Ms. Iyer,Overall Impact,6.5
+11,Dr. Rao,Innovation,7.0
+11,Dr. Rao,Technical Implementation,4.2
+11,Dr. Rao,Functionality,5.9
+11,Dr. Rao,Problem Relevance,5.3
+11,Dr. Rao,Creativity,6.6
+11,Dr. Rao,Demo & Explanation,4.7
+11,Dr. Rao,Overall Impact,4.7
+11,Prof. Kulkarni,Innovation,9.4
+11,Prof. Kulkarni,Technical Implementation,5.1
+11,Prof. Kulkarni,Functionality,8.1
+11,Prof. Kulkarni,Problem Relevance,6.7
+11,Prof. Kulkarni,Creativity,9.6
+11,Prof. Kulkarni,Demo & Explanation,5.2
+11,Prof. Kulkarni,Overall Impact,7.8
+11,Ms. Iyer,Innovation,9.0
+11,Ms. Iyer,Technical Implementation,3.2
+11,Ms. Iyer,Functionality,8.5
+11,Ms. Iyer,Problem Relevance,4.5
+11,Ms. Iyer,Creativity,9.9
+11,Ms. Iyer,Demo & Explanation,6.6
+11,Ms. Iyer,Overall Impact,8.7
+12,Dr. Rao,Innovation,9.1
+12,Dr. Rao,Technical Implementation,8.5
+12,Dr. Rao,Functionality,7.9
+12,Dr. Rao,Problem Relevance,8.8
+12,Dr. Rao,Creativity,4.7
+12,Dr. Rao,Demo & Explanation,8.4
+12,Dr. Rao,Overall Impact,4.5
+12,Prof. Kulkarni,Innovation,7.1
+12,Prof. Kulkarni,Technical Implementation,9.8
+12,Prof. Kulkarni,Functionality,4.3
+12,Prof. Kulkarni,Problem Relevance,8.1
+12,Prof. Kulkarni,Creativity,5.1
+12,Prof. Kulkarni,Demo & Explanation,9.2
+12,Prof. Kulkarni,Overall Impact,5.2
+12,Ms. Iyer,Innovation,5.1
+12,Ms. Iyer,Technical Implementation,9.0
+12,Ms. Iyer,Functionality,7.0
+12,Ms. Iyer,Problem Relevance,6.5
+12,Ms. Iyer,Creativity,3.8
+12,Ms. Iyer,Demo & Explanation,5.3
+12,Ms. Iyer,Overall Impact,6.4
+13,Dr. Rao,Innovation,6.1
+13,Dr. Rao,Technical Implementation,7.2
+13,Dr. Rao,Functionality,5.0
+13,Dr. Rao,Problem Relevance,7.6
+13,Dr. Rao,Creativity,3.4
+13,Dr. Rao,Demo & Explanation,6.7
+13,Dr. Rao,Overall Impact,8.3
+13,Prof. Kulkarni,Innovation,9.2
+13,Prof. Kulkarni,Technical Implementation,9.4
+13,Prof. Kulkarni,Functionality,9.0
+13,Prof. Kulkarni,Problem Relevance,5.5
+13,Prof. Kulkarni,Creativity,7.6
+13,Prof. Kulkarni,Demo & Explanation,5.0
+13,Prof. Kulkarni,Overall Impact,4.5
+13,Ms. Iyer,Innovation,6.6
+13,Ms. Iyer,Technical Implementation,4.1
+13,Ms. Iyer,Functionality,5.8
+13,Ms. Iyer,Problem Relevance,7.0
+13,Ms. Iyer,Creativity,8.9
+13,Ms. Iyer,Demo & Explanation,4.8
+13,Ms. Iyer,Overall Impact,7.0
+14,Dr. Rao,Innovation,8.8
+14,Dr. Rao,Technical Implementation,7.4
+14,Dr. Rao,Functionality,7.0
+14,Dr. Rao,Problem Relevance,7.0
+14,Dr. Rao,Creativity,3.4
+14,Dr. Rao,Demo & Explanation,4.3
+14,Dr. Rao,Overall Impact,5.6
+14,Prof. Kulkarni,Innovation,7.4
+14,Prof. Kulkarni,Technical Implementation,8.3
+14,Prof. Kulkarni,Functionality,8.4
+14,Prof. Kulkarni,Problem Relevance,8.2
+14,Prof. Kulkarni,Creativity,5.2
+14,Prof. Kulkarni,Demo & Explanation,3.3
+14,Prof. Kulkarni,Overall Impact,9.6
+14,Ms. Iyer,Innovation,4.0
+14,Ms. Iyer,Technical Implementation,8.6
+14,Ms. Iyer,Functionality,4.7
+14,Ms. Iyer,Problem Relevance,8.1
+14,Ms. Iyer,Creativity,8.8
+14,Ms. Iyer,Demo & Explanation,9.3
+14,Ms. Iyer,Overall Impact,9.8
+15,Dr. Rao,Innovation,8.4
+15,Dr. Rao,Technical Implementation,7.3
+15,Dr. Rao,Functionality,6.3
+15,Dr. Rao,Problem Relevance,9.7
+15,Dr. Rao,Creativity,3.6
+15,Dr. Rao,Demo & Explanation,4.7
+15,Dr. Rao,Overall Impact,7.6
+15,Prof. Kulkarni,Innovation,8.2
+15,Prof. Kulkarni,Technical Implementation,8.7
+15,Prof. Kulkarni,Functionality,4.3
+15,Prof. Kulkarni,Problem Relevance,6.2
+15,Prof. Kulkarni,Creativity,5.2
+15,Prof. Kulkarni,Demo & Explanation,4.3
+15,Prof. Kulkarni,Overall Impact,9.7
+15,Ms. Iyer,Innovation,7.4
+15,Ms. Iyer,Technical Implementation,8.4
+15,Ms. Iyer,Functionality,4.0
+15,Ms. Iyer,Problem Relevance,8.0
+15,Ms. Iyer,Creativity,3.1
+15,Ms. Iyer,Demo & Explanation,9.5
+15,Ms. Iyer,Overall Impact,8.4
+16,Dr. Rao,Innovation,7.2
+16,Dr. Rao,Technical Implementation,4.7
+16,Dr. Rao,Functionality,5.9
+16,Dr. Rao,Problem Relevance,5.0
+16,Dr. Rao,Creativity,9.4
+16,Dr. Rao,Demo & Explanation,9.3
+16,Dr. Rao,Overall Impact,9.0
+16,Prof. Kulkarni,Innovation,6.9
+16,Prof. Kulkarni,Technical Implementation,7.4
+16,Prof. Kulkarni,Functionality,9.5
+16,Prof. Kulkarni,Problem Relevance,7.9
+16,Prof. Kulkarni,Creativity,6.3
+16,Prof. Kulkarni,Demo & Explanation,7.7
+16,Prof. Kulkarni,Overall Impact,4.2
+16,Ms. Iyer,Innovation,6.6
+16,Ms. Iyer,Technical Implementation,7.2
+16,Ms. Iyer,Functionality,6.0
+16,Ms. Iyer,Problem Relevance,4.7
+16,Ms. Iyer,Creativity,6.2
+16,Ms. Iyer,Demo & Explanation,3.7
+16,Ms. Iyer,Overall Impact,4.8
+17,Dr. Rao,Innovation,3.2
+17,Dr. Rao,Technical Implementation,3.5
+17,Dr. Rao,Functionality,4.7
+17,Dr. Rao,Problem Relevance,8.1
+17,Dr. Rao,Creativity,7.2
+17,Dr. Rao,Demo & Explanation,6.8
+17,Dr. Rao,Overall Impact,3.5
+17,Prof. Kulkarni,Innovation,7.8
+17,Prof. Kulkarni,Technical Implementation,3.7
+17,Prof. Kulkarni,Functionality,8.1
+17,Prof. Kulkarni,Problem Relevance,6.3
+17,Prof. Kulkarni,Creativity,8.3
+17,Prof. Kulkarni,Demo & Explanation,7.6
+17,Prof. Kulkarni,Overall Impact,5.7
+17,Ms. Iyer,Innovation,9.0
+17,Ms. Iyer,Technical Implementation,6.0
+17,Ms. Iyer,Functionality,4.0
+17,Ms. Iyer,Problem Relevance,3.7
+17,Ms. Iyer,Creativity,9.6
+17,Ms. Iyer,Demo & Explanation,7.4
+17,Ms. Iyer,Overall Impact,4.5
+18,Dr. Rao,Innovation,6.6
+18,Dr. Rao,Technical Implementation,4.7
+18,Dr. Rao,Functionality,8.6
+18,Dr. Rao,Problem Relevance,7.9
+18,Dr. Rao,Creativity,9.5
+18,Dr. Rao,Demo & Explanation,3.9
+18,Dr. Rao,Overall Impact,9.4
+18,Prof. Kulkarni,Innovation,4.7
+18,Prof. Kulkarni,Technical Implementation,6.1
+18,Prof. Kulkarni,Functionality,5.6
+18,Prof. Kulkarni,Problem Relevance,4.2
+18,Prof. Kulkarni,Creativity,5.3
+18,Prof. Kulkarni,Demo & Explanation,4.0
+18,Prof. Kulkarni,Overall Impact,4.6
+18,Ms. Iyer,Innovation,5.0
+18,Ms. Iyer,Technical Implementation,4.9
+18,Ms. Iyer,Functionality,5.1
+18,Ms. Iyer,Problem Relevance,4.5
+18,Ms. Iyer,Creativity,9.1
+18,Ms. Iyer,Demo & Explanation,6.6
+18,Ms. Iyer,Overall Impact,6.8
+19,Dr. Rao,Innovation,5.9
+19,Dr. Rao,Technical Implementation,7.6
+19,Dr. Rao,Functionality,5.3
+19,Dr. Rao,Problem Relevance,7.5
+19,Dr. Rao,Creativity,8.5
+19,Dr. Rao,Demo & Explanation,3.2
+19,Dr. Rao,Overall Impact,7.8
+19,Prof. Kulkarni,Innovation,3.4
+19,Prof. Kulkarni,Technical Implementation,6.8
+19,Prof. Kulkarni,Functionality,5.7
+19,Prof. Kulkarni,Problem Relevance,4.5
+19,Prof. Kulkarni,Creativity,7.8
+19,Prof. Kulkarni,Demo & Explanation,4.5
+19,Prof. Kulkarni,Overall Impact,3.5
+19,Ms. Iyer,Innovation,7.5
+19,Ms. Iyer,Technical Implementation,5.0
+19,Ms. Iyer,Functionality,3.8
+19,Ms. Iyer,Problem Relevance,3.2
+19,Ms. Iyer,Creativity,7.3
+19,Ms. Iyer,Demo & Explanation,8.2
+19,Ms. Iyer,Overall Impact,4.9
+20,Dr. Rao,Innovation,8.7
+20,Dr. Rao,Technical Implementation,8.8
+20,Dr. Rao,Functionality,8.6
+20,Dr. Rao,Problem Relevance,7.9
+20,Dr. Rao,Creativity,4.0
+20,Dr. Rao,Demo & Explanation,5.7
+20,Dr. Rao,Overall Impact,7.0
+20,Prof. Kulkarni,Innovation,7.7
+20,Prof. Kulkarni,Technical Implementation,6.2
+20,Prof. Kulkarni,Functionality,5.4
+20,Prof. Kulkarni,Problem Relevance,6.9
+20,Prof. Kulkarni,Creativity,3.3
+20,Prof. Kulkarni,Demo & Explanation,5.3
+20,Prof. Kulkarni,Overall Impact,4.9
+20,Ms. Iyer,Innovation,5.9
+20,Ms. Iyer,Technical Implementation,7.7
+20,Ms. Iyer,Functionality,8.8
+20,Ms. Iyer,Problem Relevance,4.5
+20,Ms. Iyer,Creativity,4.7
+20,Ms. Iyer,Demo & Explanation,9.7
+20,Ms. Iyer,Overall Impact,5.1
+21,Dr. Rao,Innovation,9.7
+21,Dr. Rao,Technical Implementation,6.5
+21,Dr. Rao,Functionality,4.6
+21,Dr. Rao,Problem Relevance,4.3
+21,Dr. Rao,Creativity,3.7
+21,Dr. Rao,Demo & Explanation,4.0
+21,Dr. Rao,Overall Impact,7.3
+21,Prof. Kulkarni,Innovation,5.4
+21,Prof. Kulkarni,Technical Implementation,4.3
+21,Prof. Kulkarni,Functionality,5.0
+21,Prof. Kulkarni,Problem Relevance,6.3
+21,Prof. Kulkarni,Creativity,3.9
+21,Prof. Kulkarni,Demo & Explanation,4.3
+21,Prof. Kulkarni,Overall Impact,5.0
+21,Ms. Iyer,Innovation,9.6
+21,Ms. Iyer,Technical Implementation,3.1
+21,Ms. Iyer,Functionality,7.3
+21,Ms. Iyer,Problem Relevance,9.6
+21,Ms. Iyer,Creativity,9.8
+21,Ms. Iyer,Demo & Explanation,3.0
+21,Ms. Iyer,Overall Impact,5.4
+22,Dr. Rao,Innovation,4.6
+22,Dr. Rao,Technical Implementation,3.6
+22,Dr. Rao,Functionality,5.1
+22,Dr. Rao,Problem Relevance,4.1
+22,Dr. Rao,Creativity,8.8
+22,Dr. Rao,Demo & Explanation,3.7
+22,Dr. Rao,Overall Impact,8.8
+22,Prof. Kulkarni,Innovation,3.1
+22,Prof. Kulkarni,Technical Implementation,4.5
+22,Prof. Kulkarni,Functionality,9.1
+22,Prof. Kulkarni,Problem Relevance,7.4
+22,Prof. Kulkarni,Creativity,7.7
+22,Prof. Kulkarni,Demo & Explanation,7.7
+22,Prof. Kulkarni,Overall Impact,7.1
+22,Ms. Iyer,Innovation,6.6
+22,Ms. Iyer,Technical Implementation,6.7
+22,Ms. Iyer,Functionality,6.5
+22,Ms. Iyer,Problem Relevance,3.2
+22,Ms. Iyer,Creativity,7.0
+22,Ms. Iyer,Demo & Explanation,5.5
+22,Ms. Iyer,Overall Impact,9.4
+23,Dr. Rao,Innovation,6.6
+23,Dr. Rao,Technical Implementation,8.7
+23,Dr. Rao,Functionality,8.9
+23,Dr. Rao,Problem Relevance,8.5
+23,Dr. Rao,Creativity,6.4
+23,Dr. Rao,Demo & Explanation,7.0
+23,Dr. Rao,Overall Impact,8.7
+23,Prof. Kulkarni,Innovation,8.8
+23,Prof. Kulkarni,Technical Implementation,5.1
+23,Prof. Kulkarni,Functionality,7.4
+23,Prof. Kulkarni,Problem Relevance,5.4
+23,Prof. Kulkarni,Creativity,5.3
+23,Prof. Kulkarni,Demo & Explanation,9.6
+23,Prof. Kulkarni,Overall Impact,8.4
+23,Ms. Iyer,Innovation,4.7
+23,Ms. Iyer,Technical Implementation,9.6
+23,Ms. Iyer,Functionality,8.5
+23,Ms. Iyer,Problem Relevance,5.3
+23,Ms. Iyer,Creativity,6.0
+23,Ms. Iyer,Demo & Explanation,9.5
+23,Ms. Iyer,Overall Impact,5.9
+24,Dr. Rao,Innovation,7.1
+24,Dr. Rao,Technical Implementation,6.8
+24,Dr. Rao,Functionality,4.1
+24,Dr. Rao,Problem Relevance,3.1
+24,Dr. Rao,Creativity,6.6
+24,Dr. Rao,Demo & Explanation,4.8
+24,Dr. Rao,Overall Impact,5.4
+24,Prof. Kulkarni,Innovation,4.0
+24,Prof. Kulkarni,Technical Implementation,6.4
+24,Prof. Kulkarni,Functionality,9.9
+24,Prof. Kulkarni,Problem Relevance,3.3
+24,Prof. Kulkarni,Creativity,7.5
+24,Prof. Kulkarni,Demo & Explanation,9.0
+24,Prof. Kulkarni,Overall Impact,4.8
+24,Ms. Iyer,Innovation,7.0
+24,Ms. Iyer,Technical Implementation,3.7
+24,Ms. Iyer,Functionality,9.7
+24,Ms. Iyer,Problem Relevance,5.3
+24,Ms. Iyer,Creativity,8.2
+24,Ms. Iyer,Demo & Explanation,8.0
+24,Ms. Iyer,Overall Impact,4.6
+25,Dr. Rao,Innovation,3.7
+25,Dr. Rao,Technical Implementation,5.2
+25,Dr. Rao,Functionality,9.3
+25,Dr. Rao,Problem Relevance,8.2
+25,Dr. Rao,Creativity,4.5
+25,Dr. Rao,Demo & Explanation,5.8
+25,Dr. Rao,Overall Impact,3.1
+25,Prof. Kulkarni,Innovation,5.4
+25,Prof. Kulkarni,Technical Implementation,7.1
+25,Prof. Kulkarni,Functionality,3.5
+25,Prof. Kulkarni,Problem Relevance,8.1
+25,Prof. Kulkarni,Creativity,6.7
+25,Prof. Kulkarni,Demo & Explanation,3.2
+25,Prof. Kulkarni,Overall Impact,4.5
+25,Ms. Iyer,Innovation,9.7
+25,Ms. Iyer,Technical Implementation,5.8
+25,Ms. Iyer,Functionality,8.1
+25,Ms. Iyer,Problem Relevance,9.8
+25,Ms. Iyer,Creativity,9.1
+25,Ms. Iyer,Demo & Explanation,9.6
+25,Ms. Iyer,Overall Impact,9.0
+26,Dr. Rao,Innovation,4.1
+26,Dr. Rao,Technical Implementation,8.4
+26,Dr. Rao,Functionality,4.8
+26,Dr. Rao,Problem Relevance,5.6
+26,Dr. Rao,Creativity,8.1
+26,Dr. Rao,Demo & Explanation,3.7
+26,Dr. Rao,Overall Impact,5.8
+26,Prof. Kulkarni,Innovation,4.1
+26,Prof. Kulkarni,Technical Implementation,6.2
+26,Prof. Kulkarni,Functionality,5.8
+26,Prof. Kulkarni,Problem Relevance,8.8
+26,Prof. Kulkarni,Creativity,10.0
+26,Prof. Kulkarni,Demo & Explanation,9.9
+26,Prof. Kulkarni,Overall Impact,8.8
+26,Ms. Iyer,Innovation,3.0
+26,Ms. Iyer,Technical Implementation,5.2
+26,Ms. Iyer,Functionality,5.1
+26,Ms. Iyer,Problem Relevance,6.8
+26,Ms. Iyer,Creativity,3.2
+26,Ms. Iyer,Demo & Explanation,5.5
+26,Ms. Iyer,Overall Impact,7.8
+27,Dr. Rao,Innovation,9.1
+27,Dr. Rao,Technical Implementation,8.5
+27,Dr. Rao,Functionality,3.8
+27,Dr. Rao,Problem Relevance,5.6
+27,Dr. Rao,Creativity,8.3
+27,Dr. Rao,Demo & Explanation,4.7
+27,Dr. Rao,Overall Impact,8.1
+27,Prof. Kulkarni,Innovation,3.8
+27,Prof. Kulkarni,Technical Implementation,5.0
+27,Prof. Kulkarni,Functionality,7.0
+27,Prof. Kulkarni,Problem Relevance,4.7
+27,Prof. Kulkarni,Creativity,4.3
+27,Prof. Kulkarni,Demo & Explanation,9.0
+27,Prof. Kulkarni,Overall Impact,6.9
+27,Ms. Iyer,Innovation,6.4
+27,Ms. Iyer,Technical Implementation,8.7
+27,Ms. Iyer,Functionality,7.3
+27,Ms. Iyer,Problem Relevance,4.0
+27,Ms. Iyer,Creativity,4.5
+27,Ms. Iyer,Demo & Explanation,4.8
+27,Ms. Iyer,Overall Impact,9.8
+28,Dr. Rao,Innovation,6.1
+28,Dr. Rao,Technical Implementation,7.2
+28,Dr. Rao,Functionality,9.3
+28,Dr. Rao,Problem Relevance,4.0
+28,Dr. Rao,Creativity,9.8
+28,Dr. Rao,Demo & Explanation,5.4
+28,Dr. Rao,Overall Impact,5.9
+28,Prof. Kulkarni,Innovation,5.4
+28,Prof. Kulkarni,Technical Implementation,9.5
+28,Prof. Kulkarni,Functionality,4.4
+28,Prof. Kulkarni,Problem Relevance,9.7
+28,Prof. Kulkarni,Creativity,7.0
+28,Prof. Kulkarni,Demo & Explanation,8.2
+28,Prof. Kulkarni,Overall Impact,6.5
+28,Ms. Iyer,Innovation,3.6
+28,Ms. Iyer,Technical Implementation,6.3
+28,Ms. Iyer,Functionality,9.0
+28,Ms. Iyer,Problem Relevance,8.4
+28,Ms. Iyer,Creativity,3.7
+28,Ms. Iyer,Demo & Explanation,4.1
+28,Ms. Iyer,Overall Impact,9.8
+29,Dr. Rao,Innovation,4.7
+29,Dr. Rao,Technical Implementation,3.1
+29,Dr. Rao,Functionality,7.7
+29,Dr. Rao,Problem Relevance,8.9
+29,Dr. Rao,Creativity,4.1
+29,Dr. Rao,Demo & Explanation,7.6
+29,Dr. Rao,Overall Impact,7.1
+29,Prof. Kulkarni,Innovation,5.0
+29,Prof. Kulkarni,Technical Implementation,8.9
+29,Prof. Kulkarni,Functionality,6.5
+29,Prof. Kulkarni,Problem Relevance,5.8
+29,Prof. Kulkarni,Creativity,9.8
+29,Prof. Kulkarni,Demo & Explanation,9.0
+29,Prof. Kulkarni,Overall Impact,4.7
+29,Ms. Iyer,Innovation,5.4
+29,Ms. Iyer,Technical Implementation,7.0
+29,Ms. Iyer,Functionality,9.8
+29,Ms. Iyer,Problem Relevance,9.7
+29,Ms. Iyer,Creativity,9.7
+29,Ms. Iyer,Demo & Explanation,6.3
+29,Ms. Iyer,Overall Impact,6.4
+30,Dr. Rao,Innovation,6.8
+30,Dr. Rao,Technical Implementation,4.3
+30,Dr. Rao,Functionality,4.4
+30,Dr. Rao,Problem Relevance,4.5
+30,Dr. Rao,Creativity,5.4
+30,Dr. Rao,Demo & Explanation,5.3
+30,Dr. Rao,Overall Impact,3.1
+30,Prof. Kulkarni,Innovation,5.5
+30,Prof. Kulkarni,Technical Implementation,4.0
+30,Prof. Kulkarni,Functionality,5.9
+30,Prof. Kulkarni,Problem Relevance,9.6
+30,Prof. Kulkarni,Creativity,3.3
+30,Prof. Kulkarni,Demo & Explanation,9.6
+30,Prof. Kulkarni,Overall Impact,4.6
+30,Ms. Iyer,Innovation,7.2
+30,Ms. Iyer,Technical Implementation,3.6
+30,Ms. Iyer,Functionality,7.0
+30,Ms. Iyer,Problem Relevance,3.6
+30,Ms. Iyer,Creativity,9.8
+30,Ms. Iyer,Demo & Explanation,6.0
+30,Ms. Iyer,Overall Impact,5.7
+31,Dr. Rao,Innovation,9.0
+31,Dr. Rao,Technical Implementation,3.5
+31,Dr. Rao,Functionality,6.5
+31,Dr. Rao,Problem Relevance,3.3
+31,Dr. Rao,Creativity,8.9
+31,Dr. Rao,Demo & Explanation,4.7
+31,Dr. Rao,Overall Impact,4.8
+31,Prof. Kulkarni,Innovation,9.8
+31,Prof. Kulkarni,Technical Implementation,9.1
+31,Prof. Kulkarni,Functionality,4.9
+31,Prof. Kulkarni,Problem Relevance,6.4
+31,Prof. Kulkarni,Creativity,5.3
+31,Prof. Kulkarni,Demo & Explanation,9.8
+31,Prof. Kulkarni,Overall Impact,9.0
+31,Ms. Iyer,Innovation,4.6
+31,Ms. Iyer,Technical Implementation,7.1
+31,Ms. Iyer,Functionality,6.5
+31,Ms. Iyer,Problem Relevance,9.4
+31,Ms. Iyer,Creativity,7.7
+31,Ms. Iyer,Demo & Explanation,8.3
+31,Ms. Iyer,Overall Impact,6.5
+32,Dr. Rao,Innovation,4.0
+32,Dr. Rao,Technical Implementation,9.1
+32,Dr. Rao,Functionality,6.0
+32,Dr. Rao,Problem Relevance,7.3
+32,Dr. Rao,Creativity,4.2
+32,Dr. Rao,Demo & Explanation,8.5
+32,Dr. Rao,Overall Impact,6.5
+32,Prof. Kulkarni,Innovation,7.9
+32,Prof. Kulkarni,Technical Implementation,3.3
+32,Prof. Kulkarni,Functionality,7.4
+32,Prof. Kulkarni,Problem Relevance,4.6
+32,Prof. Kulkarni,Creativity,4.9
+32,Prof. Kulkarni,Demo & Explanation,7.5
+32,Prof. Kulkarni,Overall Impact,6.7
+32,Ms. Iyer,Innovation,4.5
+32,Ms. Iyer,Technical Implementation,7.0
+32,Ms. Iyer,Functionality,7.9
+32,Ms. Iyer,Problem Relevance,6.4
+32,Ms. Iyer,Creativity,6.3
+32,Ms. Iyer,Demo & Explanation,9.9
+32,Ms. Iyer,Overall Impact,6.1
+33,Dr. Rao,Innovation,3.9
+33,Dr. Rao,Technical Implementation,7.9
+33,Dr. Rao,Functionality,9.7
+33,Dr. Rao,Problem Relevance,5.0
+33,Dr. Rao,Creativity,6.7
+33,Dr. Rao,Demo & Explanation,8.2
+33,Dr. Rao,Overall Impact,3.7
+33,Prof. Kulkarni,Innovation,4.5
+33,Prof. Kulkarni,Technical Implementation,4.8
+33,Prof. Kulkarni,Functionality,9.3
+33,Prof. Kulkarni,Problem Relevance,4.3
+33,Prof. Kulkarni,Creativity,8.8
+33,Prof. Kulkarni,Demo & Explanation,5.9
+33,Prof. Kulkarni,Overall Impact,9.8
+33,Ms. Iyer,Innovation,5.0
+33,Ms. Iyer,Technical Implementation,9.1
+33,Ms. Iyer,Functionality,9.5
+33,Ms. Iyer,Problem Relevance,3.0
+33,Ms. Iyer,Creativity,7.7
+33,Ms. Iyer,Demo & Explanation,8.8
+33,Ms. Iyer,Overall Impact,6.8
+34,Dr. Rao,Innovation,8.8
+34,Dr. Rao,Technical Implementation,7.6
+34,Dr. Rao,Functionality,4.6
+34,Dr. Rao,Problem Relevance,4.4
+34,Dr. Rao,Creativity,7.0
+34,Dr. Rao,Demo & Explanation,8.0
+34,Dr. Rao,Overall Impact,9.2
+34,Prof. Kulkarni,Innovation,4.4
+34,Prof. Kulkarni,Technical Implementation,9.3
+34,Prof. Kulkarni,Functionality,9.8
+34,Prof. Kulkarni,Problem Relevance,4.4
+34,Prof. Kulkarni,Creativity,3.0
+34,Prof. Kulkarni,Demo & Explanation,5.9
+34,Prof. Kulkarni,Overall Impact,6.5
+34,Ms. Iyer,Innovation,5.7
+34,Ms. Iyer,Technical Implementation,5.1
+34,Ms. Iyer,Functionality,9.5
+34,Ms. Iyer,Problem Relevance,7.8
+34,Ms. Iyer,Creativity,6.1
+34,Ms. Iyer,Demo & Explanation,5.4
+34,Ms. Iyer,Overall Impact,6.0
+35,Dr. Rao,Innovation,6.7
+35,Dr. Rao,Technical Implementation,9.6
+35,Dr. Rao,Functionality,3.9
+35,Dr. Rao,Problem Relevance,5.0
+35,Dr. Rao,Creativity,6.7
+35,Dr. Rao,Demo & Explanation,3.4
+35,Dr. Rao,Overall Impact,8.8
+35,Prof. Kulkarni,Innovation,6.4
+35,Prof. Kulkarni,Technical Implementation,6.7
+35,Prof. Kulkarni,Functionality,6.7
+35,Prof. Kulkarni,Problem Relevance,3.4
+35,Prof. Kulkarni,Creativity,3.2
+35,Prof. Kulkarni,Demo & Explanation,8.0
+35,Prof. Kulkarni,Overall Impact,8.6
+35,Ms. Iyer,Innovation,8.9
+35,Ms. Iyer,Technical Implementation,3.0
+35,Ms. Iyer,Functionality,8.6
+35,Ms. Iyer,Problem Relevance,3.1
+35,Ms. Iyer,Creativity,3.3
+35,Ms. Iyer,Demo & Explanation,7.9
+35,Ms. Iyer,Overall Impact,7.8
+36,Dr. Rao,Innovation,8.7
+36,Dr. Rao,Technical Implementation,7.5
+36,Dr. Rao,Functionality,4.3
+36,Dr. Rao,Problem Relevance,8.7
+36,Dr. Rao,Creativity,6.8
+36,Dr. Rao,Demo & Explanation,5.1
+36,Dr. Rao,Overall Impact,8.2
+36,Prof. Kulkarni,Innovation,6.0
+36,Prof. Kulkarni,Technical Implementation,8.9
+36,Prof. Kulkarni,Functionality,5.7
+36,Prof. Kulkarni,Problem Relevance,7.3
+36,Prof. Kulkarni,Creativity,4.2
+36,Prof. Kulkarni,Demo & Explanation,5.1
+36,Prof. Kulkarni,Overall Impact,3.7
+36,Ms. Iyer,Innovation,7.1
+36,Ms. Iyer,Technical Implementation,5.4
+36,Ms. Iyer,Functionality,7.9
+36,Ms. Iyer,Problem Relevance,4.5
+36,Ms. Iyer,Creativity,3.5
+36,Ms. Iyer,Demo & Explanation,5.8
+36,Ms. Iyer,Overall Impact,8.4
+37,Dr. Rao,Innovation,6.8
+37,Dr. Rao,Technical Implementation,9.8
+37,Dr. Rao,Functionality,9.1
+37,Dr. Rao,Problem Relevance,8.6
+37,Dr. Rao,Creativity,8.7
+37,Dr. Rao,Demo & Explanation,3.0
+37,Dr. Rao,Overall Impact,3.9
+37,Prof. Kulkarni,Innovation,9.3
+37,Prof. Kulkarni,Technical Implementation,8.9
+37,Prof. Kulkarni,Functionality,4.4
+37,Prof. Kulkarni,Problem Relevance,6.5
+37,Prof. Kulkarni,Creativity,6.8
+37,Prof. Kulkarni,Demo & Explanation,6.4
+37,Prof. Kulkarni,Overall Impact,3.5
+37,Ms. Iyer,Innovation,9.8
+37,Ms. Iyer,Technical Implementation,8.6
+37,Ms. Iyer,Functionality,5.9
+37,Ms. Iyer,Problem Relevance,7.3
+37,Ms. Iyer,Creativity,3.9
+37,Ms. Iyer,Demo & Explanation,3.4
+37,Ms. Iyer,Overall Impact,9.8
+38,Dr. Rao,Innovation,9.5
+38,Dr. Rao,Technical Implementation,4.9
+38,Dr. Rao,Functionality,8.1
+38,Dr. Rao,Problem Relevance,9.6
+38,Dr. Rao,Creativity,3.6
+38,Dr. Rao,Demo & Explanation,8.8
+38,Dr. Rao,Overall Impact,4.0
+38,Prof. Kulkarni,Innovation,7.9
+38,Prof. Kulkarni,Technical Implementation,8.9
+38,Prof. Kulkarni,Functionality,5.2
+38,Prof. Kulkarni,Problem Relevance,5.2
+38,Prof. Kulkarni,Creativity,6.9
+38,Prof. Kulkarni,Demo & Explanation,6.7
+38,Prof. Kulkarni,Overall Impact,8.9
+38,Ms. Iyer,Innovation,7.1
+38,Ms. Iyer,Technical Implementation,4.9
+38,Ms. Iyer,Functionality,8.5
+38,Ms. Iyer,Problem Relevance,8.6
+38,Ms. Iyer,Creativity,7.1
+38,Ms. Iyer,Demo & Explanation,4.6
+38,Ms. Iyer,Overall Impact,6.2
+39,Dr. Rao,Innovation,9.3
+39,Dr. Rao,Technical Implementation,4.0
+39,Dr. Rao,Functionality,7.3
+39,Dr. Rao,Problem Relevance,8.9
+39,Dr. Rao,Creativity,5.3
+39,Dr. Rao,Demo & Explanation,3.5
+39,Dr. Rao,Overall Impact,6.9
+39,Prof. Kulkarni,Innovation,4.3
+39,Prof. Kulkarni,Technical Implementation,9.4
+39,Prof. Kulkarni,Functionality,3.6
+39,Prof. Kulkarni,Problem Relevance,5.8
+39,Prof. Kulkarni,Creativity,4.7
+39,Prof. Kulkarni,Demo & Explanation,8.3
+39,Prof. Kulkarni,Overall Impact,5.6
+39,Ms. Iyer,Innovation,3.8
+39,Ms. Iyer,Technical Implementation,9.4
+39,Ms. Iyer,Functionality,5.0
+39,Ms. Iyer,Problem Relevance,4.1
+39,Ms. Iyer,Creativity,4.8
+39,Ms. Iyer,Demo & Explanation,6.1
+39,Ms. Iyer,Overall Impact,6.1
+40,Dr. Rao,Innovation,5.8
+40,Dr. Rao,Technical Implementation,5.3
+40,Dr. Rao,Functionality,9.9
+40,Dr. Rao,Problem Relevance,5.5
+40,Dr. Rao,Creativity,6.2
+40,Dr. Rao,Demo & Explanation,7.7
+40,Dr. Rao,Overall Impact,7.2
+40,Prof. Kulkarni,Innovation,6.9
+40,Prof. Kulkarni,Technical Implementation,3.8
+40,Prof. Kulkarni,Functionality,7.8
+40,Prof. Kulkarni,Problem Relevance,6.0
+40,Prof. Kulkarni,Creativity,7.1
+40,Prof. Kulkarni,Demo & Explanation,5.6
+40,Prof. Kulkarni,Overall Impact,9.6
+40,Ms. Iyer,Innovation,4.0
+40,Ms. Iyer,Technical Implementation,7.7
+40,Ms. Iyer,Functionality,4.6
+40,Ms. Iyer,Problem Relevance,5.8
+40,Ms. Iyer,Creativity,6.3
+40,Ms. Iyer,Demo & Explanation,3.4
+40,Ms. Iyer,Overall Impact,6.8
+41,Dr. Rao,Innovation,6.8
+41,Dr. Rao,Technical Implementation,4.6
+41,Dr. Rao,Functionality,9.7
+41,Dr. Rao,Problem Relevance,8.1
+41,Dr. Rao,Creativity,9.1
+41,Dr. Rao,Demo & Explanation,7.7
+41,Dr. Rao,Overall Impact,3.3
+41,Prof. Kulkarni,Innovation,4.2
+41,Prof. Kulkarni,Technical Implementation,6.3
+41,Prof. Kulkarni,Functionality,3.7
+41,Prof. Kulkarni,Problem Relevance,9.8
+41,Prof. Kulkarni,Creativity,7.0
+41,Prof. Kulkarni,Demo & Explanation,4.4
+41,Prof. Kulkarni,Overall Impact,5.8
+41,Ms. Iyer,Innovation,6.1
+41,Ms. Iyer,Technical Implementation,7.9
+41,Ms. Iyer,Functionality,9.0
+41,Ms. Iyer,Problem Relevance,7.4
+41,Ms. Iyer,Creativity,8.7
+41,Ms. Iyer,Demo & Explanation,9.1
+41,Ms. Iyer,Overall Impact,6.3
+42,Dr. Rao,Innovation,7.7
+42,Dr. Rao,Technical Implementation,8.9
+42,Dr. Rao,Functionality,7.6
+42,Dr. Rao,Problem Relevance,6.0
+42,Dr. Rao,Creativity,3.4
+42,Dr. Rao,Demo & Explanation,9.2
+42,Dr. Rao,Overall Impact,4.5
+42,Prof. Kulkarni,Innovation,6.0
+42,Prof. Kulkarni,Technical Implementation,5.4
+42,Prof. Kulkarni,Functionality,5.5
+42,Prof. Kulkarni,Problem Relevance,4.8
+42,Prof. Kulkarni,Creativity,6.4
+42,Prof. Kulkarni,Demo & Explanation,8.8
+42,Prof. Kulkarni,Overall Impact,4.5
+42,Ms. Iyer,Innovation,7.9
+42,Ms. Iyer,Technical Implementation,7.6
+42,Ms. Iyer,Functionality,4.2
+42,Ms. Iyer,Problem Relevance,3.9
+42,Ms. Iyer,Creativity,4.0
+42,Ms. Iyer,Demo & Explanation,5.5
+42,Ms. Iyer,Overall Impact,6.1
+43,Dr. Rao,Innovation,3.1
+43,Dr. Rao,Technical Implementation,5.8
+43,Dr. Rao,Functionality,4.9
+43,Dr. Rao,Problem Relevance,5.2
+43,Dr. Rao,Creativity,6.7
+43,Dr. Rao,Demo & Explanation,6.0
+43,Dr. Rao,Overall Impact,3.5
+43,Prof. Kulkarni,Innovation,8.2
+43,Prof. Kulkarni,Technical Implementation,5.4
+43,Prof. Kulkarni,Functionality,8.4
+43,Prof. Kulkarni,Problem Relevance,9.6
+43,Prof. Kulkarni,Creativity,8.2
+43,Prof. Kulkarni,Demo & Explanation,8.5
+43,Prof. Kulkarni,Overall Impact,4.6
+43,Ms. Iyer,Innovation,3.9
+43,Ms. Iyer,Technical Implementation,8.4
+43,Ms. Iyer,Functionality,3.1
+43,Ms. Iyer,Problem Relevance,6.8
+43,Ms. Iyer,Creativity,8.9
+43,Ms. Iyer,Demo & Explanation,9.5
+43,Ms. Iyer,Overall Impact,7.7
+44,Dr. Rao,Innovation,5.4
+44,Dr. Rao,Technical Implementation,5.3
+44,Dr. Rao,Functionality,9.3
+44,Dr. Rao,Problem Relevance,7.4
+44,Dr. Rao,Creativity,4.5
+44,Dr. Rao,Demo & Explanation,5.9
+44,Dr. Rao,Overall Impact,5.6
+44,Prof. Kulkarni,Innovation,4.5
+44,Prof. Kulkarni,Technical Implementation,9.0
+44,Prof. Kulkarni,Functionality,7.4
+44,Prof. Kulkarni,Problem Relevance,3.4
+44,Prof. Kulkarni,Creativity,8.0
+44,Prof. Kulkarni,Demo & Explanation,9.5
+44,Prof. Kulkarni,Overall Impact,7.0
+44,Ms. Iyer,Innovation,7.4
+44,Ms. Iyer,Technical Implementation,3.2
+44,Ms. Iyer,Functionality,6.1
+44,Ms. Iyer,Problem Relevance,5.9
+44,Ms. Iyer,Creativity,6.8
+44,Ms. Iyer,Demo & Explanation,3.4
+44,Ms. Iyer,Overall Impact,5.5
+45,Dr. Rao,Innovation,8.0
+45,Dr. Rao,Technical Implementation,3.9
+45,Dr. Rao,Functionality,9.1
+45,Dr. Rao,Problem Relevance,7.7
+45,Dr. Rao,Creativity,3.8
+45,Dr. Rao,Demo & Explanation,7.0
+45,Dr. Rao,Overall Impact,6.8
+45,Prof. Kulkarni,Innovation,6.8
+45,Prof. Kulkarni,Technical Implementation,5.2
+45,Prof. Kulkarni,Functionality,5.1
+45,Prof. Kulkarni,Problem Relevance,3.3
+45,Prof. Kulkarni,Creativity,8.9
+45,Prof. Kulkarni,Demo & Explanation,3.6
+45,Prof. Kulkarni,Overall Impact,7.0
+45,Ms. Iyer,Innovation,8.3
+45,Ms. Iyer,Technical Implementation,7.9
+45,Ms. Iyer,Functionality,7.5
+45,Ms. Iyer,Problem Relevance,4.5
+45,Ms. Iyer,Creativity,6.0
+45,Ms. Iyer,Demo & Explanation,4.4
+45,Ms. Iyer,Overall Impact,3.3
+46,Dr. Rao,Innovation,7.7
+46,Dr. Rao,Technical Implementation,4.2
+46,Dr. Rao,Functionality,7.4
+46,Dr. Rao,Problem Relevance,4.4
+46,Dr. Rao,Creativity,6.9
+46,Dr. Rao,Demo & Explanation,5.5
+46,Dr. Rao,Overall Impact,6.8
+46,Prof. Kulkarni,Innovation,5.5
+46,Prof. Kulkarni,Technical Implementation,4.5
+46,Prof. Kulkarni,Functionality,6.0
+46,Prof. Kulkarni,Problem Relevance,6.4
+46,Prof. Kulkarni,Creativity,6.7
+46,Prof. Kulkarni,Demo & Explanation,3.9
+46,Prof. Kulkarni,Overall Impact,3.1
+46,Ms. Iyer,Innovation,3.5
+46,Ms. Iyer,Technical Implementation,6.3
+46,Ms. Iyer,Functionality,6.9
+46,Ms. Iyer,Problem Relevance,9.3
+46,Ms. Iyer,Creativity,9.7
+46,Ms. Iyer,Demo & Explanation,4.4
+46,Ms. Iyer,Overall Impact,6.3
+47,Dr. Rao,Innovation,7.2
+47,Dr. Rao,Technical Implementation,4.4
+47,Dr. Rao,Functionality,9.6
+47,Dr. Rao,Problem Relevance,5.9
+47,Dr. Rao,Creativity,7.2
+47,Dr. Rao,Demo & Explanation,4.9
+47,Dr. Rao,Overall Impact,7.4
+47,Prof. Kulkarni,Innovation,7.7
+47,Prof. Kulkarni,Technical Implementation,9.4
+47,Prof. Kulkarni,Functionality,9.6
+47,Prof. Kulkarni,Problem Relevance,8.2
+47,Prof. Kulkarni,Creativity,3.5
+47,Prof. Kulkarni,Demo & Explanation,3.2
+47,Prof. Kulkarni,Overall Impact,8.7
+47,Ms. Iyer,Innovation,3.3
+47,Ms. Iyer,Technical Implementation,5.5
+47,Ms. Iyer,Functionality,4.4
+47,Ms. Iyer,Problem Relevance,5.4
+47,Ms. Iyer,Creativity,8.1
+47,Ms. Iyer,Demo & Explanation,7.2
+47,Ms. Iyer,Overall Impact,5.3
+48,Dr. Rao,Innovation,3.8
+48,Dr. Rao,Technical Implementation,3.1
+48,Dr. Rao,Functionality,7.4
+48,Dr. Rao,Problem Relevance,7.9
+48,Dr. Rao,Creativity,6.6
+48,Dr. Rao,Demo & Explanation,6.7
+48,Dr. Rao,Overall Impact,9.7
+48,Prof. Kulkarni,Innovation,3.2
+48,Prof. Kulkarni,Technical Implementation,5.3
+48,Prof. Kulkarni,Functionality,5.4
+48,Prof. Kulkarni,Problem Relevance,7.4
+48,Prof. Kulkarni,Creativity,9.1
+48,Prof. Kulkarni,Demo & Explanation,9.0
+48,Prof. Kulkarni,Overall Impact,4.7
+48,Ms. Iyer,Innovation,7.1
+48,Ms. Iyer,Technical Implementation,7.4
+48,Ms. Iyer,Functionality,3.2
+48,Ms. Iyer,Problem Relevance,9.4
+48,Ms. Iyer,Creativity,8.9
+48,Ms. Iyer,Demo & Explanation,6.7
+48,Ms. Iyer,Overall Impact,8.5
+49,Dr. Rao,Innovation,4.0
+49,Dr. Rao,Technical Implementation,8.4
+49,Dr. Rao,Functionality,8.6
+49,Dr. Rao,Problem Relevance,8.4
+49,Dr. Rao,Creativity,3.3
+49,Dr. Rao,Demo & Explanation,8.2
+49,Dr. Rao,Overall Impact,7.1
+49,Prof. Kulkarni,Innovation,8.9
+49,Prof. Kulkarni,Technical Implementation,9.1
+49,Prof. Kulkarni,Functionality,5.0
+49,Prof. Kulkarni,Problem Relevance,8.0
+49,Prof. Kulkarni,Creativity,8.8
+49,Prof. Kulkarni,Demo & Explanation,3.9
+49,Prof. Kulkarni,Overall Impact,6.3
+49,Ms. Iyer,Innovation,6.3
+49,Ms. Iyer,Technical Implementation,7.3
+49,Ms. Iyer,Functionality,6.3
+49,Ms. Iyer,Problem Relevance,9.0
+49,Ms. Iyer,Creativity,8.3
+49,Ms. Iyer,Demo & Explanation,4.4
+49,Ms. Iyer,Overall Impact,9.7
+50,Dr. Rao,Innovation,8.6
+50,Dr. Rao,Technical Implementation,3.8
+50,Dr. Rao,Functionality,3.2
+50,Dr. Rao,Problem Relevance,7.3
+50,Dr. Rao,Creativity,5.1
+50,Dr. Rao,Demo & Explanation,4.8
+50,Dr. Rao,Overall Impact,6.7
+50,Prof. Kulkarni,Innovation,7.7
+50,Prof. Kulkarni,Technical Implementation,3.1
+50,Prof. Kulkarni,Functionality,4.5
+50,Prof. Kulkarni,Problem Relevance,4.1
+50,Prof. Kulkarni,Creativity,3.1
+50,Prof. Kulkarni,Demo & Explanation,8.1
+50,Prof. Kulkarni,Overall Impact,3.2
+50,Ms. Iyer,Innovation,3.3
+50,Ms. Iyer,Technical Implementation,8.4
+50,Ms. Iyer,Functionality,8.1
+50,Ms. Iyer,Problem Relevance,6.7
+50,Ms. Iyer,Creativity,8.5
+50,Ms. Iyer,Demo & Explanation,7.0
+50,Ms. Iyer,Overall Impact,8.1
+51,Dr. Rao,Innovation,4.6
+51,Dr. Rao,Technical Implementation,9.7
+51,Dr. Rao,Functionality,6.4
+51,Dr. Rao,Problem Relevance,4.3
+51,Dr. Rao,Creativity,4.2
+51,Dr. Rao,Demo & Explanation,9.6
+51,Dr. Rao,Overall Impact,9.2
+51,Prof. Kulkarni,Innovation,4.3
+51,Prof. Kulkarni,Technical Implementation,6.1
+51,Prof. Kulkarni,Functionality,8.9
+51,Prof. Kulkarni,Problem Relevance,9.1
+51,Prof. Kulkarni,Creativity,9.3
+51,Prof. Kulkarni,Demo & Explanation,5.4
+51,Prof. Kulkarni,Overall Impact,7.1
+51,Ms. Iyer,Innovation,5.9
+51,Ms. Iyer,Technical Implementation,4.5
+51,Ms. Iyer,Functionality,3.1
+51,Ms. Iyer,Problem Relevance,5.2
+51,Ms. Iyer,Creativity,10.0
+51,Ms. Iyer,Demo & Explanation,3.8
+51,Ms. Iyer,Overall Impact,5.5
+52,Dr. Rao,Innovation,5.2
+52,Dr. Rao,Technical Implementation,9.1
+52,Dr. Rao,Functionality,7.1
+52,Dr. Rao,Problem Relevance,5.5
+52,Dr. Rao,Creativity,5.6
+52,Dr. Rao,Demo & Explanation,7.0
+52,Dr. Rao,Overall Impact,5.3
+52,Prof. Kulkarni,Innovation,4.6
+52,Prof. Kulkarni,Technical Implementation,9.8
+52,Prof. Kulkarni,Functionality,9.1
+52,Prof. Kulkarni,Problem Relevance,3.7
+52,Prof. Kulkarni,Creativity,3.7
+52,Prof. Kulkarni,Demo & Explanation,4.8
+52,Prof. Kulkarni,Overall Impact,8.4
+52,Ms. Iyer,Innovation,6.0
+52,Ms. Iyer,Technical Implementation,3.3
+52,Ms. Iyer,Functionality,3.1
+52,Ms. Iyer,Problem Relevance,9.6
+52,Ms. Iyer,Creativity,5.7
+52,Ms. Iyer,Demo & Explanation,5.9
+52,Ms. Iyer,Overall Impact,8.7
+53,Dr. Rao,Innovation,4.4
+53,Dr. Rao,Technical Implementation,5.1
+53,Dr. Rao,Functionality,8.0
+53,Dr. Rao,Problem Relevance,4.3
+53,Dr. Rao,Creativity,5.0
+53,Dr. Rao,Demo & Explanation,6.8
+53,Dr. Rao,Overall Impact,8.0
+53,Prof. Kulkarni,Innovation,9.2
+53,Prof. Kulkarni,Technical Implementation,4.8
+53,Prof. Kulkarni,Functionality,9.7
+53,Prof. Kulkarni,Problem Relevance,7.1
+53,Prof. Kulkarni,Creativity,7.7
+53,Prof. Kulkarni,Demo & Explanation,3.2
+53,Prof. Kulkarni,Overall Impact,8.2
+53,Ms. Iyer,Innovation,5.8
+53,Ms. Iyer,Technical Implementation,4.3
+53,Ms. Iyer,Functionality,4.6
+53,Ms. Iyer,Problem Relevance,8.4
+53,Ms. Iyer,Creativity,5.7
+53,Ms. Iyer,Demo & Explanation,3.2
+53,Ms. Iyer,Overall Impact,4.8
+54,Dr. Rao,Innovation,5.6
+54,Dr. Rao,Technical Implementation,7.3
+54,Dr. Rao,Functionality,4.2
+54,Dr. Rao,Problem Relevance,4.2
+54,Dr. Rao,Creativity,7.3
+54,Dr. Rao,Demo & Explanation,9.0
+54,Dr. Rao,Overall Impact,8.3
+54,Prof. Kulkarni,Innovation,3.9
+54,Prof. Kulkarni,Technical Implementation,7.1
+54,Prof. Kulkarni,Functionality,3.7
+54,Prof. Kulkarni,Problem Relevance,5.8
+54,Prof. Kulkarni,Creativity,4.9
+54,Prof. Kulkarni,Demo & Explanation,5.9
+54,Prof. Kulkarni,Overall Impact,5.0
+54,Ms. Iyer,Innovation,3.1
+54,Ms. Iyer,Technical Implementation,9.5
+54,Ms. Iyer,Functionality,9.5
+54,Ms. Iyer,Problem Relevance,8.0
+54,Ms. Iyer,Creativity,6.4
+54,Ms. Iyer,Demo & Explanation,3.9
+54,Ms. Iyer,Overall Impact,5.0
+55,Dr. Rao,Innovation,5.1
+55,Dr. Rao,Technical Implementation,7.7
+55,Dr. Rao,Functionality,5.8
+55,Dr. Rao,Problem Relevance,9.6
+55,Dr. Rao,Creativity,8.4
+55,Dr. Rao,Demo & Explanation,3.4
+55,Dr. Rao,Overall Impact,4.8
+55,Prof. Kulkarni,Innovation,6.5
+55,Prof. Kulkarni,Technical Implementation,5.7
+55,Prof. Kulkarni,Functionality,9.1
+55,Prof. Kulkarni,Problem Relevance,8.8
+55,Prof. Kulkarni,Creativity,8.0
+55,Prof. Kulkarni,Demo & Explanation,7.2
+55,Prof. Kulkarni,Overall Impact,4.7
+55,Ms. Iyer,Innovation,5.3
+55,Ms. Iyer,Technical Implementation,6.6
+55,Ms. Iyer,Functionality,9.3
+55,Ms. Iyer,Problem Relevance,9.2
+55,Ms. Iyer,Creativity,3.1
+55,Ms. Iyer,Demo & Explanation,5.1
+55,Ms. Iyer,Overall Impact,8.0
+56,Dr. Rao,Innovation,3.8
+56,Dr. Rao,Technical Implementation,5.2
+56,Dr. Rao,Functionality,3.3
+56,Dr. Rao,Problem Relevance,3.8
+56,Dr. Rao,Creativity,7.5
+56,Dr. Rao,Demo & Explanation,5.4
+56,Dr. Rao,Overall Impact,7.7
+56,Prof. Kulkarni,Innovation,3.6
+56,Prof. Kulkarni,Technical Implementation,4.1
+56,Prof. Kulkarni,Functionality,8.1
+56,Prof. Kulkarni,Problem Relevance,7.7
+56,Prof. Kulkarni,Creativity,9.3
+56,Prof. Kulkarni,Demo & Explanation,5.9
+56,Prof. Kulkarni,Overall Impact,9.0
+56,Ms. Iyer,Innovation,5.9
+56,Ms. Iyer,Technical Implementation,4.2
+56,Ms. Iyer,Functionality,8.7
+56,Ms. Iyer,Problem Relevance,8.1
+56,Ms. Iyer,Creativity,7.4
+56,Ms. Iyer,Demo & Explanation,7.8
+56,Ms. Iyer,Overall Impact,4.4
+57,Dr. Rao,Innovation,4.5
+57,Dr. Rao,Technical Implementation,8.9
+57,Dr. Rao,Functionality,5.3
+57,Dr. Rao,Problem Relevance,3.1
+57,Dr. Rao,Creativity,8.0
+57,Dr. Rao,Demo & Explanation,9.1
+57,Dr. Rao,Overall Impact,6.8
+57,Prof. Kulkarni,Innovation,5.5
+57,Prof. Kulkarni,Technical Implementation,8.0
+57,Prof. Kulkarni,Functionality,8.2
+57,Prof. Kulkarni,Problem Relevance,4.3
+57,Prof. Kulkarni,Creativity,8.9
+57,Prof. Kulkarni,Demo & Explanation,6.4
+57,Prof. Kulkarni,Overall Impact,8.2
+57,Ms. Iyer,Innovation,4.1
+57,Ms. Iyer,Technical Implementation,8.6
+57,Ms. Iyer,Functionality,8.8
+57,Ms. Iyer,Problem Relevance,5.6
+57,Ms. Iyer,Creativity,8.5
+57,Ms. Iyer,Demo & Explanation,7.4
+57,Ms. Iyer,Overall Impact,8.9
+58,Dr. Rao,Innovation,4.8
+58,Dr. Rao,Technical Implementation,4.9
+58,Dr. Rao,Functionality,8.3
+58,Dr. Rao,Problem Relevance,6.0
+58,Dr. Rao,Creativity,9.1
+58,Dr. Rao,Demo & Explanation,6.0
+58,Dr. Rao,Overall Impact,3.9
+58,Prof. Kulkarni,Innovation,4.9
+58,Prof. Kulkarni,Technical Implementation,7.4
+58,Prof. Kulkarni,Functionality,6.3
+58,Prof. Kulkarni,Problem Relevance,4.8
+58,Prof. Kulkarni,Creativity,7.0
+58,Prof. Kulkarni,Demo & Explanation,7.8
+58,Prof. Kulkarni,Overall Impact,5.9
+58,Ms. Iyer,Innovation,4.8
+58,Ms. Iyer,Technical Implementation,8.9
+58,Ms. Iyer,Functionality,3.2
+58,Ms. Iyer,Problem Relevance,7.1
+58,Ms. Iyer,Creativity,6.7
+58,Ms. Iyer,Demo & Explanation,6.6
+58,Ms. Iyer,Overall Impact,5.2
+59,Dr. Rao,Innovation,3.0
+59,Dr. Rao,Technical Implementation,3.5
+59,Dr. Rao,Functionality,6.4
+59,Dr. Rao,Problem Relevance,3.1
+59,Dr. Rao,Creativity,6.8
+59,Dr. Rao,Demo & Explanation,7.1
+59,Dr. Rao,Overall Impact,3.5
+59,Prof. Kulkarni,Innovation,8.8
+59,Prof. Kulkarni,Technical Implementation,6.6
+59,Prof. Kulkarni,Functionality,7.7
+59,Prof. Kulkarni,Problem Relevance,9.8
+59,Prof. Kulkarni,Creativity,6.4
+59,Prof. Kulkarni,Demo & Explanation,6.6
+59,Prof. Kulkarni,Overall Impact,8.6
+59,Ms. Iyer,Innovation,4.8
+59,Ms. Iyer,Technical Implementation,9.0
+59,Ms. Iyer,Functionality,7.4
+59,Ms. Iyer,Problem Relevance,9.4
+59,Ms. Iyer,Creativity,9.7
+59,Ms. Iyer,Demo & Explanation,3.4
+59,Ms. Iyer,Overall Impact,8.3
+60,Dr. Rao,Innovation,3.4
+60,Dr. Rao,Technical Implementation,3.4
+60,Dr. Rao,Functionality,8.9
+60,Dr. Rao,Problem Relevance,7.8
+60,Dr. Rao,Creativity,3.5
+60,Dr. Rao,Demo & Explanation,7.7
+60,Dr. Rao,Overall Impact,7.8
+60,Prof. Kulkarni,Innovation,4.2
+60,Prof. Kulkarni,Technical Implementation,9.7
+60,Prof. Kulkarni,Functionality,4.2
+60,Prof. Kulkarni,Problem Relevance,7.8
+60,Prof. Kulkarni,Creativity,3.8
+60,Prof. Kulkarni,Demo & Explanation,5.6
+60,Prof. Kulkarni,Overall Impact,5.0
+60,Ms. Iyer,Innovation,5.9
+60,Ms. Iyer,Technical Implementation,7.0
+60,Ms. Iyer,Functionality,4.9
+60,Ms. Iyer,Problem Relevance,7.9
+60,Ms. Iyer,Creativity,7.4
+60,Ms. Iyer,Demo & Explanation,6.5
+60,Ms. Iyer,Overall Impact,4.2
+61,Dr. Rao,Innovation,5.2
+61,Dr. Rao,Technical Implementation,5.7
+61,Dr. Rao,Functionality,8.1
+61,Dr. Rao,Problem Relevance,5.1
+61,Dr. Rao,Creativity,5.9
+61,Dr. Rao,Demo & Explanation,8.1
+61,Dr. Rao,Overall Impact,9.3
+61,Prof. Kulkarni,Innovation,7.8
+61,Prof. Kulkarni,Technical Implementation,3.4
+61,Prof. Kulkarni,Functionality,5.7
+61,Prof. Kulkarni,Problem Relevance,7.8
+61,Prof. Kulkarni,Creativity,3.4
+61,Prof. Kulkarni,Demo & Explanation,7.9
+61,Prof. Kulkarni,Overall Impact,8.8
+61,Ms. Iyer,Innovation,6.1
+61,Ms. Iyer,Technical Implementation,3.4
+61,Ms. Iyer,Functionality,4.3
+61,Ms. Iyer,Problem Relevance,4.4
+61,Ms. Iyer,Creativity,5.3
+61,Ms. Iyer,Demo & Explanation,7.3
+61,Ms. Iyer,Overall Impact,3.1
+62,Dr. Rao,Innovation,4.1
+62,Dr. Rao,Technical Implementation,7.2
+62,Dr. Rao,Functionality,7.7
+62,Dr. Rao,Problem Relevance,4.9
+62,Dr. Rao,Creativity,7.7
+62,Dr. Rao,Demo & Explanation,4.4
+62,Dr. Rao,Overall Impact,5.4
+62,Prof. Kulkarni,Innovation,5.6
+62,Prof. Kulkarni,Technical Implementation,8.9
+62,Prof. Kulkarni,Functionality,6.2
+62,Prof. Kulkarni,Problem Relevance,4.0
+62,Prof. Kulkarni,Creativity,9.9
+62,Prof. Kulkarni,Demo & Explanation,3.9
+62,Prof. Kulkarni,Overall Impact,3.0
+62,Ms. Iyer,Innovation,8.0
+62,Ms. Iyer,Technical Implementation,4.7
+62,Ms. Iyer,Functionality,8.0
+62,Ms. Iyer,Problem Relevance,3.2
+62,Ms. Iyer,Creativity,9.8
+62,Ms. Iyer,Demo & Explanation,5.8
+62,Ms. Iyer,Overall Impact,8.2
+63,Dr. Rao,Innovation,6.8
+63,Dr. Rao,Technical Implementation,3.6
+63,Dr. Rao,Functionality,7.0
+63,Dr. Rao,Problem Relevance,8.9
+63,Dr. Rao,Creativity,9.3
+63,Dr. Rao,Demo & Explanation,7.5
+63,Dr. Rao,Overall Impact,5.0
+63,Prof. Kulkarni,Innovation,4.0
+63,Prof. Kulkarni,Technical Implementation,4.0
+63,Prof. Kulkarni,Functionality,6.4
+63,Prof. Kulkarni,Problem Relevance,5.4
+63,Prof. Kulkarni,Creativity,8.7
+63,Prof. Kulkarni,Demo & Explanation,7.2
+63,Prof. Kulkarni,Overall Impact,4.2
+63,Ms. Iyer,Innovation,8.7
+63,Ms. Iyer,Technical Implementation,9.2
+63,Ms. Iyer,Functionality,7.5
+63,Ms. Iyer,Problem Relevance,9.7
+63,Ms. Iyer,Creativity,7.9
+63,Ms. Iyer,Demo & Explanation,3.2
+63,Ms. Iyer,Overall Impact,9.1
+64,Dr. Rao,Innovation,9.0
+64,Dr. Rao,Technical Implementation,8.5
+64,Dr. Rao,Functionality,5.3
+64,Dr. Rao,Problem Relevance,6.9
+64,Dr. Rao,Creativity,3.5
+64,Dr. Rao,Demo & Explanation,9.1
+64,Dr. Rao,Overall Impact,6.5
+64,Prof. Kulkarni,Innovation,4.8
+64,Prof. Kulkarni,Technical Implementation,3.6
+64,Prof. Kulkarni,Functionality,5.9
+64,Prof. Kulkarni,Problem Relevance,6.8
+64,Prof. Kulkarni,Creativity,3.9
+64,Prof. Kulkarni,Demo & Explanation,3.1
+64,Prof. Kulkarni,Overall Impact,8.4
+64,Ms. Iyer,Innovation,9.3
+64,Ms. Iyer,Technical Implementation,5.5
+64,Ms. Iyer,Functionality,8.6
+64,Ms. Iyer,Problem Relevance,3.8
+64,Ms. Iyer,Creativity,8.2
+64,Ms. Iyer,Demo & Explanation,8.0
+64,Ms. Iyer,Overall Impact,8.5
+65,Dr. Rao,Innovation,9.1
+65,Dr. Rao,Technical Implementation,6.4
+65,Dr. Rao,Functionality,9.9
+65,Dr. Rao,Problem Relevance,3.4
+65,Dr. Rao,Creativity,5.5
+65,Dr. Rao,Demo & Explanation,4.0
+65,Dr. Rao,Overall Impact,7.8
+65,Prof. Kulkarni,Innovation,9.3
+65,Prof. Kulkarni,Technical Implementation,7.2
+65,Prof. Kulkarni,Functionality,8.1
+65,Prof. Kulkarni,Problem Relevance,10.0
+65,Prof. Kulkarni,Creativity,7.9
+65,Prof. Kulkarni,Demo & Explanation,6.8
+65,Prof. Kulkarni,Overall Impact,10.0
+65,Ms. Iyer,Innovation,7.8
+65,Ms. Iyer,Technical Implementation,5.2
+65,Ms. Iyer,Functionality,7.7
+65,Ms. Iyer,Problem Relevance,9.3
+65,Ms. Iyer,Creativity,4.1
+65,Ms. Iyer,Demo & Explanation,5.7
+65,Ms. Iyer,Overall Impact,6.4
+66,Dr. Rao,Innovation,9.3
+66,Dr. Rao,Technical Implementation,3.2
+66,Dr. Rao,Functionality,4.3
+66,Dr. Rao,Problem Relevance,7.5
+66,Dr. Rao,Creativity,7.3
+66,Dr. Rao,Demo & Explanation,9.6
+66,Dr. Rao,Overall Impact,3.4
+66,Prof. Kulkarni,Innovation,4.0
+66,Prof. Kulkarni,Technical Implementation,8.9
+66,Prof. Kulkarni,Functionality,7.2
+66,Prof. Kulkarni,Problem Relevance,4.1
+66,Prof. Kulkarni,Creativity,8.1
+66,Prof. Kulkarni,Demo & Explanation,7.7
+66,Prof. Kulkarni,Overall Impact,3.7
+66,Ms. Iyer,Innovation,7.9
+66,Ms. Iyer,Technical Implementation,8.4
+66,Ms. Iyer,Functionality,6.5
+66,Ms. Iyer,Problem Relevance,3.7
+66,Ms. Iyer,Creativity,9.3
+66,Ms. Iyer,Demo & Explanation,7.4
+66,Ms. Iyer,Overall Impact,3.4
+67,Dr. Rao,Innovation,5.2
+67,Dr. Rao,Technical Implementation,8.1
+67,Dr. Rao,Functionality,6.2
+67,Dr. Rao,Problem Relevance,3.9
+67,Dr. Rao,Creativity,5.8
+67,Dr. Rao,Demo & Explanation,3.7
+67,Dr. Rao,Overall Impact,6.6
+67,Prof. Kulkarni,Innovation,8.7
+67,Prof. Kulkarni,Technical Implementation,5.7
+67,Prof. Kulkarni,Functionality,9.5
+67,Prof. Kulkarni,Problem Relevance,7.9
+67,Prof. Kulkarni,Creativity,6.2
+67,Prof. Kulkarni,Demo & Explanation,3.8
+67,Prof. Kulkarni,Overall Impact,4.3
+67,Ms. Iyer,Innovation,9.3
+67,Ms. Iyer,Technical Implementation,7.0
+67,Ms. Iyer,Functionality,9.9
+67,Ms. Iyer,Problem Relevance,5.4
+67,Ms. Iyer,Creativity,6.4
+67,Ms. Iyer,Demo & Explanation,7.7
+67,Ms. Iyer,Overall Impact,4.1
+68,Dr. Rao,Innovation,8.5
+68,Dr. Rao,Technical Implementation,8.6
+68,Dr. Rao,Functionality,8.8
+68,Dr. Rao,Problem Relevance,6.3
+68,Dr. Rao,Creativity,3.5
+68,Dr. Rao,Demo & Explanation,4.5
+68,Dr. Rao,Overall Impact,5.2
+68,Prof. Kulkarni,Innovation,6.9
+68,Prof. Kulkarni,Technical Implementation,3.3
+68,Prof. Kulkarni,Functionality,8.0
+68,Prof. Kulkarni,Problem Relevance,4.2
+68,Prof. Kulkarni,Creativity,6.7
+68,Prof. Kulkarni,Demo & Explanation,5.6
+68,Prof. Kulkarni,Overall Impact,4.4
+68,Ms. Iyer,Innovation,8.3
+68,Ms. Iyer,Technical Implementation,7.5
+68,Ms. Iyer,Functionality,5.1
+68,Ms. Iyer,Problem Relevance,5.5
+68,Ms. Iyer,Creativity,5.7
+68,Ms. Iyer,Demo & Explanation,7.5
+68,Ms. Iyer,Overall Impact,4.5
+69,Dr. Rao,Innovation,4.1
+69,Dr. Rao,Technical Implementation,7.3
+69,Dr. Rao,Functionality,8.1
+69,Dr. Rao,Problem Relevance,7.5
+69,Dr. Rao,Creativity,8.0
+69,Dr. Rao,Demo & Explanation,3.4
+69,Dr. Rao,Overall Impact,7.1
+69,Prof. Kulkarni,Innovation,8.1
+69,Prof. Kulkarni,Technical Implementation,5.5
+69,Prof. Kulkarni,Functionality,7.5
+69,Prof. Kulkarni,Problem Relevance,8.9
+69,Prof. Kulkarni,Creativity,3.2
+69,Prof. Kulkarni,Demo & Explanation,5.8
+69,Prof. Kulkarni,Overall Impact,8.4
+69,Ms. Iyer,Innovation,6.3
+69,Ms. Iyer,Technical Implementation,4.9
+69,Ms. Iyer,Functionality,3.4
+69,Ms. Iyer,Problem Relevance,3.4
+69,Ms. Iyer,Creativity,7.7
+69,Ms. Iyer,Demo & Explanation,5.7
+69,Ms. Iyer,Overall Impact,3.3
+70,Dr. Rao,Innovation,9.6
+70,Dr. Rao,Technical Implementation,9.4
+70,Dr. Rao,Functionality,9.6
+70,Dr. Rao,Problem Relevance,3.2
+70,Dr. Rao,Creativity,4.3
+70,Dr. Rao,Demo & Explanation,9.1
+70,Dr. Rao,Overall Impact,3.8
+70,Prof. Kulkarni,Innovation,8.3
+70,Prof. Kulkarni,Technical Implementation,6.5
+70,Prof. Kulkarni,Functionality,7.5
+70,Prof. Kulkarni,Problem Relevance,3.1
+70,Prof. Kulkarni,Creativity,3.2
+70,Prof. Kulkarni,Demo & Explanation,4.7
+70,Prof. Kulkarni,Overall Impact,5.8
+70,Ms. Iyer,Innovation,4.4
+70,Ms. Iyer,Technical Implementation,8.0
+70,Ms. Iyer,Functionality,4.4
+70,Ms. Iyer,Problem Relevance,8.0
+70,Ms. Iyer,Creativity,8.9
+70,Ms. Iyer,Demo & Explanation,8.0
+70,Ms. Iyer,Overall Impact,7.4
+71,Dr. Rao,Innovation,7.2
+71,Dr. Rao,Technical Implementation,5.6
+71,Dr. Rao,Functionality,6.5
+71,Dr. Rao,Problem Relevance,9.7
+71,Dr. Rao,Creativity,5.2
+71,Dr. Rao,Demo & Explanation,7.9
+71,Dr. Rao,Overall Impact,8.4
+71,Prof. Kulkarni,Innovation,3.4
+71,Prof. Kulkarni,Technical Implementation,5.6
+71,Prof. Kulkarni,Functionality,7.5
+71,Prof. Kulkarni,Problem Relevance,5.0
+71,Prof. Kulkarni,Creativity,6.4
+71,Prof. Kulkarni,Demo & Explanation,8.8
+71,Prof. Kulkarni,Overall Impact,4.1
+71,Ms. Iyer,Innovation,7.1
+71,Ms. Iyer,Technical Implementation,6.6
+71,Ms. Iyer,Functionality,8.6
+71,Ms. Iyer,Problem Relevance,4.0
+71,Ms. Iyer,Creativity,3.2
+71,Ms. Iyer,Demo & Explanation,4.1
+71,Ms. Iyer,Overall Impact,5.1
+72,Dr. Rao,Innovation,6.2
+72,Dr. Rao,Technical Implementation,7.2
+72,Dr. Rao,Functionality,6.1
+72,Dr. Rao,Problem Relevance,8.6
+72,Dr. Rao,Creativity,8.6
+72,Dr. Rao,Demo & Explanation,6.7
+72,Dr. Rao,Overall Impact,8.6
+72,Prof. Kulkarni,Innovation,7.4
+72,Prof. Kulkarni,Technical Implementation,4.1
+72,Prof. Kulkarni,Functionality,7.8
+72,Prof. Kulkarni,Problem Relevance,8.9
+72,Prof. Kulkarni,Creativity,6.8
+72,Prof. Kulkarni,Demo & Explanation,4.4
+72,Prof. Kulkarni,Overall Impact,4.6
+72,Ms. Iyer,Innovation,6.4
+72,Ms. Iyer,Technical Implementation,5.2
+72,Ms. Iyer,Functionality,9.4
+72,Ms. Iyer,Problem Relevance,5.3
+72,Ms. Iyer,Creativity,5.7
+72,Ms. Iyer,Demo & Explanation,8.6
+72,Ms. Iyer,Overall Impact,9.9
+73,Dr. Rao,Innovation,6.2
+73,Dr. Rao,Technical Implementation,9.7
+73,Dr. Rao,Functionality,9.3
+73,Dr. Rao,Problem Relevance,8.7
+73,Dr. Rao,Creativity,7.9
+73,Dr. Rao,Demo & Explanation,9.1
+73,Dr. Rao,Overall Impact,5.1
+73,Prof. Kulkarni,Innovation,4.7
+73,Prof. Kulkarni,Technical Implementation,5.4
+73,Prof. Kulkarni,Functionality,8.9
+73,Prof. Kulkarni,Problem Relevance,4.0
+73,Prof. Kulkarni,Creativity,7.0
+73,Prof. Kulkarni,Demo & Explanation,6.7
+73,Prof. Kulkarni,Overall Impact,6.0
+73,Ms. Iyer,Innovation,4.5
+73,Ms. Iyer,Technical Implementation,7.2
+73,Ms. Iyer,Functionality,4.7
+73,Ms. Iyer,Problem Relevance,7.0
+73,Ms. Iyer,Creativity,6.5
+73,Ms. Iyer,Demo & Explanation,9.5
+73,Ms. Iyer,Overall Impact,7.0
+74,Dr. Rao,Innovation,6.8
+74,Dr. Rao,Technical Implementation,9.8
+74,Dr. Rao,Functionality,8.1
+74,Dr. Rao,Problem Relevance,3.3
+74,Dr. Rao,Creativity,8.0
+74,Dr. Rao,Demo & Explanation,9.7
+74,Dr. Rao,Overall Impact,9.8
+74,Prof. Kulkarni,Innovation,6.2
+74,Prof. Kulkarni,Technical Implementation,7.4
+74,Prof. Kulkarni,Functionality,4.6
+74,Prof. Kulkarni,Problem Relevance,4.4
+74,Prof. Kulkarni,Creativity,6.4
+74,Prof. Kulkarni,Demo & Explanation,3.1
+74,Prof. Kulkarni,Overall Impact,3.8
+74,Ms. Iyer,Innovation,4.1
+74,Ms. Iyer,Technical Implementation,9.9
+74,Ms. Iyer,Functionality,5.3
+74,Ms. Iyer,Problem Relevance,9.7
+74,Ms. Iyer,Creativity,6.3
+74,Ms. Iyer,Demo & Explanation,4.3
+74,Ms. Iyer,Overall Impact,4.3
+75,Dr. Rao,Innovation,7.7
+75,Dr. Rao,Technical Implementation,7.8
+75,Dr. Rao,Functionality,5.5
+75,Dr. Rao,Problem Relevance,6.4
+75,Dr. Rao,Creativity,5.3
+75,Dr. Rao,Demo & Explanation,6.4
+75,Dr. Rao,Overall Impact,7.4
+75,Prof. Kulkarni,Innovation,4.1
+75,Prof. Kulkarni,Technical Implementation,7.2
+75,Prof. Kulkarni,Functionality,5.9
+75,Prof. Kulkarni,Problem Relevance,6.8
+75,Prof. Kulkarni,Creativity,9.8
+75,Prof. Kulkarni,Demo & Explanation,9.4
+75,Prof. Kulkarni,Overall Impact,5.7
+75,Ms. Iyer,Innovation,9.3
+75,Ms. Iyer,Technical Implementation,9.4
+75,Ms. Iyer,Functionality,5.4
+75,Ms. Iyer,Problem Relevance,5.2
+75,Ms. Iyer,Creativity,8.1
+75,Ms. Iyer,Demo & Explanation,6.5
+75,Ms. Iyer,Overall Impact,8.4
+76,Dr. Rao,Innovation,6.5
+76,Dr. Rao,Technical Implementation,8.4
+76,Dr. Rao,Functionality,9.5
+76,Dr. Rao,Problem Relevance,9.0
+76,Dr. Rao,Creativity,5.2
+76,Dr. Rao,Demo & Explanation,5.0
+76,Dr. Rao,Overall Impact,5.4
+76,Prof. Kulkarni,Innovation,5.1
+76,Prof. Kulkarni,Technical Implementation,6.1
+76,Prof. Kulkarni,Functionality,7.1
+76,Prof. Kulkarni,Problem Relevance,9.5
+76,Prof. Kulkarni,Creativity,6.5
+76,Prof. Kulkarni,Demo & Explanation,9.3
+76,Prof. Kulkarni,Overall Impact,8.1
+76,Ms. Iyer,Innovation,3.8
+76,Ms. Iyer,Technical Implementation,3.6
+76,Ms. Iyer,Functionality,4.0
+76,Ms. Iyer,Problem Relevance,5.5
+76,Ms. Iyer,Creativity,3.4
+76,Ms. Iyer,Demo & Explanation,3.8
+76,Ms. Iyer,Overall Impact,9.6
+77,Dr. Rao,Innovation,6.0
+77,Dr. Rao,Technical Implementation,5.0
+77,Dr. Rao,Functionality,6.3
+77,Dr. Rao,Problem Relevance,9.0
+77,Dr. Rao,Creativity,8.5
+77,Dr. Rao,Demo & Explanation,8.9
+77,Dr. Rao,Overall Impact,8.4
+77,Prof. Kulkarni,Innovation,4.6
+77,Prof. Kulkarni,Technical Implementation,7.4
+77,Prof. Kulkarni,Functionality,6.6
+77,Prof. Kulkarni,Problem Relevance,6.2
+77,Prof. Kulkarni,Creativity,6.9
+77,Prof. Kulkarni,Demo & Explanation,7.0
+77,Prof. Kulkarni,Overall Impact,8.9
+77,Ms. Iyer,Innovation,5.7
+77,Ms. Iyer,Technical Implementation,3.3
+77,Ms. Iyer,Functionality,9.3
+77,Ms. Iyer,Problem Relevance,3.4
+77,Ms. Iyer,Creativity,6.8
+77,Ms. Iyer,Demo & Explanation,4.0
+77,Ms. Iyer,Overall Impact,7.6
+78,Dr. Rao,Innovation,9.2
+78,Dr. Rao,Technical Implementation,4.7
+78,Dr. Rao,Functionality,6.8
+78,Dr. Rao,Problem Relevance,6.0
+78,Dr. Rao,Creativity,4.5
+78,Dr. Rao,Demo & Explanation,4.5
+78,Dr. Rao,Overall Impact,6.6
+78,Prof. Kulkarni,Innovation,7.9
+78,Prof. Kulkarni,Technical Implementation,4.8
+78,Prof. Kulkarni,Functionality,5.1
+78,Prof. Kulkarni,Problem Relevance,3.6
+78,Prof. Kulkarni,Creativity,6.4
+78,Prof. Kulkarni,Demo & Explanation,5.9
+78,Prof. Kulkarni,Overall Impact,3.7
+78,Ms. Iyer,Innovation,9.9
+78,Ms. Iyer,Technical Implementation,6.1
+78,Ms. Iyer,Functionality,4.5
+78,Ms. Iyer,Problem Relevance,8.6
+78,Ms. Iyer,Creativity,6.4
+78,Ms. Iyer,Demo & Explanation,6.6
+78,Ms. Iyer,Overall Impact,9.8
+79,Dr. Rao,Innovation,6.3
+79,Dr. Rao,Technical Implementation,4.8
+79,Dr. Rao,Functionality,3.9
+79,Dr. Rao,Problem Relevance,9.1
+79,Dr. Rao,Creativity,4.9
+79,Dr. Rao,Demo & Explanation,3.0
+79,Dr. Rao,Overall Impact,7.4
+79,Prof. Kulkarni,Innovation,4.6
+79,Prof. Kulkarni,Technical Implementation,7.6
+79,Prof. Kulkarni,Functionality,4.9
+79,Prof. Kulkarni,Problem Relevance,5.2
+79,Prof. Kulkarni,Creativity,5.0
+79,Prof. Kulkarni,Demo & Explanation,5.6
+79,Prof. Kulkarni,Overall Impact,3.4
+79,Ms. Iyer,Innovation,4.5
+79,Ms. Iyer,Technical Implementation,10.0
+79,Ms. Iyer,Functionality,4.9
+79,Ms. Iyer,Problem Relevance,5.8
+79,Ms. Iyer,Creativity,9.8
+79,Ms. Iyer,Demo & Explanation,3.5
+79,Ms. Iyer,Overall Impact,3.0
+80,Dr. Rao,Innovation,7.6
+80,Dr. Rao,Technical Implementation,9.1
+80,Dr. Rao,Functionality,6.8
+80,Dr. Rao,Problem Relevance,7.6
+80,Dr. Rao,Creativity,3.4
+80,Dr. Rao,Demo & Explanation,7.2
+80,Dr. Rao,Overall Impact,7.2
+80,Prof. Kulkarni,Innovation,6.5
+80,Prof. Kulkarni,Technical Implementation,9.6
+80,Prof. Kulkarni,Functionality,4.7
+80,Prof. Kulkarni,Problem Relevance,4.4
+80,Prof. Kulkarni,Creativity,6.2
+80,Prof. Kulkarni,Demo & Explanation,4.2
+80,Prof. Kulkarni,Overall Impact,3.3
+80,Ms. Iyer,Innovation,6.3
+80,Ms. Iyer,Technical Implementation,9.7
+80,Ms. Iyer,Functionality,6.4
+80,Ms. Iyer,Problem Relevance,7.8
+80,Ms. Iyer,Creativity,7.6
+80,Ms. Iyer,Demo & Explanation,8.2
+80,Ms. Iyer,Overall Impact,8.3
+81,Dr. Rao,Innovation,3.8
+81,Dr. Rao,Technical Implementation,4.7
+81,Dr. Rao,Functionality,6.6
+81,Dr. Rao,Problem Relevance,7.5
+81,Dr. Rao,Creativity,8.5
+81,Dr. Rao,Demo & Explanation,4.0
+81,Dr. Rao,Overall Impact,5.6
+81,Prof. Kulkarni,Innovation,8.0
+81,Prof. Kulkarni,Technical Implementation,7.2
+81,Prof. Kulkarni,Functionality,9.1
+81,Prof. Kulkarni,Problem Relevance,4.1
+81,Prof. Kulkarni,Creativity,7.3
+81,Prof. Kulkarni,Demo & Explanation,4.7
+81,Prof. Kulkarni,Overall Impact,7.4
+81,Ms. Iyer,Innovation,8.4
+81,Ms. Iyer,Technical Implementation,6.0
+81,Ms. Iyer,Functionality,7.2
+81,Ms. Iyer,Problem Relevance,3.6
+81,Ms. Iyer,Creativity,5.5
+81,Ms. Iyer,Demo & Explanation,5.7
+81,Ms. Iyer,Overall Impact,9.1
+82,Dr. Rao,Innovation,5.7
+82,Dr. Rao,Technical Implementation,8.0
+82,Dr. Rao,Functionality,8.2
+82,Dr. Rao,Problem Relevance,7.6
+82,Dr. Rao,Creativity,4.9
+82,Dr. Rao,Demo & Explanation,7.1
+82,Dr. Rao,Overall Impact,3.3
+82,Prof. Kulkarni,Innovation,3.1
+82,Prof. Kulkarni,Technical Implementation,9.1
+82,Prof. Kulkarni,Functionality,6.1
+82,Prof. Kulkarni,Problem Relevance,5.1
+82,Prof. Kulkarni,Creativity,3.2
+82,Prof. Kulkarni,Demo & Explanation,6.4
+82,Prof. Kulkarni,Overall Impact,6.7
+82,Ms. Iyer,Innovation,6.4
+82,Ms. Iyer,Technical Implementation,4.2
+82,Ms. Iyer,Functionality,9.0
+82,Ms. Iyer,Problem Relevance,5.0
+82,Ms. Iyer,Creativity,5.7
+82,Ms. Iyer,Demo & Explanation,9.6
+82,Ms. Iyer,Overall Impact,3.2
+83,Dr. Rao,Innovation,10.0
+83,Dr. Rao,Technical Implementation,3.8
+83,Dr. Rao,Functionality,6.6
+83,Dr. Rao,Problem Relevance,4.3
+83,Dr. Rao,Creativity,8.7
+83,Dr. Rao,Demo & Explanation,5.0
+83,Dr. Rao,Overall Impact,9.8
+83,Prof. Kulkarni,Innovation,6.1
+83,Prof. Kulkarni,Technical Implementation,3.8
+83,Prof. Kulkarni,Functionality,5.8
+83,Prof. Kulkarni,Problem Relevance,6.9
+83,Prof. Kulkarni,Creativity,9.3
+83,Prof. Kulkarni,Demo & Explanation,3.5
+83,Prof. Kulkarni,Overall Impact,7.4
+83,Ms. Iyer,Innovation,9.2
+83,Ms. Iyer,Technical Implementation,8.0
+83,Ms. Iyer,Functionality,7.5
+83,Ms. Iyer,Problem Relevance,5.0
+83,Ms. Iyer,Creativity,9.3
+83,Ms. Iyer,Demo & Explanation,7.3
+83,Ms. Iyer,Overall Impact,7.8
+84,Dr. Rao,Innovation,4.2
+84,Dr. Rao,Technical Implementation,5.2
+84,Dr. Rao,Functionality,5.0
+84,Dr. Rao,Problem Relevance,5.9
+84,Dr. Rao,Creativity,7.9
+84,Dr. Rao,Demo & Explanation,4.2
+84,Dr. Rao,Overall Impact,8.7
+84,Prof. Kulkarni,Innovation,6.0
+84,Prof. Kulkarni,Technical Implementation,4.9
+84,Prof. Kulkarni,Functionality,9.6
+84,Prof. Kulkarni,Problem Relevance,6.6
+84,Prof. Kulkarni,Creativity,6.8
+84,Prof. Kulkarni,Demo & Explanation,7.5
+84,Prof. Kulkarni,Overall Impact,4.9
+84,Ms. Iyer,Innovation,8.4
+84,Ms. Iyer,Technical Implementation,6.2
+84,Ms. Iyer,Functionality,7.8
+84,Ms. Iyer,Problem Relevance,9.7
+84,Ms. Iyer,Creativity,9.7
+84,Ms. Iyer,Demo & Explanation,4.9
+84,Ms. Iyer,Overall Impact,7.4
+85,Dr. Rao,Innovation,9.1
+85,Dr. Rao,Technical Implementation,9.4
+85,Dr. Rao,Functionality,6.0
+85,Dr. Rao,Problem Relevance,6.5
+85,Dr. Rao,Creativity,5.2
+85,Dr. Rao,Demo & Explanation,9.2
+85,Dr. Rao,Overall Impact,9.4
+85,Prof. Kulkarni,Innovation,5.2
+85,Prof. Kulkarni,Technical Implementation,5.1
+85,Prof. Kulkarni,Functionality,8.3
+85,Prof. Kulkarni,Problem Relevance,7.1
+85,Prof. Kulkarni,Creativity,5.8
+85,Prof. Kulkarni,Demo & Explanation,8.5
+85,Prof. Kulkarni,Overall Impact,5.2
+85,Ms. Iyer,Innovation,5.3
+85,Ms. Iyer,Technical Implementation,6.9
+85,Ms. Iyer,Functionality,9.6
+85,Ms. Iyer,Problem Relevance,6.1
+85,Ms. Iyer,Creativity,5.8
+85,Ms. Iyer,Demo & Explanation,5.4
+85,Ms. Iyer,Overall Impact,5.9
+86,Dr. Rao,Innovation,6.4
+86,Dr. Rao,Technical Implementation,7.2
+86,Dr. Rao,Functionality,5.7
+86,Dr. Rao,Problem Relevance,6.5
+86,Dr. Rao,Creativity,5.6
+86,Dr. Rao,Demo & Explanation,7.1
+86,Dr. Rao,Overall Impact,6.7
+86,Prof. Kulkarni,Innovation,6.4
+86,Prof. Kulkarni,Technical Implementation,9.5
+86,Prof. Kulkarni,Functionality,3.6
+86,Prof. Kulkarni,Problem Relevance,4.1
+86,Prof. Kulkarni,Creativity,8.3
+86,Prof. Kulkarni,Demo & Explanation,5.4
+86,Prof. Kulkarni,Overall Impact,6.4
+86,Ms. Iyer,Innovation,5.0
+86,Ms. Iyer,Technical Implementation,9.1
+86,Ms. Iyer,Functionality,4.0
+86,Ms. Iyer,Problem Relevance,6.9
+86,Ms. Iyer,Creativity,7.9
+86,Ms. Iyer,Demo & Explanation,8.4
+86,Ms. Iyer,Overall Impact,9.9
+87,Dr. Rao,Innovation,3.1
+87,Dr. Rao,Technical Implementation,7.3
+87,Dr. Rao,Functionality,4.4
+87,Dr. Rao,Problem Relevance,7.2
+87,Dr. Rao,Creativity,5.1
+87,Dr. Rao,Demo & Explanation,6.5
+87,Dr. Rao,Overall Impact,7.5
+87,Prof. Kulkarni,Innovation,8.5
+87,Prof. Kulkarni,Technical Implementation,9.4
+87,Prof. Kulkarni,Functionality,5.7
+87,Prof. Kulkarni,Problem Relevance,6.9
+87,Prof. Kulkarni,Creativity,8.2
+87,Prof. Kulkarni,Demo & Explanation,9.9
+87,Prof. Kulkarni,Overall Impact,3.2
+87,Ms. Iyer,Innovation,7.7
+87,Ms. Iyer,Technical Implementation,7.5
+87,Ms. Iyer,Functionality,8.1
+87,Ms. Iyer,Problem Relevance,3.8
+87,Ms. Iyer,Creativity,6.2
+87,Ms. Iyer,Demo & Explanation,4.4
+87,Ms. Iyer,Overall Impact,7.5
+88,Dr. Rao,Innovation,4.4
+88,Dr. Rao,Technical Implementation,7.0
+88,Dr. Rao,Functionality,6.8
+88,Dr. Rao,Problem Relevance,9.1
+88,Dr. Rao,Creativity,9.5
+88,Dr. Rao,Demo & Explanation,4.0
+88,Dr. Rao,Overall Impact,5.0
+88,Prof. Kulkarni,Innovation,8.9
+88,Prof. Kulkarni,Technical Implementation,4.2
+88,Prof. Kulkarni,Functionality,9.1
+88,Prof. Kulkarni,Problem Relevance,4.8
+88,Prof. Kulkarni,Creativity,6.2
+88,Prof. Kulkarni,Demo & Explanation,3.4
+88,Prof. Kulkarni,Overall Impact,3.9
+88,Ms. Iyer,Innovation,6.9
+88,Ms. Iyer,Technical Implementation,9.6
+88,Ms. Iyer,Functionality,3.6
+88,Ms. Iyer,Problem Relevance,6.9
+88,Ms. Iyer,Creativity,5.1
+88,Ms. Iyer,Demo & Explanation,3.4
+88,Ms. Iyer,Overall Impact,7.4
+89,Dr. Rao,Innovation,3.1
+89,Dr. Rao,Technical Implementation,9.9
+89,Dr. Rao,Functionality,8.8
+89,Dr. Rao,Problem Relevance,9.9
+89,Dr. Rao,Creativity,4.4
+89,Dr. Rao,Demo & Explanation,3.3
+89,Dr. Rao,Overall Impact,3.9
+89,Prof. Kulkarni,Innovation,6.6
+89,Prof. Kulkarni,Technical Implementation,5.9
+89,Prof. Kulkarni,Functionality,4.4
+89,Prof. Kulkarni,Problem Relevance,4.6
+89,Prof. Kulkarni,Creativity,3.4
+89,Prof. Kulkarni,Demo & Explanation,3.9
+89,Prof. Kulkarni,Overall Impact,7.9
+89,Ms. Iyer,Innovation,4.0
+89,Ms. Iyer,Technical Implementation,5.8
+89,Ms. Iyer,Functionality,8.2
+89,Ms. Iyer,Problem Relevance,3.2
+89,Ms. Iyer,Creativity,9.4
+89,Ms. Iyer,Demo & Explanation,4.3
+89,Ms. Iyer,Overall Impact,6.9
+90,Dr. Rao,Innovation,4.5
+90,Dr. Rao,Technical Implementation,5.7
+90,Dr. Rao,Functionality,8.0
+90,Dr. Rao,Problem Relevance,3.7
+90,Dr. Rao,Creativity,5.4
+90,Dr. Rao,Demo & Explanation,9.1
+90,Dr. Rao,Overall Impact,8.9
+90,Prof. Kulkarni,Innovation,9.1
+90,Prof. Kulkarni,Technical Implementation,6.5
+90,Prof. Kulkarni,Functionality,3.1
+90,Prof. Kulkarni,Problem Relevance,3.5
+90,Prof. Kulkarni,Creativity,9.2
+90,Prof. Kulkarni,Demo & Explanation,8.9
+90,Prof. Kulkarni,Overall Impact,8.6
+90,Ms. Iyer,Innovation,6.7
+90,Ms. Iyer,Technical Implementation,6.5
+90,Ms. Iyer,Functionality,9.5
+90,Ms. Iyer,Problem Relevance,8.7
+90,Ms. Iyer,Creativity,6.4
+90,Ms. Iyer,Demo & Explanation,3.2
+90,Ms. Iyer,Overall Impact,3.3
+91,Dr. Rao,Innovation,6.0
+91,Dr. Rao,Technical Implementation,5.1
+91,Dr. Rao,Functionality,5.7
+91,Dr. Rao,Problem Relevance,3.7
+91,Dr. Rao,Creativity,9.7
+91,Dr. Rao,Demo & Explanation,4.3
+91,Dr. Rao,Overall Impact,4.2
+91,Prof. Kulkarni,Innovation,5.2
+91,Prof. Kulkarni,Technical Implementation,6.5
+91,Prof. Kulkarni,Functionality,6.8
+91,Prof. Kulkarni,Problem Relevance,3.9
+91,Prof. Kulkarni,Creativity,3.0
+91,Prof. Kulkarni,Demo & Explanation,7.2
+91,Prof. Kulkarni,Overall Impact,7.5
+91,Ms. Iyer,Innovation,6.5
+91,Ms. Iyer,Technical Implementation,3.7
+91,Ms. Iyer,Functionality,6.5
+91,Ms. Iyer,Problem Relevance,8.3
+91,Ms. Iyer,Creativity,6.2
+91,Ms. Iyer,Demo & Explanation,8.0
+91,Ms. Iyer,Overall Impact,3.8
+92,Dr. Rao,Innovation,9.3
+92,Dr. Rao,Technical Implementation,9.4
+92,Dr. Rao,Functionality,6.8
+92,Dr. Rao,Problem Relevance,3.6
+92,Dr. Rao,Creativity,6.3
+92,Dr. Rao,Demo & Explanation,9.9
+92,Dr. Rao,Overall Impact,8.3
+92,Prof. Kulkarni,Innovation,8.0
+92,Prof. Kulkarni,Technical Implementation,9.9
+92,Prof. Kulkarni,Functionality,3.3
+92,Prof. Kulkarni,Problem Relevance,3.5
+92,Prof. Kulkarni,Creativity,3.6
+92,Prof. Kulkarni,Demo & Explanation,7.8
+92,Prof. Kulkarni,Overall Impact,7.1
+92,Ms. Iyer,Innovation,3.1
+92,Ms. Iyer,Technical Implementation,3.3
+92,Ms. Iyer,Functionality,8.1
+92,Ms. Iyer,Problem Relevance,9.5
+92,Ms. Iyer,Creativity,4.7
+92,Ms. Iyer,Demo & Explanation,4.1
+92,Ms. Iyer,Overall Impact,3.0
+93,Dr. Rao,Innovation,7.8
+93,Dr. Rao,Technical Implementation,4.4
+93,Dr. Rao,Functionality,8.7
+93,Dr. Rao,Problem Relevance,4.4
+93,Dr. Rao,Creativity,9.1
+93,Dr. Rao,Demo & Explanation,9.5
+93,Dr. Rao,Overall Impact,8.8
+93,Prof. Kulkarni,Innovation,5.0
+93,Prof. Kulkarni,Technical Implementation,9.9
+93,Prof. Kulkarni,Functionality,8.7
+93,Prof. Kulkarni,Problem Relevance,6.1
+93,Prof. Kulkarni,Creativity,6.3
+93,Prof. Kulkarni,Demo & Explanation,5.4
+93,Prof. Kulkarni,Overall Impact,7.0
+93,Ms. Iyer,Innovation,5.5
+93,Ms. Iyer,Technical Implementation,6.5
+93,Ms. Iyer,Functionality,5.2
+93,Ms. Iyer,Problem Relevance,6.7
+93,Ms. Iyer,Creativity,3.4
+93,Ms. Iyer,Demo & Explanation,6.4
+93,Ms. Iyer,Overall Impact,3.0
+94,Dr. Rao,Innovation,9.8
+94,Dr. Rao,Technical Implementation,4.5
+94,Dr. Rao,Functionality,6.3
+94,Dr. Rao,Problem Relevance,4.3
+94,Dr. Rao,Creativity,8.5
+94,Dr. Rao,Demo & Explanation,3.9
+94,Dr. Rao,Overall Impact,9.9
+94,Prof. Kulkarni,Innovation,5.4
+94,Prof. Kulkarni,Technical Implementation,9.5
+94,Prof. Kulkarni,Functionality,4.7
+94,Prof. Kulkarni,Problem Relevance,3.0
+94,Prof. Kulkarni,Creativity,8.2
+94,Prof. Kulkarni,Demo & Explanation,9.5
+94,Prof. Kulkarni,Overall Impact,3.1
+94,Ms. Iyer,Innovation,4.1
+94,Ms. Iyer,Technical Implementation,5.5
+94,Ms. Iyer,Functionality,7.2
+94,Ms. Iyer,Problem Relevance,5.6
+94,Ms. Iyer,Creativity,10.0
+94,Ms. Iyer,Demo & Explanation,6.0
+94,Ms. Iyer,Overall Impact,4.2
+95,Dr. Rao,Innovation,5.7
+95,Dr. Rao,Technical Implementation,5.8
+95,Dr. Rao,Functionality,6.3
+95,Dr. Rao,Problem Relevance,6.9
+95,Dr. Rao,Creativity,6.6
+95,Dr. Rao,Demo & Explanation,7.1
+95,Dr. Rao,Overall Impact,5.1
+95,Prof. Kulkarni,Innovation,7.9
+95,Prof. Kulkarni,Technical Implementation,9.5
+95,Prof. Kulkarni,Functionality,8.6
+95,Prof. Kulkarni,Problem Relevance,8.5
+95,Prof. Kulkarni,Creativity,9.0
+95,Prof. Kulkarni,Demo & Explanation,8.5
+95,Prof. Kulkarni,Overall Impact,7.4
+95,Ms. Iyer,Innovation,9.9
+95,Ms. Iyer,Technical Implementation,4.6
+95,Ms. Iyer,Functionality,3.9
+95,Ms. Iyer,Problem Relevance,9.6
+95,Ms. Iyer,Creativity,6.6
+95,Ms. Iyer,Demo & Explanation,3.3
+95,Ms. Iyer,Overall Impact,9.9
+96,Dr. Rao,Innovation,9.2
+96,Dr. Rao,Technical Implementation,9.8
+96,Dr. Rao,Functionality,5.5
+96,Dr. Rao,Problem Relevance,3.9
+96,Dr. Rao,Creativity,3.5
+96,Dr. Rao,Demo & Explanation,6.9
+96,Dr. Rao,Overall Impact,7.0
+96,Prof. Kulkarni,Innovation,9.4
+96,Prof. Kulkarni,Technical Implementation,5.6
+96,Prof. Kulkarni,Functionality,7.3
+96,Prof. Kulkarni,Problem Relevance,4.7
+96,Prof. Kulkarni,Creativity,5.8
+96,Prof. Kulkarni,Demo & Explanation,7.3
+96,Prof. Kulkarni,Overall Impact,9.1
+96,Ms. Iyer,Innovation,7.1
+96,Ms. Iyer,Technical Implementation,9.7
+96,Ms. Iyer,Functionality,9.6
+96,Ms. Iyer,Problem Relevance,3.1
+96,Ms. Iyer,Creativity,3.7
+96,Ms. Iyer,Demo & Explanation,3.5
+96,Ms. Iyer,Overall Impact,3.5
+97,Dr. Rao,Innovation,6.0
+97,Dr. Rao,Technical Implementation,9.5
+97,Dr. Rao,Functionality,8.5
+97,Dr. Rao,Problem Relevance,7.7
+97,Dr. Rao,Creativity,5.0
+97,Dr. Rao,Demo & Explanation,7.5
+97,Dr. Rao,Overall Impact,3.5
+97,Prof. Kulkarni,Innovation,5.9
+97,Prof. Kulkarni,Technical Implementation,4.7
+97,Prof. Kulkarni,Functionality,5.1
+97,Prof. Kulkarni,Problem Relevance,3.4
+97,Prof. Kulkarni,Creativity,8.1
+97,Prof. Kulkarni,Demo & Explanation,6.0
+97,Prof. Kulkarni,Overall Impact,8.0
+97,Ms. Iyer,Innovation,3.6
+97,Ms. Iyer,Technical Implementation,5.8
+97,Ms. Iyer,Functionality,6.7
+97,Ms. Iyer,Problem Relevance,7.5
+97,Ms. Iyer,Creativity,10.0
+97,Ms. Iyer,Demo & Explanation,9.7
+97,Ms. Iyer,Overall Impact,7.9
+98,Dr. Rao,Innovation,6.5
+98,Dr. Rao,Technical Implementation,7.5
+98,Dr. Rao,Functionality,3.1
+98,Dr. Rao,Problem Relevance,5.0
+98,Dr. Rao,Creativity,6.3
+98,Dr. Rao,Demo & Explanation,6.1
+98,Dr. Rao,Overall Impact,7.1
+98,Prof. Kulkarni,Innovation,7.9
+98,Prof. Kulkarni,Technical Implementation,4.9
+98,Prof. Kulkarni,Functionality,9.0
+98,Prof. Kulkarni,Problem Relevance,7.2
+98,Prof. Kulkarni,Creativity,6.5
+98,Prof. Kulkarni,Demo & Explanation,3.9
+98,Prof. Kulkarni,Overall Impact,3.0
+98,Ms. Iyer,Innovation,4.0
+98,Ms. Iyer,Technical Implementation,4.4
+98,Ms. Iyer,Functionality,4.0
+98,Ms. Iyer,Problem Relevance,5.3
+98,Ms. Iyer,Creativity,9.8
+98,Ms. Iyer,Demo & Explanation,3.1
+98,Ms. Iyer,Overall Impact,6.3
+99,Dr. Rao,Innovation,9.7
+99,Dr. Rao,Technical Implementation,7.6
+99,Dr. Rao,Functionality,9.7
+99,Dr. Rao,Problem Relevance,6.1
+99,Dr. Rao,Creativity,5.7
+99,Dr. Rao,Demo & Explanation,10.0
+99,Dr. Rao,Overall Impact,9.3
+99,Prof. Kulkarni,Innovation,9.7
+99,Prof. Kulkarni,Technical Implementation,8.3
+99,Prof. Kulkarni,Functionality,5.1
+99,Prof. Kulkarni,Problem Relevance,4.2
+99,Prof. Kulkarni,Creativity,6.8
+99,Prof. Kulkarni,Demo & Explanation,9.5
+99,Prof. Kulkarni,Overall Impact,4.6
+99,Ms. Iyer,Innovation,3.1
+99,Ms. Iyer,Technical Implementation,5.0
+99,Ms. Iyer,Functionality,4.5
+99,Ms. Iyer,Problem Relevance,3.9
+99,Ms. Iyer,Creativity,4.0
+99,Ms. Iyer,Demo & Explanation,9.9
+99,Ms. Iyer,Overall Impact,3.9
+100,Dr. Rao,Innovation,3.4
+100,Dr. Rao,Technical Implementation,4.6
+100,Dr. Rao,Functionality,9.7
+100,Dr. Rao,Problem Relevance,6.6
+100,Dr. Rao,Creativity,7.8
+100,Dr. Rao,Demo & Explanation,9.4
+100,Dr. Rao,Overall Impact,8.0
+100,Prof. Kulkarni,Innovation,8.3
+100,Prof. Kulkarni,Technical Implementation,6.3
+100,Prof. Kulkarni,Functionality,7.3
+100,Prof. Kulkarni,Problem Relevance,7.3
+100,Prof. Kulkarni,Creativity,8.8
+100,Prof. Kulkarni,Demo & Explanation,7.4
+100,Prof. Kulkarni,Overall Impact,4.5
+100,Ms. Iyer,Innovation,7.8
+100,Ms. Iyer,Technical Implementation,6.9
+100,Ms. Iyer,Functionality,4.8
+100,Ms. Iyer,Problem Relevance,3.9
+100,Ms. Iyer,Creativity,10.0
+100,Ms. Iyer,Demo & Explanation,8.3
+100,Ms. Iyer,Overall Impact,5.8
+101,Dr. Rao,Innovation,9.9
+101,Dr. Rao,Technical Implementation,6.7
+101,Dr. Rao,Functionality,6.3
+101,Dr. Rao,Problem Relevance,3.5
+101,Dr. Rao,Creativity,8.0
+101,Dr. Rao,Demo & Explanation,4.8
+101,Dr. Rao,Overall Impact,3.6
+101,Prof. Kulkarni,Innovation,9.6
+101,Prof. Kulkarni,Technical Implementation,6.5
+101,Prof. Kulkarni,Functionality,6.7
+101,Prof. Kulkarni,Problem Relevance,9.8
+101,Prof. Kulkarni,Creativity,5.6
+101,Prof. Kulkarni,Demo & Explanation,8.9
+101,Prof. Kulkarni,Overall Impact,3.7
+101,Ms. Iyer,Innovation,8.4
+101,Ms. Iyer,Technical Implementation,8.7
+101,Ms. Iyer,Functionality,5.4
+101,Ms. Iyer,Problem Relevance,6.7
+101,Ms. Iyer,Creativity,7.1
+101,Ms. Iyer,Demo & Explanation,3.4
+101,Ms. Iyer,Overall Impact,3.7
+102,Dr. Rao,Innovation,8.7
+102,Dr. Rao,Technical Implementation,8.4
+102,Dr. Rao,Functionality,5.8
+102,Dr. Rao,Problem Relevance,9.9
+102,Dr. Rao,Creativity,4.4
+102,Dr. Rao,Demo & Explanation,6.5
+102,Dr. Rao,Overall Impact,7.2
+102,Prof. Kulkarni,Innovation,5.7
+102,Prof. Kulkarni,Technical Implementation,5.3
+102,Prof. Kulkarni,Functionality,8.6
+102,Prof. Kulkarni,Problem Relevance,7.7
+102,Prof. Kulkarni,Creativity,6.5
+102,Prof. Kulkarni,Demo & Explanation,7.9
+102,Prof. Kulkarni,Overall Impact,5.8
+102,Ms. Iyer,Innovation,4.6
+102,Ms. Iyer,Technical Implementation,5.8
+102,Ms. Iyer,Functionality,4.5
+102,Ms. Iyer,Problem Relevance,8.7
+102,Ms. Iyer,Creativity,7.3
+102,Ms. Iyer,Demo & Explanation,6.8
+102,Ms. Iyer,Overall Impact,7.2
+103,Dr. Rao,Innovation,8.4
+103,Dr. Rao,Technical Implementation,9.1
+103,Dr. Rao,Functionality,7.7
+103,Dr. Rao,Problem Relevance,5.8
+103,Dr. Rao,Creativity,3.4
+103,Dr. Rao,Demo & Explanation,5.2
+103,Dr. Rao,Overall Impact,3.8
+103,Prof. Kulkarni,Innovation,6.5
+103,Prof. Kulkarni,Technical Implementation,4.4
+103,Prof. Kulkarni,Functionality,6.2
+103,Prof. Kulkarni,Problem Relevance,5.2
+103,Prof. Kulkarni,Creativity,7.6
+103,Prof. Kulkarni,Demo & Explanation,5.7
+103,Prof. Kulkarni,Overall Impact,8.1
+103,Ms. Iyer,Innovation,3.5
+103,Ms. Iyer,Technical Implementation,3.0
+103,Ms. Iyer,Functionality,8.4
+103,Ms. Iyer,Problem Relevance,7.5
+103,Ms. Iyer,Creativity,9.0
+103,Ms. Iyer,Demo & Explanation,4.7
+103,Ms. Iyer,Overall Impact,8.3
+104,Dr. Rao,Innovation,9.9
+104,Dr. Rao,Technical Implementation,3.6
+104,Dr. Rao,Functionality,4.1
+104,Dr. Rao,Problem Relevance,5.3
+104,Dr. Rao,Creativity,5.0
+104,Dr. Rao,Demo & Explanation,9.3
+104,Dr. Rao,Overall Impact,4.9
+104,Prof. Kulkarni,Innovation,5.6
+104,Prof. Kulkarni,Technical Implementation,5.0
+104,Prof. Kulkarni,Functionality,9.4
+104,Prof. Kulkarni,Problem Relevance,3.4
+104,Prof. Kulkarni,Creativity,7.4
+104,Prof. Kulkarni,Demo & Explanation,8.0
+104,Prof. Kulkarni,Overall Impact,5.9
+104,Ms. Iyer,Innovation,3.6
+104,Ms. Iyer,Technical Implementation,9.9
+104,Ms. Iyer,Functionality,9.1
+104,Ms. Iyer,Problem Relevance,7.8
+104,Ms. Iyer,Creativity,9.4
+104,Ms. Iyer,Demo & Explanation,7.8
+104,Ms. Iyer,Overall Impact,8.2
+105,Dr. Rao,Innovation,8.7
+105,Dr. Rao,Technical Implementation,8.6
+105,Dr. Rao,Functionality,6.2
+105,Dr. Rao,Problem Relevance,6.1
+105,Dr. Rao,Creativity,4.7
+105,Dr. Rao,Demo & Explanation,6.8
+105,Dr. Rao,Overall Impact,4.0
+105,Prof. Kulkarni,Innovation,9.8
+105,Prof. Kulkarni,Technical Implementation,4.2
+105,Prof. Kulkarni,Functionality,6.2
+105,Prof. Kulkarni,Problem Relevance,4.9
+105,Prof. Kulkarni,Creativity,7.1
+105,Prof. Kulkarni,Demo & Explanation,6.3
+105,Prof. Kulkarni,Overall Impact,4.0
+105,Ms. Iyer,Innovation,6.9
+105,Ms. Iyer,Technical Implementation,9.3
+105,Ms. Iyer,Functionality,5.3
+105,Ms. Iyer,Problem Relevance,6.2
+105,Ms. Iyer,Creativity,4.9
+105,Ms. Iyer,Demo & Explanation,7.6
+105,Ms. Iyer,Overall Impact,5.6
+106,Dr. Rao,Innovation,8.5
+106,Dr. Rao,Technical Implementation,4.6
+106,Dr. Rao,Functionality,3.2
+106,Dr. Rao,Problem Relevance,5.1
+106,Dr. Rao,Creativity,4.2
+106,Dr. Rao,Demo & Explanation,6.3
+106,Dr. Rao,Overall Impact,4.5
+106,Prof. Kulkarni,Innovation,3.8
+106,Prof. Kulkarni,Technical Implementation,7.8
+106,Prof. Kulkarni,Functionality,5.3
+106,Prof. Kulkarni,Problem Relevance,9.9
+106,Prof. Kulkarni,Creativity,7.8
+106,Prof. Kulkarni,Demo & Explanation,6.9
+106,Prof. Kulkarni,Overall Impact,5.8
+106,Ms. Iyer,Innovation,4.9
+106,Ms. Iyer,Technical Implementation,5.0
+106,Ms. Iyer,Functionality,5.2
+106,Ms. Iyer,Problem Relevance,7.7
+106,Ms. Iyer,Creativity,4.6
+106,Ms. Iyer,Demo & Explanation,4.4
+106,Ms. Iyer,Overall Impact,4.7
+107,Dr. Rao,Innovation,4.2
+107,Dr. Rao,Technical Implementation,9.2
+107,Dr. Rao,Functionality,7.8
+107,Dr. Rao,Problem Relevance,3.5
+107,Dr. Rao,Creativity,5.7
+107,Dr. Rao,Demo & Explanation,6.8
+107,Dr. Rao,Overall Impact,5.4
+107,Prof. Kulkarni,Innovation,8.7
+107,Prof. Kulkarni,Technical Implementation,8.8
+107,Prof. Kulkarni,Functionality,7.6
+107,Prof. Kulkarni,Problem Relevance,5.3
+107,Prof. Kulkarni,Creativity,7.0
+107,Prof. Kulkarni,Demo & Explanation,7.2
+107,Prof. Kulkarni,Overall Impact,6.2
+107,Ms. Iyer,Innovation,4.2
+107,Ms. Iyer,Technical Implementation,4.9
+107,Ms. Iyer,Functionality,5.3
+107,Ms. Iyer,Problem Relevance,4.8
+107,Ms. Iyer,Creativity,5.0
+107,Ms. Iyer,Demo & Explanation,7.2
+107,Ms. Iyer,Overall Impact,4.3
+108,Dr. Rao,Innovation,4.8
+108,Dr. Rao,Technical Implementation,7.9
+108,Dr. Rao,Functionality,8.6
+108,Dr. Rao,Problem Relevance,3.8
+108,Dr. Rao,Creativity,5.4
+108,Dr. Rao,Demo & Explanation,9.2
+108,Dr. Rao,Overall Impact,6.5
+108,Prof. Kulkarni,Innovation,9.9
+108,Prof. Kulkarni,Technical Implementation,9.4
+108,Prof. Kulkarni,Functionality,8.1
+108,Prof. Kulkarni,Problem Relevance,4.4
+108,Prof. Kulkarni,Creativity,4.8
+108,Prof. Kulkarni,Demo & Explanation,8.5
+108,Prof. Kulkarni,Overall Impact,3.4
+108,Ms. Iyer,Innovation,9.7
+108,Ms. Iyer,Technical Implementation,5.6
+108,Ms. Iyer,Functionality,9.7
+108,Ms. Iyer,Problem Relevance,6.0
+108,Ms. Iyer,Creativity,9.7
+108,Ms. Iyer,Demo & Explanation,3.9
+108,Ms. Iyer,Overall Impact,3.5
+109,Dr. Rao,Innovation,9.9
+109,Dr. Rao,Technical Implementation,8.6
+109,Dr. Rao,Functionality,6.9
+109,Dr. Rao,Problem Relevance,9.0
+109,Dr. Rao,Creativity,8.8
+109,Dr. Rao,Demo & Explanation,8.2
+109,Dr. Rao,Overall Impact,3.1
+109,Prof. Kulkarni,Innovation,5.8
+109,Prof. Kulkarni,Technical Implementation,3.9
+109,Prof. Kulkarni,Functionality,4.4
+109,Prof. Kulkarni,Problem Relevance,8.1
+109,Prof. Kulkarni,Creativity,4.0
+109,Prof. Kulkarni,Demo & Explanation,4.5
+109,Prof. Kulkarni,Overall Impact,8.1
+109,Ms. Iyer,Innovation,7.5
+109,Ms. Iyer,Technical Implementation,9.9
+109,Ms. Iyer,Functionality,6.0
+109,Ms. Iyer,Problem Relevance,6.4
+109,Ms. Iyer,Creativity,4.4
+109,Ms. Iyer,Demo & Explanation,5.8
+109,Ms. Iyer,Overall Impact,5.7
+110,Dr. Rao,Innovation,5.8
+110,Dr. Rao,Technical Implementation,9.2
+110,Dr. Rao,Functionality,4.0
+110,Dr. Rao,Problem Relevance,5.9
+110,Dr. Rao,Creativity,6.5
+110,Dr. Rao,Demo & Explanation,9.2
+110,Dr. Rao,Overall Impact,8.8
+110,Prof. Kulkarni,Innovation,7.9
+110,Prof. Kulkarni,Technical Implementation,9.4
+110,Prof. Kulkarni,Functionality,8.3
+110,Prof. Kulkarni,Problem Relevance,6.1
+110,Prof. Kulkarni,Creativity,3.1
+110,Prof. Kulkarni,Demo & Explanation,5.8
+110,Prof. Kulkarni,Overall Impact,8.4
+110,Ms. Iyer,Innovation,9.9
+110,Ms. Iyer,Technical Implementation,6.6
+110,Ms. Iyer,Functionality,3.7
+110,Ms. Iyer,Problem Relevance,9.7
+110,Ms. Iyer,Creativity,3.8
+110,Ms. Iyer,Demo & Explanation,7.9
+110,Ms. Iyer,Overall Impact,4.7
+111,Dr. Rao,Innovation,9.7
+111,Dr. Rao,Technical Implementation,8.1
+111,Dr. Rao,Functionality,8.1
+111,Dr. Rao,Problem Relevance,5.7
+111,Dr. Rao,Creativity,3.8
+111,Dr. Rao,Demo & Explanation,8.8
+111,Dr. Rao,Overall Impact,7.0
+111,Prof. Kulkarni,Innovation,9.5
+111,Prof. Kulkarni,Technical Implementation,4.0
+111,Prof. Kulkarni,Functionality,9.4
+111,Prof. Kulkarni,Problem Relevance,7.4
+111,Prof. Kulkarni,Creativity,8.8
+111,Prof. Kulkarni,Demo & Explanation,3.3
+111,Prof. Kulkarni,Overall Impact,6.2
+111,Ms. Iyer,Innovation,4.3
+111,Ms. Iyer,Technical Implementation,7.9
+111,Ms. Iyer,Functionality,8.0
+111,Ms. Iyer,Problem Relevance,6.1
+111,Ms. Iyer,Creativity,7.8
+111,Ms. Iyer,Demo & Explanation,3.4
+111,Ms. Iyer,Overall Impact,9.8
+112,Dr. Rao,Innovation,3.9
+112,Dr. Rao,Technical Implementation,6.7
+112,Dr. Rao,Functionality,4.0
+112,Dr. Rao,Problem Relevance,4.8
+112,Dr. Rao,Creativity,4.3
+112,Dr. Rao,Demo & Explanation,8.7
+112,Dr. Rao,Overall Impact,9.3
+112,Prof. Kulkarni,Innovation,9.4
+112,Prof. Kulkarni,Technical Implementation,8.6
+112,Prof. Kulkarni,Functionality,9.4
+112,Prof. Kulkarni,Problem Relevance,5.8
+112,Prof. Kulkarni,Creativity,9.0
+112,Prof. Kulkarni,Demo & Explanation,6.3
+112,Prof. Kulkarni,Overall Impact,5.4
+112,Ms. Iyer,Innovation,9.0
+112,Ms. Iyer,Technical Implementation,10.0
+112,Ms. Iyer,Functionality,7.0
+112,Ms. Iyer,Problem Relevance,6.0
+112,Ms. Iyer,Creativity,4.5
+112,Ms. Iyer,Demo & Explanation,3.5
+112,Ms. Iyer,Overall Impact,6.8
+113,Dr. Rao,Innovation,9.0
+113,Dr. Rao,Technical Implementation,3.9
+113,Dr. Rao,Functionality,8.1
+113,Dr. Rao,Problem Relevance,7.6
+113,Dr. Rao,Creativity,7.5
+113,Dr. Rao,Demo & Explanation,3.3
+113,Dr. Rao,Overall Impact,6.1
+113,Prof. Kulkarni,Innovation,5.1
+113,Prof. Kulkarni,Technical Implementation,3.2
+113,Prof. Kulkarni,Functionality,6.0
+113,Prof. Kulkarni,Problem Relevance,3.2
+113,Prof. Kulkarni,Creativity,5.7
+113,Prof. Kulkarni,Demo & Explanation,7.0
+113,Prof. Kulkarni,Overall Impact,8.2
+113,Ms. Iyer,Innovation,7.0
+113,Ms. Iyer,Technical Implementation,4.1
+113,Ms. Iyer,Functionality,9.7
+113,Ms. Iyer,Problem Relevance,6.8
+113,Ms. Iyer,Creativity,4.6
+113,Ms. Iyer,Demo & Explanation,4.6
+113,Ms. Iyer,Overall Impact,9.4
+114,Dr. Rao,Innovation,4.0
+114,Dr. Rao,Technical Implementation,9.4
+114,Dr. Rao,Functionality,3.2
+114,Dr. Rao,Problem Relevance,8.6
+114,Dr. Rao,Creativity,9.5
+114,Dr. Rao,Demo & Explanation,6.6
+114,Dr. Rao,Overall Impact,5.7
+114,Prof. Kulkarni,Innovation,5.8
+114,Prof. Kulkarni,Technical Implementation,7.8
+114,Prof. Kulkarni,Functionality,3.2
+114,Prof. Kulkarni,Problem Relevance,9.0
+114,Prof. Kulkarni,Creativity,8.7
+114,Prof. Kulkarni,Demo & Explanation,5.7
+114,Prof. Kulkarni,Overall Impact,8.8
+114,Ms. Iyer,Innovation,6.3
+114,Ms. Iyer,Technical Implementation,9.4
+114,Ms. Iyer,Functionality,3.4
+114,Ms. Iyer,Problem Relevance,9.1
+114,Ms. Iyer,Creativity,8.6
+114,Ms. Iyer,Demo & Explanation,8.3
+114,Ms. Iyer,Overall Impact,5.3
+115,Dr. Rao,Innovation,6.4
+115,Dr. Rao,Technical Implementation,7.2
+115,Dr. Rao,Functionality,7.9
+115,Dr. Rao,Problem Relevance,3.2
+115,Dr. Rao,Creativity,3.1
+115,Dr. Rao,Demo & Explanation,3.3
+115,Dr. Rao,Overall Impact,7.5
+115,Prof. Kulkarni,Innovation,3.4
+115,Prof. Kulkarni,Technical Implementation,8.8
+115,Prof. Kulkarni,Functionality,6.5
+115,Prof. Kulkarni,Problem Relevance,7.8
+115,Prof. Kulkarni,Creativity,5.4
+115,Prof. Kulkarni,Demo & Explanation,5.3
+115,Prof. Kulkarni,Overall Impact,3.1
+115,Ms. Iyer,Innovation,3.0
+115,Ms. Iyer,Technical Implementation,9.3
+115,Ms. Iyer,Functionality,7.3
+115,Ms. Iyer,Problem Relevance,7.3
+115,Ms. Iyer,Creativity,4.5
+115,Ms. Iyer,Demo & Explanation,3.1
+115,Ms. Iyer,Overall Impact,8.7
+116,Dr. Rao,Innovation,9.6
+116,Dr. Rao,Technical Implementation,9.1
+116,Dr. Rao,Functionality,3.2
+116,Dr. Rao,Problem Relevance,3.3
+116,Dr. Rao,Creativity,9.0
+116,Dr. Rao,Demo & Explanation,5.0
+116,Dr. Rao,Overall Impact,9.4
+116,Prof. Kulkarni,Innovation,9.4
+116,Prof. Kulkarni,Technical Implementation,7.5
+116,Prof. Kulkarni,Functionality,6.8
+116,Prof. Kulkarni,Problem Relevance,5.0
+116,Prof. Kulkarni,Creativity,9.0
+116,Prof. Kulkarni,Demo & Explanation,6.2
+116,Prof. Kulkarni,Overall Impact,7.0
+116,Ms. Iyer,Innovation,7.1
+116,Ms. Iyer,Technical Implementation,8.0
+116,Ms. Iyer,Functionality,7.8
+116,Ms. Iyer,Problem Relevance,4.2
+116,Ms. Iyer,Creativity,8.5
+116,Ms. Iyer,Demo & Explanation,8.0
+116,Ms. Iyer,Overall Impact,8.2
+117,Dr. Rao,Innovation,5.9
+117,Dr. Rao,Technical Implementation,5.3
+117,Dr. Rao,Functionality,6.7
+117,Dr. Rao,Problem Relevance,8.1
+117,Dr. Rao,Creativity,9.0
+117,Dr. Rao,Demo & Explanation,4.9
+117,Dr. Rao,Overall Impact,5.2
+117,Prof. Kulkarni,Innovation,5.7
+117,Prof. Kulkarni,Technical Implementation,6.2
+117,Prof. Kulkarni,Functionality,7.5
+117,Prof. Kulkarni,Problem Relevance,5.1
+117,Prof. Kulkarni,Creativity,6.1
+117,Prof. Kulkarni,Demo & Explanation,3.2
+117,Prof. Kulkarni,Overall Impact,4.5
+117,Ms. Iyer,Innovation,8.5
+117,Ms. Iyer,Technical Implementation,3.3
+117,Ms. Iyer,Functionality,9.5
+117,Ms. Iyer,Problem Relevance,8.8
+117,Ms. Iyer,Creativity,7.6
+117,Ms. Iyer,Demo & Explanation,9.1
+117,Ms. Iyer,Overall Impact,5.3
+118,Dr. Rao,Innovation,5.1
+118,Dr. Rao,Technical Implementation,4.1
+118,Dr. Rao,Functionality,8.7
+118,Dr. Rao,Problem Relevance,4.9
+118,Dr. Rao,Creativity,9.1
+118,Dr. Rao,Demo & Explanation,5.1
+118,Dr. Rao,Overall Impact,4.4
+118,Prof. Kulkarni,Innovation,7.2
+118,Prof. Kulkarni,Technical Implementation,3.5
+118,Prof. Kulkarni,Functionality,7.2
+118,Prof. Kulkarni,Problem Relevance,5.3
+118,Prof. Kulkarni,Creativity,9.8
+118,Prof. Kulkarni,Demo & Explanation,6.4
+118,Prof. Kulkarni,Overall Impact,3.4
+118,Ms. Iyer,Innovation,6.3
+118,Ms. Iyer,Technical Implementation,8.5
+118,Ms. Iyer,Functionality,8.6
+118,Ms. Iyer,Problem Relevance,7.2
+118,Ms. Iyer,Creativity,6.9
+118,Ms. Iyer,Demo & Explanation,9.7
+118,Ms. Iyer,Overall Impact,9.4
+119,Dr. Rao,Innovation,7.2
+119,Dr. Rao,Technical Implementation,8.4
+119,Dr. Rao,Functionality,7.0
+119,Dr. Rao,Problem Relevance,5.9
+119,Dr. Rao,Creativity,7.1
+119,Dr. Rao,Demo & Explanation,7.9
+119,Dr. Rao,Overall Impact,7.7
+119,Prof. Kulkarni,Innovation,3.4
+119,Prof. Kulkarni,Technical Implementation,8.0
+119,Prof. Kulkarni,Functionality,9.3
+119,Prof. Kulkarni,Problem Relevance,4.3
+119,Prof. Kulkarni,Creativity,4.1
+119,Prof. Kulkarni,Demo & Explanation,6.2
+119,Prof. Kulkarni,Overall Impact,6.1
+119,Ms. Iyer,Innovation,5.8
+119,Ms. Iyer,Technical Implementation,5.0
+119,Ms. Iyer,Functionality,5.9
+119,Ms. Iyer,Problem Relevance,9.8
+119,Ms. Iyer,Creativity,8.5
+119,Ms. Iyer,Demo & Explanation,6.1
+119,Ms. Iyer,Overall Impact,4.1
+120,Dr. Rao,Innovation,9.1
+120,Dr. Rao,Technical Implementation,7.1
+120,Dr. Rao,Functionality,5.8
+120,Dr. Rao,Problem Relevance,6.1
+120,Dr. Rao,Creativity,4.0
+120,Dr. Rao,Demo & Explanation,8.9
+120,Dr. Rao,Overall Impact,7.7
+120,Prof. Kulkarni,Innovation,4.9
+120,Prof. Kulkarni,Technical Implementation,4.7
+120,Prof. Kulkarni,Functionality,6.2
+120,Prof. Kulkarni,Problem Relevance,7.1
+120,Prof. Kulkarni,Creativity,6.1
+120,Prof. Kulkarni,Demo & Explanation,8.6
+120,Prof. Kulkarni,Overall Impact,7.9
+120,Ms. Iyer,Innovation,9.5
+120,Ms. Iyer,Technical Implementation,6.1
+120,Ms. Iyer,Functionality,9.7
+120,Ms. Iyer,Problem Relevance,8.5
+120,Ms. Iyer,Creativity,4.1
+120,Ms. Iyer,Demo & Explanation,6.5
+120,Ms. Iyer,Overall Impact,3.1
+121,Dr. Rao,Innovation,6.9
+121,Dr. Rao,Technical Implementation,8.7
+121,Dr. Rao,Functionality,4.4
+121,Dr. Rao,Problem Relevance,9.4
+121,Dr. Rao,Creativity,5.3
+121,Dr. Rao,Demo & Explanation,7.1
+121,Dr. Rao,Overall Impact,8.0
+121,Prof. Kulkarni,Innovation,9.2
+121,Prof. Kulkarni,Technical Implementation,6.5
+121,Prof. Kulkarni,Functionality,5.4
+121,Prof. Kulkarni,Problem Relevance,6.8
+121,Prof. Kulkarni,Creativity,7.7
+121,Prof. Kulkarni,Demo & Explanation,9.9
+121,Prof. Kulkarni,Overall Impact,6.8
+121,Ms. Iyer,Innovation,8.4
+121,Ms. Iyer,Technical Implementation,6.9
+121,Ms. Iyer,Functionality,7.4
+121,Ms. Iyer,Problem Relevance,6.3
+121,Ms. Iyer,Creativity,4.7
+121,Ms. Iyer,Demo & Explanation,4.8
+121,Ms. Iyer,Overall Impact,8.0
+122,Dr. Rao,Innovation,3.1
+122,Dr. Rao,Technical Implementation,9.0
+122,Dr. Rao,Functionality,5.7
+122,Dr. Rao,Problem Relevance,4.4
+122,Dr. Rao,Creativity,9.8
+122,Dr. Rao,Demo & Explanation,3.4
+122,Dr. Rao,Overall Impact,4.1
+122,Prof. Kulkarni,Innovation,7.2
+122,Prof. Kulkarni,Technical Implementation,6.4
+122,Prof. Kulkarni,Functionality,6.7
+122,Prof. Kulkarni,Problem Relevance,7.2
+122,Prof. Kulkarni,Creativity,6.9
+122,Prof. Kulkarni,Demo & Explanation,7.0
+122,Prof. Kulkarni,Overall Impact,9.2
+122,Ms. Iyer,Innovation,9.0
+122,Ms. Iyer,Technical Implementation,8.0
+122,Ms. Iyer,Functionality,3.1
+122,Ms. Iyer,Problem Relevance,6.4
+122,Ms. Iyer,Creativity,3.4
+122,Ms. Iyer,Demo & Explanation,9.3
+122,Ms. Iyer,Overall Impact,8.7
+123,Dr. Rao,Innovation,6.5
+123,Dr. Rao,Technical Implementation,5.4
+123,Dr. Rao,Functionality,5.2
+123,Dr. Rao,Problem Relevance,3.6
+123,Dr. Rao,Creativity,6.2
+123,Dr. Rao,Demo & Explanation,7.6
+123,Dr. Rao,Overall Impact,9.2
+123,Prof. Kulkarni,Innovation,9.1
+123,Prof. Kulkarni,Technical Implementation,7.9
+123,Prof. Kulkarni,Functionality,4.7
+123,Prof. Kulkarni,Problem Relevance,3.5
+123,Prof. Kulkarni,Creativity,7.0
+123,Prof. Kulkarni,Demo & Explanation,7.9
+123,Prof. Kulkarni,Overall Impact,3.2
+123,Ms. Iyer,Innovation,4.2
+123,Ms. Iyer,Technical Implementation,7.2
+123,Ms. Iyer,Functionality,3.1
+123,Ms. Iyer,Problem Relevance,4.4
+123,Ms. Iyer,Creativity,9.9
+123,Ms. Iyer,Demo & Explanation,9.2
+123,Ms. Iyer,Overall Impact,6.5
+124,Dr. Rao,Innovation,7.3
+124,Dr. Rao,Technical Implementation,7.4
+124,Dr. Rao,Functionality,3.7
+124,Dr. Rao,Problem Relevance,3.0
+124,Dr. Rao,Creativity,9.0
+124,Dr. Rao,Demo & Explanation,5.1
+124,Dr. Rao,Overall Impact,8.9
+124,Prof. Kulkarni,Innovation,8.1
+124,Prof. Kulkarni,Technical Implementation,6.5
+124,Prof. Kulkarni,Functionality,5.0
+124,Prof. Kulkarni,Problem Relevance,4.6
+124,Prof. Kulkarni,Creativity,3.3
+124,Prof. Kulkarni,Demo & Explanation,4.0
+124,Prof. Kulkarni,Overall Impact,6.2
+124,Ms. Iyer,Innovation,5.1
+124,Ms. Iyer,Technical Implementation,3.3
+124,Ms. Iyer,Functionality,8.9
+124,Ms. Iyer,Problem Relevance,3.5
+124,Ms. Iyer,Creativity,3.9
+124,Ms. Iyer,Demo & Explanation,4.3
+124,Ms. Iyer,Overall Impact,8.2
+125,Dr. Rao,Innovation,8.0
+125,Dr. Rao,Technical Implementation,6.9
+125,Dr. Rao,Functionality,9.1
+125,Dr. Rao,Problem Relevance,7.1
+125,Dr. Rao,Creativity,8.9
+125,Dr. Rao,Demo & Explanation,5.7
+125,Dr. Rao,Overall Impact,5.9
+125,Prof. Kulkarni,Innovation,8.0
+125,Prof. Kulkarni,Technical Implementation,8.6
+125,Prof. Kulkarni,Functionality,4.2
+125,Prof. Kulkarni,Problem Relevance,8.3
+125,Prof. Kulkarni,Creativity,8.4
+125,Prof. Kulkarni,Demo & Explanation,6.1
+125,Prof. Kulkarni,Overall Impact,5.0
+125,Ms. Iyer,Innovation,9.1
+125,Ms. Iyer,Technical Implementation,8.5
+125,Ms. Iyer,Functionality,3.7
+125,Ms. Iyer,Problem Relevance,3.2
+125,Ms. Iyer,Creativity,7.7
+125,Ms. Iyer,Demo & Explanation,3.4
+125,Ms. Iyer,Overall Impact,3.1
+126,Dr. Rao,Innovation,7.2
+126,Dr. Rao,Technical Implementation,6.3
+126,Dr. Rao,Functionality,8.7
+126,Dr. Rao,Problem Relevance,5.4
+126,Dr. Rao,Creativity,3.7
+126,Dr. Rao,Demo & Explanation,6.1
+126,Dr. Rao,Overall Impact,9.5
+126,Prof. Kulkarni,Innovation,5.0
+126,Prof. Kulkarni,Technical Implementation,6.3
+126,Prof. Kulkarni,Functionality,7.6
+126,Prof. Kulkarni,Problem Relevance,4.4
+126,Prof. Kulkarni,Creativity,8.8
+126,Prof. Kulkarni,Demo & Explanation,4.5
+126,Prof. Kulkarni,Overall Impact,9.9
+126,Ms. Iyer,Innovation,3.7
+126,Ms. Iyer,Technical Implementation,8.5
+126,Ms. Iyer,Functionality,5.4
+126,Ms. Iyer,Problem Relevance,5.3
+126,Ms. Iyer,Creativity,9.4
+126,Ms. Iyer,Demo & Explanation,4.9
+126,Ms. Iyer,Overall Impact,5.5
+127,Dr. Rao,Innovation,7.9
+127,Dr. Rao,Technical Implementation,8.6
+127,Dr. Rao,Functionality,3.5
+127,Dr. Rao,Problem Relevance,9.9
+127,Dr. Rao,Creativity,8.0
+127,Dr. Rao,Demo & Explanation,4.0
+127,Dr. Rao,Overall Impact,9.9
+127,Prof. Kulkarni,Innovation,5.3
+127,Prof. Kulkarni,Technical Implementation,6.1
+127,Prof. Kulkarni,Functionality,7.5
+127,Prof. Kulkarni,Problem Relevance,3.3
+127,Prof. Kulkarni,Creativity,8.9
+127,Prof. Kulkarni,Demo & Explanation,8.2
+127,Prof. Kulkarni,Overall Impact,9.4
+127,Ms. Iyer,Innovation,7.4
+127,Ms. Iyer,Technical Implementation,6.8
+127,Ms. Iyer,Functionality,6.5
+127,Ms. Iyer,Problem Relevance,8.3
+127,Ms. Iyer,Creativity,3.0
+127,Ms. Iyer,Demo & Explanation,8.6
+127,Ms. Iyer,Overall Impact,7.1
+128,Dr. Rao,Innovation,8.6
+128,Dr. Rao,Technical Implementation,8.8
+128,Dr. Rao,Functionality,6.3
+128,Dr. Rao,Problem Relevance,8.9
+128,Dr. Rao,Creativity,5.2
+128,Dr. Rao,Demo & Explanation,9.2
+128,Dr. Rao,Overall Impact,3.9
+128,Prof. Kulkarni,Innovation,8.3
+128,Prof. Kulkarni,Technical Implementation,4.7
+128,Prof. Kulkarni,Functionality,7.6
+128,Prof. Kulkarni,Problem Relevance,4.4
+128,Prof. Kulkarni,Creativity,5.6
+128,Prof. Kulkarni,Demo & Explanation,7.3
+128,Prof. Kulkarni,Overall Impact,8.9
+128,Ms. Iyer,Innovation,5.8
+128,Ms. Iyer,Technical Implementation,4.7
+128,Ms. Iyer,Functionality,6.7
+128,Ms. Iyer,Problem Relevance,8.1
+128,Ms. Iyer,Creativity,7.7
+128,Ms. Iyer,Demo & Explanation,6.1
+128,Ms. Iyer,Overall Impact,7.7
+129,Dr. Rao,Innovation,7.5
+129,Dr. Rao,Technical Implementation,7.7
+129,Dr. Rao,Functionality,5.8
+129,Dr. Rao,Problem Relevance,8.3
+129,Dr. Rao,Creativity,6.6
+129,Dr. Rao,Demo & Explanation,5.4
+129,Dr. Rao,Overall Impact,4.6
+129,Prof. Kulkarni,Innovation,9.9
+129,Prof. Kulkarni,Technical Implementation,9.6
+129,Prof. Kulkarni,Functionality,3.2
+129,Prof. Kulkarni,Problem Relevance,7.3
+129,Prof. Kulkarni,Creativity,3.1
+129,Prof. Kulkarni,Demo & Explanation,3.3
+129,Prof. Kulkarni,Overall Impact,8.6
+129,Ms. Iyer,Innovation,8.1
+129,Ms. Iyer,Technical Implementation,3.6
+129,Ms. Iyer,Functionality,3.1
+129,Ms. Iyer,Problem Relevance,4.8
+129,Ms. Iyer,Creativity,6.7
+129,Ms. Iyer,Demo & Explanation,5.1
+129,Ms. Iyer,Overall Impact,8.9
+130,Dr. Rao,Innovation,6.0
+130,Dr. Rao,Technical Implementation,4.9
+130,Dr. Rao,Functionality,7.9
+130,Dr. Rao,Problem Relevance,9.9
+130,Dr. Rao,Creativity,4.4
+130,Dr. Rao,Demo & Explanation,8.1
+130,Dr. Rao,Overall Impact,6.1
+130,Prof. Kulkarni,Innovation,8.7
+130,Prof. Kulkarni,Technical Implementation,5.8
+130,Prof. Kulkarni,Functionality,4.0
+130,Prof. Kulkarni,Problem Relevance,7.0
+130,Prof. Kulkarni,Creativity,3.1
+130,Prof. Kulkarni,Demo & Explanation,8.7
+130,Prof. Kulkarni,Overall Impact,7.6
+130,Ms. Iyer,Innovation,5.3
+130,Ms. Iyer,Technical Implementation,3.2
+130,Ms. Iyer,Functionality,3.3
+130,Ms. Iyer,Problem Relevance,3.0
+130,Ms. Iyer,Creativity,7.2
+130,Ms. Iyer,Demo & Explanation,3.9
+130,Ms. Iyer,Overall Impact,8.5
+131,Dr. Rao,Innovation,9.1
+131,Dr. Rao,Technical Implementation,8.6
+131,Dr. Rao,Functionality,8.8
+131,Dr. Rao,Problem Relevance,9.0
+131,Dr. Rao,Creativity,9.1
+131,Dr. Rao,Demo & Explanation,3.5
+131,Dr. Rao,Overall Impact,9.6
+131,Prof. Kulkarni,Innovation,7.0
+131,Prof. Kulkarni,Technical Implementation,3.8
+131,Prof. Kulkarni,Functionality,7.2
+131,Prof. Kulkarni,Problem Relevance,5.8
+131,Prof. Kulkarni,Creativity,5.0
+131,Prof. Kulkarni,Demo & Explanation,9.5
+131,Prof. Kulkarni,Overall Impact,3.9
+131,Ms. Iyer,Innovation,4.6
+131,Ms. Iyer,Technical Implementation,6.1
+131,Ms. Iyer,Functionality,9.5
+131,Ms. Iyer,Problem Relevance,3.6
+131,Ms. Iyer,Creativity,8.8
+131,Ms. Iyer,Demo & Explanation,6.5
+131,Ms. Iyer,Overall Impact,8.7
+132,Dr. Rao,Innovation,8.6
+132,Dr. Rao,Technical Implementation,9.7
+132,Dr. Rao,Functionality,9.9
+132,Dr. Rao,Problem Relevance,8.8
+132,Dr. Rao,Creativity,9.2
+132,Dr. Rao,Demo & Explanation,9.7
+132,Dr. Rao,Overall Impact,3.2
+132,Prof. Kulkarni,Innovation,5.8
+132,Prof. Kulkarni,Technical Implementation,9.5
+132,Prof. Kulkarni,Functionality,5.3
+132,Prof. Kulkarni,Problem Relevance,8.1
+132,Prof. Kulkarni,Creativity,3.6
+132,Prof. Kulkarni,Demo & Explanation,5.7
+132,Prof. Kulkarni,Overall Impact,6.9
+132,Ms. Iyer,Innovation,5.7
+132,Ms. Iyer,Technical Implementation,7.6
+132,Ms. Iyer,Functionality,9.3
+132,Ms. Iyer,Problem Relevance,6.2
+132,Ms. Iyer,Creativity,9.5
+132,Ms. Iyer,Demo & Explanation,8.0
+132,Ms. Iyer,Overall Impact,6.4
+133,Dr. Rao,Innovation,9.9
+133,Dr. Rao,Technical Implementation,6.3
+133,Dr. Rao,Functionality,6.4
+133,Dr. Rao,Problem Relevance,3.2
+133,Dr. Rao,Creativity,6.0
+133,Dr. Rao,Demo & Explanation,9.5
+133,Dr. Rao,Overall Impact,5.0
+133,Prof. Kulkarni,Innovation,4.5
+133,Prof. Kulkarni,Technical Implementation,4.6
+133,Prof. Kulkarni,Functionality,4.7
+133,Prof. Kulkarni,Problem Relevance,9.2
+133,Prof. Kulkarni,Creativity,6.5
+133,Prof. Kulkarni,Demo & Explanation,5.4
+133,Prof. Kulkarni,Overall Impact,7.5
+133,Ms. Iyer,Innovation,9.5
+133,Ms. Iyer,Technical Implementation,5.1
+133,Ms. Iyer,Functionality,4.0
+133,Ms. Iyer,Problem Relevance,4.1
+133,Ms. Iyer,Creativity,8.3
+133,Ms. Iyer,Demo & Explanation,4.4
+133,Ms. Iyer,Overall Impact,8.7
+134,Dr. Rao,Innovation,6.6
+134,Dr. Rao,Technical Implementation,5.2
+134,Dr. Rao,Functionality,6.7
+134,Dr. Rao,Problem Relevance,4.2
+134,Dr. Rao,Creativity,5.9
+134,Dr. Rao,Demo & Explanation,5.4
+134,Dr. Rao,Overall Impact,3.1
+134,Prof. Kulkarni,Innovation,7.0
+134,Prof. Kulkarni,Technical Implementation,3.2
+134,Prof. Kulkarni,Functionality,3.4
+134,Prof. Kulkarni,Problem Relevance,3.2
+134,Prof. Kulkarni,Creativity,9.3
+134,Prof. Kulkarni,Demo & Explanation,3.2
+134,Prof. Kulkarni,Overall Impact,6.8
+134,Ms. Iyer,Innovation,4.5
+134,Ms. Iyer,Technical Implementation,9.4
+134,Ms. Iyer,Functionality,7.0
+134,Ms. Iyer,Problem Relevance,9.3
+134,Ms. Iyer,Creativity,9.5
+134,Ms. Iyer,Demo & Explanation,8.6
+134,Ms. Iyer,Overall Impact,3.5
+135,Dr. Rao,Innovation,4.6
+135,Dr. Rao,Technical Implementation,9.0
+135,Dr. Rao,Functionality,3.7
+135,Dr. Rao,Problem Relevance,4.2
+135,Dr. Rao,Creativity,6.4
+135,Dr. Rao,Demo & Explanation,5.8
+135,Dr. Rao,Overall Impact,4.5
+135,Prof. Kulkarni,Innovation,8.0
+135,Prof. Kulkarni,Technical Implementation,7.8
+135,Prof. Kulkarni,Functionality,7.2
+135,Prof. Kulkarni,Problem Relevance,8.7
+135,Prof. Kulkarni,Creativity,8.2
+135,Prof. Kulkarni,Demo & Explanation,7.4
+135,Prof. Kulkarni,Overall Impact,8.7
+135,Ms. Iyer,Innovation,6.8
+135,Ms. Iyer,Technical Implementation,4.5
+135,Ms. Iyer,Functionality,7.8
+135,Ms. Iyer,Problem Relevance,10.0
+135,Ms. Iyer,Creativity,4.2
+135,Ms. Iyer,Demo & Explanation,7.8
+135,Ms. Iyer,Overall Impact,4.4
+136,Dr. Rao,Innovation,9.3
+136,Dr. Rao,Technical Implementation,4.6
+136,Dr. Rao,Functionality,9.8
+136,Dr. Rao,Problem Relevance,8.7
+136,Dr. Rao,Creativity,3.5
+136,Dr. Rao,Demo & Explanation,5.4
+136,Dr. Rao,Overall Impact,3.3
+136,Prof. Kulkarni,Innovation,9.8
+136,Prof. Kulkarni,Technical Implementation,6.3
+136,Prof. Kulkarni,Functionality,3.7
+136,Prof. Kulkarni,Problem Relevance,8.6
+136,Prof. Kulkarni,Creativity,3.7
+136,Prof. Kulkarni,Demo & Explanation,9.4
+136,Prof. Kulkarni,Overall Impact,3.5
+136,Ms. Iyer,Innovation,4.1
+136,Ms. Iyer,Technical Implementation,3.9
+136,Ms. Iyer,Functionality,7.6
+136,Ms. Iyer,Problem Relevance,7.1
+136,Ms. Iyer,Creativity,8.6
+136,Ms. Iyer,Demo & Explanation,8.9
+136,Ms. Iyer,Overall Impact,5.5
+137,Dr. Rao,Innovation,9.4
+137,Dr. Rao,Technical Implementation,9.9
+137,Dr. Rao,Functionality,8.9
+137,Dr. Rao,Problem Relevance,9.9
+137,Dr. Rao,Creativity,4.9
+137,Dr. Rao,Demo & Explanation,4.9
+137,Dr. Rao,Overall Impact,3.6
+137,Prof. Kulkarni,Innovation,7.6
+137,Prof. Kulkarni,Technical Implementation,9.1
+137,Prof. Kulkarni,Functionality,6.1
+137,Prof. Kulkarni,Problem Relevance,6.8
+137,Prof. Kulkarni,Creativity,8.7
+137,Prof. Kulkarni,Demo & Explanation,5.6
+137,Prof. Kulkarni,Overall Impact,3.6
+137,Ms. Iyer,Innovation,8.6
+137,Ms. Iyer,Technical Implementation,3.0
+137,Ms. Iyer,Functionality,4.4
+137,Ms. Iyer,Problem Relevance,4.2
+137,Ms. Iyer,Creativity,8.0
+137,Ms. Iyer,Demo & Explanation,8.1
+137,Ms. Iyer,Overall Impact,6.2
+138,Dr. Rao,Innovation,7.1
+138,Dr. Rao,Technical Implementation,5.5
+138,Dr. Rao,Functionality,3.6
+138,Dr. Rao,Problem Relevance,9.5
+138,Dr. Rao,Creativity,4.1
+138,Dr. Rao,Demo & Explanation,3.7
+138,Dr. Rao,Overall Impact,5.6
+138,Prof. Kulkarni,Innovation,9.5
+138,Prof. Kulkarni,Technical Implementation,9.4
+138,Prof. Kulkarni,Functionality,6.5
+138,Prof. Kulkarni,Problem Relevance,9.6
+138,Prof. Kulkarni,Creativity,6.0
+138,Prof. Kulkarni,Demo & Explanation,7.2
+138,Prof. Kulkarni,Overall Impact,8.5
+138,Ms. Iyer,Innovation,5.6
+138,Ms. Iyer,Technical Implementation,5.5
+138,Ms. Iyer,Functionality,9.5
+138,Ms. Iyer,Problem Relevance,9.4
+138,Ms. Iyer,Creativity,4.9
+138,Ms. Iyer,Demo & Explanation,8.8
+138,Ms. Iyer,Overall Impact,7.1
+139,Dr. Rao,Innovation,3.9
+139,Dr. Rao,Technical Implementation,3.5
+139,Dr. Rao,Functionality,4.3
+139,Dr. Rao,Problem Relevance,6.7
+139,Dr. Rao,Creativity,8.8
+139,Dr. Rao,Demo & Explanation,5.2
+139,Dr. Rao,Overall Impact,5.8
+139,Prof. Kulkarni,Innovation,3.7
+139,Prof. Kulkarni,Technical Implementation,9.6
+139,Prof. Kulkarni,Functionality,8.2
+139,Prof. Kulkarni,Problem Relevance,4.6
+139,Prof. Kulkarni,Creativity,6.1
+139,Prof. Kulkarni,Demo & Explanation,5.6
+139,Prof. Kulkarni,Overall Impact,7.3
+139,Ms. Iyer,Innovation,8.4
+139,Ms. Iyer,Technical Implementation,8.1
+139,Ms. Iyer,Functionality,8.9
+139,Ms. Iyer,Problem Relevance,6.1
+139,Ms. Iyer,Creativity,3.9
+139,Ms. Iyer,Demo & Explanation,5.9
+139,Ms. Iyer,Overall Impact,3.4
+140,Dr. Rao,Innovation,9.3
+140,Dr. Rao,Technical Implementation,3.0
+140,Dr. Rao,Functionality,3.2
+140,Dr. Rao,Problem Relevance,7.0
+140,Dr. Rao,Creativity,7.1
+140,Dr. Rao,Demo & Explanation,8.6
+140,Dr. Rao,Overall Impact,4.8
+140,Prof. Kulkarni,Innovation,7.9
+140,Prof. Kulkarni,Technical Implementation,5.7
+140,Prof. Kulkarni,Functionality,4.4
+140,Prof. Kulkarni,Problem Relevance,8.2
+140,Prof. Kulkarni,Creativity,8.8
+140,Prof. Kulkarni,Demo & Explanation,6.1
+140,Prof. Kulkarni,Overall Impact,6.9
+140,Ms. Iyer,Innovation,3.1
+140,Ms. Iyer,Technical Implementation,9.9
+140,Ms. Iyer,Functionality,4.4
+140,Ms. Iyer,Problem Relevance,3.9
+140,Ms. Iyer,Creativity,7.2
+140,Ms. Iyer,Demo & Explanation,9.7
+140,Ms. Iyer,Overall Impact,5.2
+141,Dr. Rao,Innovation,9.3
+141,Dr. Rao,Technical Implementation,4.8
+141,Dr. Rao,Functionality,6.1
+141,Dr. Rao,Problem Relevance,7.0
+141,Dr. Rao,Creativity,7.2
+141,Dr. Rao,Demo & Explanation,5.7
+141,Dr. Rao,Overall Impact,8.1
+141,Prof. Kulkarni,Innovation,6.4
+141,Prof. Kulkarni,Technical Implementation,7.7
+141,Prof. Kulkarni,Functionality,6.1
+141,Prof. Kulkarni,Problem Relevance,9.5
+141,Prof. Kulkarni,Creativity,5.1
+141,Prof. Kulkarni,Demo & Explanation,9.7
+141,Prof. Kulkarni,Overall Impact,4.9
+141,Ms. Iyer,Innovation,6.2
+141,Ms. Iyer,Technical Implementation,3.3
+141,Ms. Iyer,Functionality,8.4
+141,Ms. Iyer,Problem Relevance,3.1
+141,Ms. Iyer,Creativity,8.2
+141,Ms. Iyer,Demo & Explanation,6.2
+141,Ms. Iyer,Overall Impact,7.2
+142,Dr. Rao,Innovation,8.0
+142,Dr. Rao,Technical Implementation,8.3
+142,Dr. Rao,Functionality,9.0
+142,Dr. Rao,Problem Relevance,7.5
+142,Dr. Rao,Creativity,6.3
+142,Dr. Rao,Demo & Explanation,6.4
+142,Dr. Rao,Overall Impact,6.8
+142,Prof. Kulkarni,Innovation,8.7
+142,Prof. Kulkarni,Technical Implementation,5.6
+142,Prof. Kulkarni,Functionality,7.9
+142,Prof. Kulkarni,Problem Relevance,3.5
+142,Prof. Kulkarni,Creativity,6.2
+142,Prof. Kulkarni,Demo & Explanation,3.1
+142,Prof. Kulkarni,Overall Impact,7.5
+142,Ms. Iyer,Innovation,7.6
+142,Ms. Iyer,Technical Implementation,9.0
+142,Ms. Iyer,Functionality,8.7
+142,Ms. Iyer,Problem Relevance,9.9
+142,Ms. Iyer,Creativity,6.1
+142,Ms. Iyer,Demo & Explanation,7.1
+142,Ms. Iyer,Overall Impact,6.4
+143,Dr. Rao,Innovation,4.8
+143,Dr. Rao,Technical Implementation,4.9
+143,Dr. Rao,Functionality,6.1
+143,Dr. Rao,Problem Relevance,5.7
+143,Dr. Rao,Creativity,6.1
+143,Dr. Rao,Demo & Explanation,5.0
+143,Dr. Rao,Overall Impact,3.5
+143,Prof. Kulkarni,Innovation,6.8
+143,Prof. Kulkarni,Technical Implementation,3.2
+143,Prof. Kulkarni,Functionality,6.5
+143,Prof. Kulkarni,Problem Relevance,6.0
+143,Prof. Kulkarni,Creativity,5.4
+143,Prof. Kulkarni,Demo & Explanation,9.5
+143,Prof. Kulkarni,Overall Impact,3.5
+143,Ms. Iyer,Innovation,6.9
+143,Ms. Iyer,Technical Implementation,8.5
+143,Ms. Iyer,Functionality,8.9
+143,Ms. Iyer,Problem Relevance,6.3
+143,Ms. Iyer,Creativity,5.6
+143,Ms. Iyer,Demo & Explanation,6.9
+143,Ms. Iyer,Overall Impact,9.5
+144,Dr. Rao,Innovation,3.2
+144,Dr. Rao,Technical Implementation,4.4
+144,Dr. Rao,Functionality,5.3
+144,Dr. Rao,Problem Relevance,7.2
+144,Dr. Rao,Creativity,4.9
+144,Dr. Rao,Demo & Explanation,3.4
+144,Dr. Rao,Overall Impact,3.1
+144,Prof. Kulkarni,Innovation,4.4
+144,Prof. Kulkarni,Technical Implementation,7.2
+144,Prof. Kulkarni,Functionality,3.7
+144,Prof. Kulkarni,Problem Relevance,4.1
+144,Prof. Kulkarni,Creativity,4.4
+144,Prof. Kulkarni,Demo & Explanation,5.0
+144,Prof. Kulkarni,Overall Impact,4.0
+144,Ms. Iyer,Innovation,9.5
+144,Ms. Iyer,Technical Implementation,4.7
+144,Ms. Iyer,Functionality,5.6
+144,Ms. Iyer,Problem Relevance,7.2
+144,Ms. Iyer,Creativity,3.7
+144,Ms. Iyer,Demo & Explanation,4.6
+144,Ms. Iyer,Overall Impact,7.6
+145,Dr. Rao,Innovation,6.2
+145,Dr. Rao,Technical Implementation,7.1
+145,Dr. Rao,Functionality,5.0
+145,Dr. Rao,Problem Relevance,3.9
+145,Dr. Rao,Creativity,5.6
+145,Dr. Rao,Demo & Explanation,8.6
+145,Dr. Rao,Overall Impact,7.7
+145,Prof. Kulkarni,Innovation,6.5
+145,Prof. Kulkarni,Technical Implementation,5.3
+145,Prof. Kulkarni,Functionality,7.1
+145,Prof. Kulkarni,Problem Relevance,7.2
+145,Prof. Kulkarni,Creativity,5.4
+145,Prof. Kulkarni,Demo & Explanation,9.3
+145,Prof. Kulkarni,Overall Impact,9.7
+145,Ms. Iyer,Innovation,3.3
+145,Ms. Iyer,Technical Implementation,9.5
+145,Ms. Iyer,Functionality,8.5
+145,Ms. Iyer,Problem Relevance,6.9
+145,Ms. Iyer,Creativity,3.1
+145,Ms. Iyer,Demo & Explanation,8.8
+145,Ms. Iyer,Overall Impact,8.7
+146,Dr. Rao,Innovation,3.8
+146,Dr. Rao,Technical Implementation,5.8
+146,Dr. Rao,Functionality,9.2
+146,Dr. Rao,Problem Relevance,4.7
+146,Dr. Rao,Creativity,7.1
+146,Dr. Rao,Demo & Explanation,10.0
+146,Dr. Rao,Overall Impact,5.7
+146,Prof. Kulkarni,Innovation,7.5
+146,Prof. Kulkarni,Technical Implementation,6.7
+146,Prof. Kulkarni,Functionality,5.4
+146,Prof. Kulkarni,Problem Relevance,9.9
+146,Prof. Kulkarni,Creativity,3.3
+146,Prof. Kulkarni,Demo & Explanation,6.7
+146,Prof. Kulkarni,Overall Impact,4.2
+146,Ms. Iyer,Innovation,8.7
+146,Ms. Iyer,Technical Implementation,8.0
+146,Ms. Iyer,Functionality,5.8
+146,Ms. Iyer,Problem Relevance,7.7
+146,Ms. Iyer,Creativity,3.3
+146,Ms. Iyer,Demo & Explanation,7.4
+146,Ms. Iyer,Overall Impact,6.1
+147,Dr. Rao,Innovation,5.1
+147,Dr. Rao,Technical Implementation,8.5
+147,Dr. Rao,Functionality,8.8
+147,Dr. Rao,Problem Relevance,3.9
+147,Dr. Rao,Creativity,9.5
+147,Dr. Rao,Demo & Explanation,9.8
+147,Dr. Rao,Overall Impact,7.9
+147,Prof. Kulkarni,Innovation,6.3
+147,Prof. Kulkarni,Technical Implementation,9.2
+147,Prof. Kulkarni,Functionality,4.7
+147,Prof. Kulkarni,Problem Relevance,8.3
+147,Prof. Kulkarni,Creativity,6.1
+147,Prof. Kulkarni,Demo & Explanation,3.5
+147,Prof. Kulkarni,Overall Impact,3.2
+147,Ms. Iyer,Innovation,3.5
+147,Ms. Iyer,Technical Implementation,6.7
+147,Ms. Iyer,Functionality,4.9
+147,Ms. Iyer,Problem Relevance,9.9
+147,Ms. Iyer,Creativity,8.0
+147,Ms. Iyer,Demo & Explanation,4.2
+147,Ms. Iyer,Overall Impact,4.3
+148,Dr. Rao,Innovation,6.6
+148,Dr. Rao,Technical Implementation,6.7
+148,Dr. Rao,Functionality,8.8
+148,Dr. Rao,Problem Relevance,9.5
+148,Dr. Rao,Creativity,5.2
+148,Dr. Rao,Demo & Explanation,3.7
+148,Dr. Rao,Overall Impact,4.1
+148,Prof. Kulkarni,Innovation,7.8
+148,Prof. Kulkarni,Technical Implementation,7.4
+148,Prof. Kulkarni,Functionality,5.6
+148,Prof. Kulkarni,Problem Relevance,7.5
+148,Prof. Kulkarni,Creativity,8.3
+148,Prof. Kulkarni,Demo & Explanation,9.9
+148,Prof. Kulkarni,Overall Impact,8.3
+148,Ms. Iyer,Innovation,7.0
+148,Ms. Iyer,Technical Implementation,7.1
+148,Ms. Iyer,Functionality,6.9
+148,Ms. Iyer,Problem Relevance,7.8
+148,Ms. Iyer,Creativity,5.3
+148,Ms. Iyer,Demo & Explanation,9.0
+148,Ms. Iyer,Overall Impact,8.2
+149,Dr. Rao,Innovation,8.8
+149,Dr. Rao,Technical Implementation,9.0
+149,Dr. Rao,Functionality,9.0
+149,Dr. Rao,Problem Relevance,4.1
+149,Dr. Rao,Creativity,7.0
+149,Dr. Rao,Demo & Explanation,3.1
+149,Dr. Rao,Overall Impact,6.0
+149,Prof. Kulkarni,Innovation,3.2
+149,Prof. Kulkarni,Technical Implementation,4.9
+149,Prof. Kulkarni,Functionality,7.4
+149,Prof. Kulkarni,Problem Relevance,5.9
+149,Prof. Kulkarni,Creativity,6.7
+149,Prof. Kulkarni,Demo & Explanation,3.1
+149,Prof. Kulkarni,Overall Impact,6.3
+149,Ms. Iyer,Innovation,5.5
+149,Ms. Iyer,Technical Implementation,5.5
+149,Ms. Iyer,Functionality,8.1
+149,Ms. Iyer,Problem Relevance,9.5
+149,Ms. Iyer,Creativity,7.8
+149,Ms. Iyer,Demo & Explanation,3.7
+149,Ms. Iyer,Overall Impact,9.6

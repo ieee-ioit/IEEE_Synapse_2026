@@ -10,3 +10,7 @@ next-env.d.ts
 npm-debug.log*
 .DS_Store
 .dist/
+
+# audit run (test secrets, results)
+.env.audit
+audit/results/

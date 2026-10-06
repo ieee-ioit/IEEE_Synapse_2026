@@ -1,0 +1,211 @@
+finalistSlot,judge,criterion,value
+0,Jury A,Innovation,7.4
+0,Jury A,Technical Implementation,5.4
+0,Jury A,Functionality,9.1
+0,Jury A,Problem Relevance,7.5
+0,Jury A,Creativity,8.0
+0,Jury A,Demo & Explanation,5.6
+0,Jury A,Overall Impact,8.9
+0,Jury B,Innovation,8.3
+0,Jury B,Technical Implementation,8.1
+0,Jury B,Functionality,5.5
+0,Jury B,Problem Relevance,6.2
+0,Jury B,Creativity,9.0
+0,Jury B,Demo & Explanation,5.1
+0,Jury B,Overall Impact,10.0
+0,Jury C,Innovation,5.3
+0,Jury C,Technical Implementation,8.1
+0,Jury C,Functionality,9.7
+0,Jury C,Problem Relevance,9.9
+0,Jury C,Creativity,8.2
+0,Jury C,Demo & Explanation,5.1
+0,Jury C,Overall Impact,7.5
+1,Jury A,Innovation,5.4
+1,Jury A,Technical Implementation,6.7
+1,Jury A,Functionality,5.3
+1,Jury A,Problem Relevance,6.2
+1,Jury A,Creativity,6.6
+1,Jury A,Demo & Explanation,6.6
+1,Jury A,Overall Impact,5.9
+1,Jury B,Innovation,6.1
+1,Jury B,Technical Implementation,8.8
+1,Jury B,Functionality,8.6
+1,Jury B,Problem Relevance,6.6
+1,Jury B,Creativity,9.3
+1,Jury B,Demo & Explanation,9.4
+1,Jury B,Overall Impact,8.5
+1,Jury C,Innovation,6.2
+1,Jury C,Technical Implementation,5.5
+1,Jury C,Functionality,7.3
+1,Jury C,Problem Relevance,9.3
+1,Jury C,Creativity,8.5
+1,Jury C,Demo & Explanation,6.0
+1,Jury C,Overall Impact,7.7
+2,Jury A,Innovation,7.2
+2,Jury A,Technical Implementation,9.6
+2,Jury A,Functionality,9.7
+2,Jury A,Problem Relevance,5.6
+2,Jury A,Creativity,6.1
+2,Jury A,Demo & Explanation,8.5
+2,Jury A,Overall Impact,5.6
+2,Jury B,Innovation,8.5
+2,Jury B,Technical Implementation,7.7
+2,Jury B,Functionality,7.6
+2,Jury B,Problem Relevance,9.1
+2,Jury B,Creativity,7.9
+2,Jury B,Demo & Explanation,8.2
+2,Jury B,Overall Impact,9.2
+2,Jury C,Innovation,9.0
+2,Jury C,Technical Implementation,8.2
+2,Jury C,Functionality,8.7
+2,Jury C,Problem Relevance,7.3
+2,Jury C,Creativity,9.3
+2,Jury C,Demo & Explanation,9.0
+2,Jury C,Overall Impact,5.7
+3,Jury A,Innovation,5.4
+3,Jury A,Technical Implementation,8.9
+3,Jury A,Functionality,5.4
+3,Jury A,Problem Relevance,6.4
+3,Jury A,Creativity,5.8
+3,Jury A,Demo & Explanation,7.5
+3,Jury A,Overall Impact,9.1
+3,Jury B,Innovation,7.9
+3,Jury B,Technical Implementation,10.0
+3,Jury B,Functionality,6.6
+3,Jury B,Problem Relevance,6.8
+3,Jury B,Creativity,8.7
+3,Jury B,Demo & Explanation,5.1
+3,Jury B,Overall Impact,6.2
+3,Jury C,Innovation,7.0
+3,Jury C,Technical Implementation,6.3
+3,Jury C,Functionality,6.0
+3,Jury C,Problem Relevance,9.3
+3,Jury C,Creativity,7.8
+3,Jury C,Demo & Explanation,8.5
+3,Jury C,Overall Impact,5.1
+4,Jury A,Innovation,6.7
+4,Jury A,Technical Implementation,6.4
+4,Jury A,Functionality,8.3
+4,Jury A,Problem Relevance,7.3
+4,Jury A,Creativity,9.9
+4,Jury A,Demo & Explanation,6.7
+4,Jury A,Overall Impact,6.3
+4,Jury B,Innovation,8.9
+4,Jury B,Technical Implementation,7.3
+4,Jury B,Functionality,6.6
+4,Jury B,Problem Relevance,5.7
+4,Jury B,Creativity,6.6
+4,Jury B,Demo & Explanation,5.5
+4,Jury B,Overall Impact,8.2
+4,Jury C,Innovation,6.3
+4,Jury C,Technical Implementation,6.8
+4,Jury C,Functionality,8.7
+4,Jury C,Problem Relevance,7.0
+4,Jury C,Creativity,5.1
+4,Jury C,Demo & Explanation,5.2
+4,Jury C,Overall Impact,6.3
+5,Jury A,Innovation,9.7
+5,Jury A,Technical Implementation,8.0
+5,Jury A,Functionality,9.2
+5,Jury A,Problem Relevance,9.7
+5,Jury A,Creativity,8.9
+5,Jury A,Demo & Explanation,8.4
+5,Jury A,Overall Impact,9.2
+5,Jury B,Innovation,5.8
+5,Jury B,Technical Implementation,5.6
+5,Jury B,Functionality,8.9
+5,Jury B,Problem Relevance,5.2
+5,Jury B,Creativity,9.2
+5,Jury B,Demo & Explanation,8.6
+5,Jury B,Overall Impact,9.5
+5,Jury C,Innovation,7.7
+5,Jury C,Technical Implementation,5.7
+5,Jury C,Functionality,8.2
+5,Jury C,Problem Relevance,9.1
+5,Jury C,Creativity,8.5
+5,Jury C,Demo & Explanation,9.6
+5,Jury C,Overall Impact,5.1
+6,Jury A,Innovation,9.0
+6,Jury A,Technical Implementation,7.7
+6,Jury A,Functionality,10.0
+6,Jury A,Problem Relevance,6.0
+6,Jury A,Creativity,8.6
+6,Jury A,Demo & Explanation,6.6
+6,Jury A,Overall Impact,8.7
+6,Jury B,Innovation,7.9
+6,Jury B,Technical Implementation,8.0
+6,Jury B,Functionality,6.5
+6,Jury B,Problem Relevance,6.9
+6,Jury B,Creativity,5.5
+6,Jury B,Demo & Explanation,5.3
+6,Jury B,Overall Impact,9.5
+6,Jury C,Innovation,8.6
+6,Jury C,Technical Implementation,6.7
+6,Jury C,Functionality,7.9
+6,Jury C,Problem Relevance,9.1
+6,Jury C,Creativity,8.2
+6,Jury C,Demo & Explanation,5.1
+6,Jury C,Overall Impact,7.4
+7,Jury A,Innovation,7.6
+7,Jury A,Technical Implementation,8.5
+7,Jury A,Functionality,8.2
+7,Jury A,Problem Relevance,9.1
+7,Jury A,Creativity,9.5
+7,Jury A,Demo & Explanation,6.1
+7,Jury A,Overall Impact,7.7
+7,Jury B,Innovation,9.3
+7,Jury B,Technical Implementation,7.9
+7,Jury B,Functionality,5.7
+7,Jury B,Problem Relevance,8.2
+7,Jury B,Creativity,5.5
+7,Jury B,Demo & Explanation,7.5
+7,Jury B,Overall Impact,6.3
+7,Jury C,Innovation,7.7
+7,Jury C,Technical Implementation,9.2
+7,Jury C,Functionality,5.7
+7,Jury C,Problem Relevance,10.0
+7,Jury C,Creativity,5.8
+7,Jury C,Demo & Explanation,9.0
+7,Jury C,Overall Impact,6.2
+8,Jury A,Innovation,9.5
+8,Jury A,Technical Implementation,7.1
+8,Jury A,Functionality,9.8
+8,Jury A,Problem Relevance,9.0
+8,Jury A,Creativity,7.3
+8,Jury A,Demo & Explanation,6.4
+8,Jury A,Overall Impact,6.2
+8,Jury B,Innovation,6.2
+8,Jury B,Technical Implementation,8.8
+8,Jury B,Functionality,5.1
+8,Jury B,Problem Relevance,9.6
+8,Jury B,Creativity,9.8
+8,Jury B,Demo & Explanation,8.2
+8,Jury B,Overall Impact,9.7
+8,Jury C,Innovation,6.5
+8,Jury C,Technical Implementation,6.6
+8,Jury C,Functionality,7.2
+8,Jury C,Problem Relevance,7.8
+8,Jury C,Creativity,5.7
+8,Jury C,Demo & Explanation,9.7
+8,Jury C,Overall Impact,5.4
+9,Jury A,Innovation,5.0
+9,Jury A,Technical Implementation,8.1
+9,Jury A,Functionality,6.2
+9,Jury A,Problem Relevance,9.3
+9,Jury A,Creativity,9.8
+9,Jury A,Demo & Explanation,8.7
+9,Jury A,Overall Impact,6.8
+9,Jury B,Innovation,7.3
+9,Jury B,Technical Implementation,9.6
+9,Jury B,Functionality,7.0
+9,Jury B,Problem Relevance,6.7
+9,Jury B,Creativity,7.5
+9,Jury B,Demo & Explanation,7.5
+9,Jury B,Overall Impact,6.7
+9,Jury C,Innovation,8.9
+9,Jury C,Technical Implementation,5.4
+9,Jury C,Functionality,8.6
+9,Jury C,Problem Relevance,9.9
+9,Jury C,Creativity,6.2
+9,Jury C,Demo & Explanation,7.5
+9,Jury C,Overall Impact,8.8
