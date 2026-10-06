@@ -27,7 +27,9 @@ export const event = {
     eventStart: "2026-10-09T09:00:00+05:30",
     submissionDeadline: "2026-10-09T15:00:00+05:30",
   },
-  registrationCloseAt: "2026-10-07T00:00:00+05:30", // Unstop closes Oct 7, 2026 at 12 AM IST
+  registrationCloseAt: "2026-10-05T00:00:00+05:30", // Closed early due to capacity reached
+  registrationClosed: true,
+  registrationClosedMessage: "Registrations closed early — Housefull! Participation exceeded venue capacity.",
   registerUrl: "https://unstop.com/o/9wkXWNc?lb=useiidKW&utm_medium=Share&utm_source=online_coding_challenge&utm_campaign=Nlbkyedh98376",
   paymentFormUrl: "https://forms.gle/UhCtgharsh9VfR899",
   whatsappUrl: "https://chat.whatsapp.com/JlVDNdsMD2w5qGNXXP12tl",
@@ -43,8 +45,8 @@ export const event = {
     badgeFallback: "AISSMS IOIT Pune · 6-Hour Offline Hackathon",
     line1: { before: "Start at sunrise with an ", em: "empty repo", after: "." },
     line2: "Ship it by sundown.",
-    lede: "One day, one problem statement, one working product. Register your team, build from scratch in a 6-hour window, and pitch it to the judges.",
-    primaryCta: "Register on Unstop",
+    lede: "One day, one problem statement, one working product. Registrations are now closed early as participation exceeded expectations and capacity. Build from scratch in a 6-hour window, and pitch it to the judges.",
+    primaryCta: "Registrations Closed",
     secondaryCta: "Join the WhatsApp group",
   },
 

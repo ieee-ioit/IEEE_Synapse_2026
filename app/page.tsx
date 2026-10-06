@@ -25,10 +25,10 @@ export default function Home() {
               start={event.defaults.eventStart}
               deadline={event.defaults.submissionDeadline}
               pre={{
-                label: "Register",
+                label: "Registrations Closed",
                 href: trackedUrl(event.registerUrl, event.utm.register, "header"),
                 external: true,
-                pending: "Registration soon",
+                pending: "Registrations Closed",
               }}
               live={{ label: "Team Login", href: "/team/login" }}
               className="btn btn-solid header-cta"
