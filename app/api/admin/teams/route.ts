@@ -1,5 +1,6 @@
 import { newCredential } from "@/lib/codes";
 import { db } from "@/lib/db";
+import { setFinalists } from "@/lib/finalists";
 import { checkTeamRepo } from "@/lib/github";
 import { adminRoute, clientInfo, fail, ok } from "@/lib/http";
 import { logAudit } from "@/lib/logger";
@@ -13,12 +14,15 @@ const ACTIONS = [
   "reset-submission",
   "regenerate-code",
   "delete",
+  "set-finalists",
 ] as const;
 type Action = (typeof ACTIONS)[number];
 
 const UUID = /^[0-9a-f-]{36}$/i;
 
-export const POST = adminRoute<{ action?: string; ids?: string[] }>(async (admin, body, req) => {
+type Body = { action?: string; ids?: string[]; confirmIncomplete?: boolean; confirmTie?: boolean };
+
+export const POST = adminRoute<Body>(async (admin, body, req) => {
   const action = body.action as Action;
   if (!ACTIONS.includes(action)) return fail(400, "Unknown action.");
   const ids = (Array.isArray(body.ids) ? body.ids : []).filter((id) => typeof id === "string" && UUID.test(id));
@@ -79,5 +83,19 @@ export const POST = adminRoute<{ action?: string; ids?: string[] }>(async (admin
     case "delete":
       await sql`delete from teams where id = any(${ids}::uuid[])`;
       return ok();
+    case "set-finalists": {
+      const result = await setFinalists(ids, { confirmIncomplete: body.confirmIncomplete === true, confirmTie: body.confirmTie === true });
+      if (result.error) return fail(400, result.error);
+      await logAudit({
+        actorType: "admin",
+        actorId: admin.email,
+        action: "FINALISTS_SET",
+        targetType: "teams",
+        details: { teamNumbers: result.teamNumbers, count: result.teamNumbers!.length },
+        ip,
+        userAgent,
+      });
+      return ok({ teamNumbers: result.teamNumbers });
+    }
   }
 });
