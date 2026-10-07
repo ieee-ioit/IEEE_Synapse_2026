@@ -13,7 +13,10 @@ export const ok = (data: Record<string, unknown> = {}) =>
  * cross-site forms can't send that without a CORS preflight) and, when the
  * browser sends an Origin, it must be this site.
  */
-export async function readJsonBody<T>(req: Request): Promise<T | null> {
+export const MAX_BODY_BYTES = 1_000_000;
+export class BodyTooLarge extends Error {}
+
+export async function readJsonBody<T>(req: Request, maxBytes?: number): Promise<T | null> {
   if (!(req.headers.get("content-type") ?? "").includes("application/json")) return null;
   const origin = req.headers.get("origin");
   if (origin) {
@@ -24,8 +27,16 @@ export async function readJsonBody<T>(req: Request): Promise<T | null> {
       return null;
     }
   }
+  if (maxBytes && Number(req.headers.get("content-length") ?? 0) > maxBytes) throw new BodyTooLarge();
+  let text: string;
   try {
-    return (await req.json()) as T;
+    text = await req.text();
+  } catch {
+    return null;
+  }
+  if (maxBytes && text.length > maxBytes) throw new BodyTooLarge();
+  try {
+    return JSON.parse(text) as T;
   } catch {
     return null;
   }
@@ -48,10 +59,11 @@ export function adminRoute<T>(handler: AdminHandler<T>) {
     try {
       const admin = await getAdmin();
       if (!admin) return fail(401, "Your admin session has expired. Log in again.");
-      const body = await readJsonBody<T>(req);
+      const body = await readJsonBody<T>(req, MAX_BODY_BYTES);
       if (body === null) return fail(400, "Expected a JSON request from this site.");
       return await handler(admin, body, req);
     } catch (err) {
+      if (err instanceof BodyTooLarge) return fail(413, "That upload is too large (max 1 MB). Split the file and try again.");
       const { ip, userAgent } = clientInfo(req);
       let endpoint = "admin_api";
       try {
