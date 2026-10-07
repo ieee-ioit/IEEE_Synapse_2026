@@ -1,6 +1,6 @@
 import { compare } from "bcryptjs";
 import { db } from "@/lib/db";
-import { clientInfo, fail, ok, readJsonBody } from "@/lib/http";
+import { clientInfo, fail, failWithReference, ok, readJsonBody } from "@/lib/http";
 import { startSession } from "@/lib/session";
 
 // A valid bcrypt hash of a random string, so unknown emails take as long as wrong passwords.
@@ -32,7 +32,6 @@ export async function POST(req: Request) {
     await startSession("admin", admin.id);
     return ok();
   } catch (err) {
-    console.error("[admin login]", err);
-    return fail(500, (err as Error).message || "Login failed.");
+    return failWithReference(err, req);
   }
 }

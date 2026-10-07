@@ -7,8 +7,17 @@ import { downloadXlsx, readFirstSheet } from "@/components/sheets";
 import type { Criterion } from "@/lib/criteria";
 
 type Payload = { sheetRow: number; teamNumber: unknown; judge: string; values: Record<string, unknown>; notes: string };
-type CheckedRow = { index: number; teamNumber: number; teamName: string; judge: string; values: unknown[]; problems: string[] };
-type Summary = { rows: number; valid: number; invalid: number; scores: number; teams: number };
+type CheckedRow = { index: number; teamNumber: number; teamName: string; judge: string; judgeName: string; values: unknown[]; problems: string[]; warnings: string[] };
+type Summary = {
+  rows: number;
+  valid: number;
+  invalid: number;
+  scores: number;
+  teams: number;
+  incomplete: number;
+  judges: { name: string; rows: number }[];
+  judgeWarnings: string[];
+};
 
 const norm = (s: string) => s.trim().toLowerCase().replace(/\s+/g, " ");
 
@@ -16,6 +25,7 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
   const router = useRouter();
   const input = useRef<HTMLInputElement>(null);
   const [fileName, setFileName] = useState("");
+  const [stage, setStage] = useState<1 | 2>(1);
   const [payload, setPayload] = useState<Payload[] | null>(null);
   const [missing, setMissing] = useState<string[]>([]);
   const [preview, setPreview] = useState<{ summary: Summary; rows: CheckedRow[] } | null>(null);
@@ -24,12 +34,13 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
   const [busy, setBusy] = useState(false);
 
   function downloadTemplate() {
-    downloadXlsx("score-template.xlsx", [
+    downloadXlsx(`score-template-stage${stage}.xlsx`, [
       {
-        name: "Scores",
+        name: `Stage ${stage} Scores`,
         rows: teams.map((t) => ({
           "Team Number": t.teamNumber,
           "Team Name": t.name,
+          Stage: stage,
           Judge: "",
           ...Object.fromEntries(criteria.map((c) => [c.name, ""])),
           Notes: "",
@@ -76,7 +87,7 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
     }
     setPayload(built);
     setBusy(true);
-    const res = await api<{ summary: Summary; rows: CheckedRow[] }>("/api/admin/scores", { rows: built, dryRun: true });
+    const res = await api<{ summary: Summary; rows: CheckedRow[] }>("/api/admin/scores", { rows: built, stage, dryRun: true });
     setBusy(false);
     if (!res.ok) return setMsg({ kind: "error", text: res.error });
     setPreview(res.data);
@@ -84,12 +95,12 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
 
   async function commit() {
     if (!payload) return;
-    if (replaceAll && !window.confirm("Delete every existing score before importing this file?")) return;
+    if (replaceAll && !window.confirm(`Delete all existing Stage ${stage} scores before importing this file?`)) return;
     setBusy(true);
-    const res = await api<{ imported: number }>("/api/admin/scores", { rows: payload, replaceAll });
+    const res = await api<{ imported: number }>("/api/admin/scores", { rows: payload, stage, replaceAll });
     setBusy(false);
     if (!res.ok) return setMsg({ kind: "error", text: res.error });
-    setMsg({ kind: "ok", text: `Imported ${res.data.imported} scores. The leaderboard updates live if it's published.` });
+    setMsg({ kind: "ok", text: `Imported ${res.data.imported} Stage ${stage} scores. Rankings update live.` });
     setPreview(null);
     setPayload(null);
     setFileName("");
@@ -97,15 +108,34 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
   }
 
   const problems = preview?.rows.filter((r) => r.problems.length) ?? [];
+  const incomplete = preview?.rows.filter((r) => !r.problems.length && r.warnings.length) ?? [];
 
   return (
     <div className="stack">
+      <div style={{ display: "flex", gap: 12, alignItems: "center", marginBottom: 6 }}>
+        <span style={{ fontSize: 13, fontWeight: 500 }}>Target evaluation:</span>
+        <button
+          type="button"
+          className={`btn btn-sm ${stage === 1 ? "btn-solid" : "btn-ghost"}`}
+          onClick={() => { setStage(1); setPreview(null); setPayload(null); }}
+        >
+          Stage 1 (All Teams)
+        </button>
+        <button
+          type="button"
+          className={`btn btn-sm ${stage === 2 ? "btn-solid" : "btn-ghost"}`}
+          onClick={() => { setStage(2); setPreview(null); setPayload(null); }}
+        >
+          Stage 2 (Finalists Podium)
+        </button>
+      </div>
+
       <div className="row">
         <button type="button" className="btn btn-ghost btn-sm" onClick={downloadTemplate} disabled={!teams.length}>
-          Download Excel template
+          Download Stage {stage} template
         </button>
         <button type="button" className="btn btn-solid btn-sm" onClick={() => input.current?.click()} disabled={busy}>
-          {busy && !preview ? "Reading…" : "Upload filled sheet"}
+          {busy && !preview ? "Reading…" : `Upload Stage ${stage} scores`}
         </button>
         <input
           ref={input}
@@ -135,6 +165,26 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
             {preview.summary.valid} valid rows → {preview.summary.scores} scores for {preview.summary.teams} teams
             {preview.summary.invalid ? ` · ${preview.summary.invalid} rows have problems and will be skipped` : ""}
           </div>
+          <div className="form-note">
+            Judges in this file ({preview.summary.judges.length}):{" "}
+            {preview.summary.judges.map((j) => `${j.name} (${j.rows} rows)`).join(" · ") || "none"}
+          </div>
+          {preview.summary.judgeWarnings.length > 0 && (
+            <div className="notice">
+              {preview.summary.judgeWarnings.map((w) => (
+                <div key={w}>⚠ {w}</div>
+              ))}
+            </div>
+          )}
+          {incomplete.length > 0 && (
+            <div className="notice">
+              {incomplete.length} row(s) are incomplete. A criterion with no marks from any judge counts as 0 in that team's total:{" "}
+              {incomplete
+                .slice(0, 15)
+                .map((r) => `team ${r.teamNumber}${r.judgeName ? ` · ${r.judgeName}` : ""} (${r.warnings.join("; ")})`)
+                .join(", ")}
+            </div>
+          )}
           {problems.length > 0 && (
             <ul className="status-list" style={{ fontSize: 13 }}>
               {problems.slice(0, 20).map((r) => (

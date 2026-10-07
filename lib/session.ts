@@ -1,6 +1,7 @@
 import "server-only";
 import { jwtVerify, SignJWT } from "jose";
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import { db } from "./db";
 
 type Kind = "team" | "admin";
@@ -46,9 +47,20 @@ async function read(kind: Kind) {
   }
 }
 
+/** Short tag of the team's current login code, carried in the session cookie. */
+export const codeFingerprint = (loginCodeHash: string) => loginCodeHash.slice(0, 16);
+
+/**
+ * A team session is valid only while the team exists, isn't disqualified and still has the
+ * login code it signed in with — regenerating the code ends every older session.
+ */
 export async function getTeamSession() {
   const p = await read("team");
-  return p ? { teamId: p.sub as string } : null;
+  if (!p || typeof p.cv !== "string") return null;
+  const [t] = await db()<{ login_code_hash: string; submission_status: string }[]>`
+    select login_code_hash, submission_status from teams where id = ${p.sub as string}`;
+  if (!t || t.submission_status === "disqualified" || codeFingerprint(t.login_code_hash) !== p.cv) return null;
+  return { teamId: p.sub as string };
 }
 
 export type AdminUser = { id: string; name: string; email: string };
@@ -59,4 +71,14 @@ export async function getAdmin(): Promise<AdminUser | null> {
   if (!p) return null;
   const [admin] = await db()<AdminUser[]>`select id, name, email from admins where id = ${p.sub as string}`;
   return admin ?? null;
+}
+
+/**
+ * For admin pages: the layout's check alone doesn't stop a page from rendering,
+ * so every admin page (and admin data helper) calls this before touching data.
+ */
+export async function requireAdmin(): Promise<AdminUser> {
+  const admin = await getAdmin();
+  if (!admin) redirect("/admin/login");
+  return admin;
 }

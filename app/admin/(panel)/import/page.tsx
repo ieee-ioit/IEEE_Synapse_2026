@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import ImportWizard from "./ImportWizard";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Import" };
 
-export default function ImportPage() {
+export default async function ImportPage() {
+  await requireAdmin();
   return (
     <>
       <h1 className="admin-h1">

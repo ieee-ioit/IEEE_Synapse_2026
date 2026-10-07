@@ -3,11 +3,13 @@ import { getAdminTeams } from "@/lib/admin-teams";
 import { getSettings } from "@/lib/settings";
 import { formatDateTime } from "@/lib/format";
 import TeamsTable from "./TeamsTable";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Teams" };
 export const dynamic = "force-dynamic";
 
 export default async function TeamsPage() {
+  await requireAdmin();
   const [teams, settings] = await Promise.all([getAdminTeams(), getSettings()]);
   return (
     <>

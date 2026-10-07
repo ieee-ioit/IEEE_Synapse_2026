@@ -10,6 +10,7 @@ const TABS = [
   { href: "/admin/scores", label: "Scores" },
   { href: "/admin/leaderboard", label: "Leaderboard" },
   { href: "/admin/send-credentials", label: "Credentials" },
+  { href: "/admin/logs", label: "Logs" },
 ];
 
 export default function AdminTabs() {

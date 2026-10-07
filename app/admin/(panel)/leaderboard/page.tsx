@@ -3,13 +3,17 @@ import Link from "next/link";
 import { formatScore } from "@/lib/format";
 import { getRanking } from "@/lib/scoring";
 import { getSettings } from "@/lib/settings";
+import { getFinalistCandidates } from "@/lib/finalists";
+import FinalistsPanel from "./FinalistsPanel";
 import VisibilityToggles from "./VisibilityToggles";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Leaderboard" };
 export const dynamic = "force-dynamic";
 
 export default async function AdminLeaderboardPage() {
-  const [settings, { teams }] = await Promise.all([getSettings(), getRanking()]);
+  await requireAdmin();
+  const [settings, { teams }, finalists] = await Promise.all([getSettings(), getRanking(), getFinalistCandidates()]);
   const ranked = teams.filter((t) => t.rank != null);
 
   return (
@@ -55,6 +59,14 @@ export default async function AdminLeaderboardPage() {
           )}
         </section>
       </div>
+
+      <section className="panel admin-section">
+        <div className="panel-title">
+          Stage 2 finalists
+          <span className="pill pill--idle">{finalists.candidates.filter((c) => c.isFinalist).length} of {finalists.finalistCount} chosen</span>
+        </div>
+        <FinalistsPanel {...finalists} />
+      </section>
     </>
   );
 }

@@ -14,21 +14,31 @@ export async function GET() {
     if (!settings.leaderboardVisible) {
       return NextResponse.json({ visible: false }, { headers: { "Cache-Control": CACHE } });
     }
-    const { teams } = await getRanking();
-    const rows = teams.map((t) => ({
-      rank: t.rank,
-      teamNumber: t.teamNumber,
-      name: t.name,
-      status: t.status,
-      submittedAt: t.submittedAt,
-      ...(settings.scoresVisible ? { score: t.score } : {}),
-    }));
+    const { teams } = await getRanking({ stage: 2 });
+    // If no stage 2 scores yet, check stage 1
+    const activeRanking = teams.some((t) => t.score != null) ? teams : (await getRanking({ stage: 1 })).teams;
+    
+    // Only publicly display ranked finalists and top teams (no bottom rank score shaming)
+    const podiumAndFinalists = activeRanking
+      .filter((t) => t.rank != null && (t.isFinalist || (t.rank && t.rank <= 10)))
+      .map((t) => ({
+        rank: t.rank,
+        teamNumber: t.teamNumber,
+        name: t.name,
+        status: t.status,
+        submittedAt: t.submittedAt,
+        repoUrl: t.repoUrl,
+        demoVideoUrl: t.demoVideoUrl,
+        isFinalist: t.isFinalist,
+        ...(settings.scoresVisible ? { score: t.score } : {}),
+      }));
+
     return NextResponse.json(
       {
         visible: true,
         scoresVisible: settings.scoresVisible,
-        teams: rows,
-        totals: { teams: rows.length, submitted: rows.filter((r) => r.status === "submitted").length },
+        teams: podiumAndFinalists,
+        totals: { teams: activeRanking.length, submitted: activeRanking.filter((r) => r.status === "submitted").length },
       },
       { headers: { "Cache-Control": CACHE } },
     );

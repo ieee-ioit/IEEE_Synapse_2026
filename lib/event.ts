@@ -91,9 +91,9 @@ export const event = {
       "Register on Unstop and complete payment (Solo ₹100, 2 Members ₹150, 3 Members ₹200, 4 Members ₹250).",
       "Theme — Build Beyond Code: Identify Problem → Design Solution → Build Functional Prototype → Demonstrate Impact.",
       "4 Tracks: AI & Intelligent Systems, Cybersecurity & Digital Trust, Social Impact & Sustainability, Open Innovation.",
-      "Build from scratch in a GitHub repo during the 6-hour build window (09:00 AM – 03:00 PM). No PPT required: submit Repo + README.md + Demo.",
-      "Add organizer reviewer collaborator to your repository right at initial creation for development monitoring.",
-      "Live evaluation: 3 min presentation demo + 2 min judge Q&A (total 5 mins).",
+      "Build from scratch in a GitHub repo during the 6-hour build window (09:00 AM – 03:00 PM). Deliverables: GitHub Repo + README.md + Demo Video link (Mandatory). No PPT required.",
+      "Add organizer reviewer collaborator (ieee-synapse-reviewer) to your repository right at initial creation for development monitoring.",
+      "Two-Stage Evaluation: Stage 1 preliminary evaluation across all teams; top finalists present live (3 min demo + 2 min judge Q&A) for the podium.",
     ],
     eligibility: [
       "Open to students from recognized colleges and institutions (all branches and years).",
@@ -111,11 +111,12 @@ export const event = {
 
   rules: [
     "All code must be written during the 6-hour build window. Your repo's initial commit must come after 09:00 AM.",
-    "Teams must add the official reviewer collaborator to their GitHub repo at the start of the event when the repository is first created.",
+    "Teams must add the official reviewer collaborator (ieee-synapse-reviewer) to their GitHub repo when the repository is first created.",
     "Open-source libraries, frameworks, APIs, and AI coding assistants are allowed; pre-built projects are strictly prohibited.",
     "Commit early and often. Repository commit history will be reviewed to monitor development activity.",
-    "Official deliverables: GitHub Repository + README.md documentation + Working Project Demo (No PPT / slide deck required).",
-    "Evaluation format: 3 minutes live project demonstration + 2 minutes judge Q&A (5 minutes total).",
+    "Official deliverables: GitHub Repository + README.md documentation + Working Project Demo Video link (hosted on YouTube, Google Drive, Loom, or Vimeo). No PPT required.",
+    "Phased submission: Repo URL submitted early in the morning; Demo Video URL unlocks at Hour 4/5.",
+    "Evaluation format: Stage 1 preliminary review across all teams followed by Stage 2 live demos (3 min demo + 2 min Q&A) for top finalists.",
     "Only the team leader submits from the team dashboard before the 03:00 PM deadline. Late submissions are not accepted.",
     "Judges' decisions are final. Respect the code of conduct and institute guidelines.",
   ],
@@ -123,16 +124,24 @@ export const event = {
   // Event-day timeline (times in IST). Single day, Oct 9, 2026.
   schedule: [
     { day: "Oct 9", time: "07:00 – 07:30 AM", title: "Check-in opens", detail: "Collect team badge, verify college ID, and report to your table at AISSMS IOIT." },
-    { day: "Oct 9", time: "08:30 AM", title: "Briefing & Setup", detail: "Final logistical briefing, network setup, and repo preparation." },
+    { day: "Oct 9", time: "08:30 AM", title: "Briefing & Setup", detail: "Final logistical briefing and network setup. Create your GitHub repo only after 09:00 AM." },
     { day: "Oct 9", time: "09:00 AM", title: "Build window opens", detail: "6-hour development sprint begins. Create your repo, add the reviewer collaborator, and commit frequently." },
-    { day: "Oct 9", time: "03:00 PM", title: "Submission deadline", detail: "Development ends. Submit your GitHub repo link, README.md, and demo link." },
-    { day: "Oct 9", time: "04:00 PM", title: "Judging & Live Demos", detail: "Live evaluations begin: 3 min demo + 2 min judge Q&A per team." },
+    { day: "Oct 9", time: "03:00 PM", title: "Submission deadline", detail: "Development ends. Submit your GitHub repo link, README.md, and demo video link." },
+    { day: "Oct 9", time: "04:00 PM", title: "Judging & Live Demos", detail: "Live evaluations begin: 3 min demo + 2 min judge Q&A for top finalists." },
     { day: "Oct 9", time: "05:30 PM", title: "Results & Valedictory", detail: "Winner announcements and prize distribution." },
   ],
 
   reviewerGithub: "ieee-synapse-reviewer",
   codePrefix: "SYN",
   teamNumberStart: 101,
+  finalistCount: 10,
+  allowedVideoHosts: [
+    "youtube.com",
+    "youtu.be",
+    "drive.google.com",
+    "loom.com",
+    "vimeo.com",
+  ],
 };
 
 export type EventConfig = typeof event;
