@@ -75,3 +75,19 @@ After Batch 4, every suite passes together on one build: 360 + 17 + 23 + 19 + 15
 * **BP-032 (S3), audit `details` double-encoded.** `logAudit()` stores `details` as a JSON *string* inside jsonb, because it `JSON.stringify`s before `::jsonb`.
   * Readable, but awkward to query.
   * Fix: pass the object (`sql.json(details)`). Only affects new rows.
+
+## 7 Oct 2026 (evening): BP-031 and BP-032 (approved by the user in chat)
+| BP | Sev | Change | Test before → after |
+| :--- | :-: | :--- | :--- |
+| 031 | S1 | `lib/scoring.ts`: sort on `round(pt.score::numeric, 6)`, so exact ties fall through to `first_submitted_at` | `batch5.mjs`: the earliest of 8 exactly tied teams ranked **last** (9.4999… vs 9.5) → correct order when the noise is present. The noise is intermittent, so the test reports "inconclusive" when it doesn't occur |
+| 032 | S3 | `lib/logger.ts`: `(${x}::text)::jsonb`, so `details` and `context` are stored as objects | `jsonb_typeof` was `string` → `object` |
+
+Branch `fix/scoring-ties` (from `origin/main` `83efc26`). Left **uncommitted** for the user to commit as two separate commits.
+
+## Final runs (FIX_ORDERS §6)
+On the exact code of `fix/scoring-ties`, each from a fresh DB:
+* **Run 1:** 60 PASS, 2 FAIL. The machine was slow (rush p95 9.6 s), so 160 rush requests landed after the test deadline and were correctly refused; that cascaded into GH-3.
+* **Run 2:** 62 PASS + 1 ACCEPTED-RISK (L1) + 1 N/A (GH-4).
+* **Run 3:** 62 PASS + 1 ACCEPTED-RISK + 1 N/A.
+* **Runs 2 and 3 = two consecutive clean runs.**
+* Tag `rc-1` on the user's second commit (the code doesn't change between that commit and what was tested).
