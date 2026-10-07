@@ -12,7 +12,7 @@ const GH_PILL = { clean: "pill--ok", review: "pill--warn", flagged: "pill--bad",
 const RECHECK_BATCH = 5; // server limit per request
 const STATUS_PILL = { building: "pill--idle", submitted: "pill--ok", disqualified: "pill--bad" } as const;
 
-type Filter = "all" | "building" | "submitted" | "disqualified" | "flagged" | "review" | "unchecked";
+type Filter = "all" | "building" | "submitted" | "disqualified" | "flagged" | "review" | "unchecked" | "shared" | "noreadme";
 
 export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
   const router = useRouter();
@@ -32,6 +32,10 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
         case "flagged":
         case "review":
           return t.githubStatus === filter;
+        case "shared":
+          return t.sharedRepo;
+        case "noreadme":
+          return t.hasReadme === false;
         case "unchecked":
           return Boolean(t.repoUrl) && (!t.githubStatus || t.githubStatus === "unchecked");
         default:
@@ -105,6 +109,8 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
           Repo: t.repoUrl ?? "",
           "GitHub Status": t.githubStatus ?? "",
           "GitHub Note": t.githubNote ?? "",
+          README: t.hasReadme == null ? "" : t.hasReadme ? "yes" : "no",
+          "Shared Repo": t.sharedRepo ? "yes" : "",
           "First Commit": t.firstCommitAt ?? "",
           Status: t.status,
           "Submitted At": t.submittedAt ?? "",
@@ -125,6 +131,8 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
           <option value="flagged">GitHub: flagged</option>
           <option value="review">GitHub: needs review</option>
           <option value="unchecked">GitHub: unchecked / not reachable</option>
+          <option value="shared">Repo shared with another team</option>
+          <option value="noreadme">README missing</option>
         </select>
         <label className="switch" style={{ fontSize: 13.5 }}>
           <input type="checkbox" checked={showCodes} onChange={(e) => setShowCodes(e.target.checked)} />
@@ -199,6 +207,13 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
                           ) : (
                             <span className="pill pill--idle">not checked</span>
                           )}
+                          {t.sharedRepo && (
+                            <span className="pill pill--bad" title="Another team saved the same repo URL">
+                              shared repo
+                            </span>
+                          )}
+                          {t.hasReadme === false && <span className="pill pill--warn">no README</span>}
+                          {t.hasReadme === true && <span className="pill pill--idle">README</span>}
                           {t.githubNote && <span className="muted" style={{ fontSize: 12 }}>{t.githubNote}</span>}
                         </div>
                       </>

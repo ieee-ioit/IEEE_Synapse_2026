@@ -17,6 +17,8 @@ export type AdminTeam = {
   stage2Order: number | null;
   githubStatus: "clean" | "review" | "flagged" | "unchecked" | null;
   githubNote: string | null;
+  hasReadme: boolean | null;
+  sharedRepo: boolean; // another team saved the same repo URL
   firstCommitAt: string | null;
   githubCheckedAt: string | null;
   submittedAt: string | null;
@@ -44,6 +46,8 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
       stage2_order: number | null;
       github_status: AdminTeam["githubStatus"];
       github_note: string | null;
+      github_has_readme: boolean | null;
+      shared_repo: boolean;
       first_commit_at: Date | null;
       github_checked_at: Date | null;
       submitted_at: Date | null;
@@ -56,7 +60,8 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
   >`
     select t.id, t.team_number, t.name, t.leader_name, t.leader_email, t.college, t.login_code_enc,
            t.github_repo_url, t.demo_video_url, t.is_finalist, t.stage2_order,
-           t.github_status, t.github_note, t.first_commit_at, t.github_checked_at,
+           t.github_status, t.github_note, t.github_has_readme,
+           t.github_repo_url is not null and count(*) over (partition by lower(t.github_repo_url)) > 1 as shared_repo, t.first_commit_at, t.github_checked_at,
            t.submitted_at, t.first_submitted_at, t.submission_status, exists (select 1 from team_login_locks l where l.team_id = t.id and l.locked_until > now()) as locked,
            t.credentials_sent_at,
            coalesce(array_agg(m.name order by m.name) filter (where m.id is not null), '{}') as members
@@ -78,6 +83,8 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
     stage2Order: r.stage2_order,
     githubStatus: r.github_status,
     githubNote: r.github_note,
+    hasReadme: r.github_has_readme,
+    sharedRepo: Boolean(r.shared_repo),
     firstCommitAt: iso(r.first_commit_at),
     githubCheckedAt: iso(r.github_checked_at),
     submittedAt: iso(r.submitted_at),

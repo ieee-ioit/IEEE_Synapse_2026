@@ -9,7 +9,7 @@ import { getSettings } from "@/lib/settings";
 function isValidVideoUrl(urlStr: string): boolean {
   try {
     const parsed = new URL(urlStr);
-    if (parsed.protocol !== "https:" && parsed.protocol !== "http:") return false;
+    if (parsed.protocol !== "https:") return false;
     const host = parsed.hostname.toLowerCase();
     return event.allowedVideoHosts.some((h) => host === h || host.endsWith(`.${h}`));
   } catch {

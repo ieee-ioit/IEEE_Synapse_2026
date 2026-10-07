@@ -25,6 +25,7 @@ export async function POST(req: Request) {
         github_repo_url = ${parsed.url}, 
         github_status = null, 
         github_note = null,
+        github_has_readme = null,
         first_commit_at = null, 
         github_checked_at = null,
         first_submitted_at = coalesce(first_submitted_at, now()),

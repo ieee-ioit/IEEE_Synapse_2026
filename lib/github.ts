@@ -9,11 +9,11 @@ const TIMEOUT_MS = 4000; // per GitHub call, so a slow API never leaves a reques
 // Test seam (audit): point at a local mock GitHub. Defaults to the real API.
 const API = (process.env.GITHUB_API_BASE_URL || "https://api.github.com").replace(/\/$/, "");
 
-/** Accepts github.com/owner/repo in the usual forms and returns the canonical https URL. */
+/** Accepts github.com/owner/repo (https or no scheme) and returns the canonical https URL. */
 export function parseRepoUrl(input: string) {
   const m = input
     .trim()
-    .match(/^(?:https?:\/\/)?(?:www\.)?github\.com\/([A-Za-z0-9](?:[A-Za-z0-9-]{0,38}))\/([A-Za-z0-9._-]{1,100}?)(?:\.git)?(?:\/[^?#]*)?(?:[?#].*)?$/i);
+    .match(/^(?:https:\/\/)?(?:www\.)?github\.com\/([A-Za-z0-9](?:[A-Za-z0-9-]{0,38}))\/([A-Za-z0-9._-]{1,100}?)(?:\.git)?(?:\/[^?#]*)?(?:[?#].*)?$/i);
   if (!m || m[2] === "." || m[2] === "..") return null;
   const [, owner, repo] = m;
   return { owner, repo, url: `https://github.com/${owner}/${repo}` };
@@ -95,7 +95,8 @@ export async function checkTeamRepo(teamId: string) {
     const result = await inspectRepo(team.github_repo_url, eventStart);
     await sql`
       update teams set github_status = ${result.status}, github_note = ${result.note},
-        first_commit_at = ${result.firstCommitAt}, github_checked_at = now()
+        first_commit_at = ${result.firstCommitAt}, github_has_readme = ${"hasReadme" in result ? result.hasReadme ?? null : null},
+        github_checked_at = now()
       where id = ${teamId}`;
     return result;
   } catch (err) {
