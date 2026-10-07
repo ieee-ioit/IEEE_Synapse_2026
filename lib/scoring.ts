@@ -16,7 +16,7 @@ export type RankedTeam = {
   score: number | null; // 0–10, weighted
   criteriaScored: number;
   criteriaScores?: { criterionId: string; name: string; weight: number; score: number }[];
-  githubStatus: "clean" | "review" | "flagged" | null;
+  githubStatus: "clean" | "review" | "flagged" | "unchecked" | null;
 };
 
 /**

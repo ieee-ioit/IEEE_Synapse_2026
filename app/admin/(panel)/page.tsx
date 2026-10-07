@@ -20,6 +20,7 @@ export default async function AdminOverview() {
         disqualified: number;
         flagged: number;
         review: number;
+        unchecked: number;
         scored: number;
         sent: number;
       }[]
@@ -30,6 +31,7 @@ export default async function AdminOverview() {
         count(*) filter (where submission_status = 'disqualified')::int as disqualified,
         count(*) filter (where github_status = 'flagged')::int as flagged,
         count(*) filter (where github_status = 'review')::int as review,
+        count(*) filter (where github_repo_url is not null and (github_status is null or github_status = 'unchecked'))::int as unchecked,
         (select count(distinct team_id)::int from scores) as scored,
         count(*) filter (where credentials_sent_at is not null)::int as sent
       from teams`,
@@ -53,6 +55,7 @@ export default async function AdminOverview() {
     { label: "Still building", value: k.building },
     { label: "Flagged repos", value: k.flagged },
     { label: "Repos to review", value: k.review },
+    { label: "Repos unchecked", value: k.unchecked },
     { label: "Teams scored", value: k.scored },
     { label: "Credentials emailed", value: k.sent },
     { label: "Disqualified", value: k.disqualified },

@@ -2,7 +2,9 @@ import "server-only";
 import { db } from "./db";
 import { getSettings } from "./settings";
 
-export type GithubStatus = "clean" | "review" | "flagged";
+export type GithubStatus = "clean" | "review" | "flagged" | "unchecked";
+
+const TIMEOUT_MS = 4000; // per GitHub call, so a slow API never leaves a request hanging
 
 // Test seam (audit): point at a local mock GitHub. Defaults to the real API.
 const API = (process.env.GITHUB_API_BASE_URL || "https://api.github.com").replace(/\/$/, "");
@@ -38,22 +40,22 @@ export async function inspectRepo(url: string, eventStartIso: string) {
   if (process.env.GITHUB_TOKEN) headers.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
   const base = `${API}/repos/${parsed.owner}/${parsed.repo}/commits?per_page=1`;
-  const get = (u: string) => fetch(u, { headers, cache: "no-store", signal: AbortSignal.timeout(8000) });
+  const get = (u: string) => fetch(u, { headers, cache: "no-store", signal: AbortSignal.timeout(TIMEOUT_MS) });
 
   let res = await get(base);
   if (res.status === 404) {
-    return { status: "review" as GithubStatus, firstCommitAt: null, note: "Repo not reachable — still private, renamed, or wrong URL." };
+    return { status: "unchecked" as GithubStatus, firstCommitAt: null, note: "Repo not reachable (private or missing); re-check after it is public." };
   }
   if (res.status === 409) return { status: "review" as GithubStatus, firstCommitAt: null, note: "Repo has no commits yet." };
   if (res.status === 403 || res.status === 429) {
-    return { status: "review" as GithubStatus, firstCommitAt: null, note: "GitHub rate limit hit — re-check later (set GITHUB_TOKEN)." };
+    return { status: "unchecked" as GithubStatus, firstCommitAt: null, note: "GitHub rate limit hit; re-check later." };
   }
-  if (!res.ok) return { status: "review" as GithubStatus, firstCommitAt: null, note: `GitHub responded ${res.status}.` };
+  if (!res.ok) return { status: "unchecked" as GithubStatus, firstCommitAt: null, note: `GitHub responded ${res.status}; re-check later.` };
 
   const last = lastPage(res.headers.get("link"));
   if (last && last > 1) {
     res = await get(`${base}&page=${last}`);
-    if (!res.ok) return { status: "review" as GithubStatus, firstCommitAt: null, note: `GitHub responded ${res.status} on the last page.` };
+    if (!res.ok) return { status: "unchecked" as GithubStatus, firstCommitAt: null, note: `GitHub responded ${res.status} on the last page; re-check later.` };
   }
   const commits = (await res.json()) as { commit?: { author?: { date?: string }; committer?: { date?: string } } }[];
   const first = commits.at(-1)?.commit;
@@ -97,8 +99,8 @@ export async function checkTeamRepo(teamId: string) {
       where id = ${teamId}`;
     return result;
   } catch (err) {
-    const note = `Check failed: ${(err as Error).message}`.slice(0, 200);
-    await sql`update teams set github_status = 'review', github_note = ${note}, github_checked_at = now() where id = ${teamId}`.catch(() => {});
-    return { status: "review" as GithubStatus, firstCommitAt: null, note };
+    const note = `Check failed (${(err as Error).name === "TimeoutError" ? "GitHub timed out" : (err as Error).message}); re-check later.`.slice(0, 200);
+    await sql`update teams set github_status = 'unchecked', github_note = ${note}, first_commit_at = null, github_checked_at = now() where id = ${teamId}`.catch(() => {});
+    return { status: "unchecked" as GithubStatus, firstCommitAt: null, note };
   }
 }

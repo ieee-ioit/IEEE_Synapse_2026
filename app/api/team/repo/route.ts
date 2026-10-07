@@ -1,5 +1,6 @@
+import { after } from "next/server";
 import { db } from "@/lib/db";
-import { parseRepoUrl } from "@/lib/github";
+import { checkTeamRepo, parseRepoUrl } from "@/lib/github";
 import { clientInfo, fail, ok, readJsonBody } from "@/lib/http";
 import { logAudit, logError } from "@/lib/logger";
 import { getTeamSession } from "@/lib/session";
@@ -29,7 +30,7 @@ export async function POST(req: Request) {
         first_submitted_at = coalesce(first_submitted_at, now()),
         last_updated_at = now()
       where id = ${session.teamId} and submission_status <> 'disqualified'
-      returning id, team_number`;
+      returning id, team_number, submission_status`;
     if (!rows.length) {
       const [t] = await sql<{ submission_status: string }[]>`select submission_status from teams where id = ${session.teamId}`;
       if (!t) return fail(401, "Team not found.");
@@ -48,6 +49,8 @@ export async function POST(req: Request) {
       userAgent,
     });
 
+    // Already submitted: the repo changed after the integrity check, so check it again.
+    if (rows[0].submission_status === "submitted") after(() => checkTeamRepo(session.teamId));
     return ok({ url: parsed.url });
   } catch (err) {
     const { ip, userAgent } = clientInfo(req);

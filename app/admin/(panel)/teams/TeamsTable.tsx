@@ -8,7 +8,8 @@ import { downloadXlsx } from "@/components/sheets";
 import type { AdminTeam } from "@/lib/admin-teams";
 import { formatDateTime } from "@/lib/format";
 
-const GH_PILL = { clean: "pill--ok", review: "pill--warn", flagged: "pill--bad" } as const;
+const GH_PILL = { clean: "pill--ok", review: "pill--warn", flagged: "pill--bad", unchecked: "pill--idle" } as const;
+const RECHECK_BATCH = 5; // server limit per request
 const STATUS_PILL = { building: "pill--idle", submitted: "pill--ok", disqualified: "pill--bad" } as const;
 
 type Filter = "all" | "building" | "submitted" | "disqualified" | "flagged" | "review" | "unchecked";
@@ -32,7 +33,7 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
         case "review":
           return t.githubStatus === filter;
         case "unchecked":
-          return Boolean(t.repoUrl) && !t.githubStatus;
+          return Boolean(t.repoUrl) && (!t.githubStatus || t.githubStatus === "unchecked");
         default:
           return t.status === filter;
       }
@@ -59,13 +60,15 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
     router.refresh();
   }
 
-  async function recheckAll() {
-    const ids = teams.filter((t) => t.repoUrl).map((t) => t.id);
-    if (!ids.length) return setMsg({ kind: "error", text: "No teams have saved a repo link yet." });
+  async function recheck(onlyUnchecked: boolean) {
+    const ids = teams
+      .filter((t) => t.repoUrl && (!onlyUnchecked || !t.githubStatus || t.githubStatus === "unchecked"))
+      .map((t) => t.id);
+    if (!ids.length) return setMsg({ kind: "error", text: onlyUnchecked ? "No unchecked repos." : "No teams have saved a repo link yet." });
     setMsg(null);
-    for (let i = 0; i < ids.length; i += 10) {
-      setBusy(`all:${Math.min(i + 10, ids.length)}/${ids.length}`);
-      const res = await api("/api/admin/teams", { action: "recheck-github", ids: ids.slice(i, i + 10) });
+    for (let i = 0; i < ids.length; i += RECHECK_BATCH) {
+      setBusy(`all:${Math.min(i + RECHECK_BATCH, ids.length)}/${ids.length}`);
+      const res = await api("/api/admin/teams", { action: "recheck-github", ids: ids.slice(i, i + RECHECK_BATCH) });
       if (!res.ok) {
         setBusy("");
         return setMsg({ kind: "error", text: res.error });
@@ -73,6 +76,17 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
     }
     setBusy("");
     setMsg({ kind: "ok", text: `Re-checked ${ids.length} repos.` });
+    router.refresh();
+  }
+
+  async function unlockAll() {
+    if (!window.confirm("Clear every login lock for every team?")) return;
+    setBusy("unlock-all");
+    setMsg(null);
+    const res = await api("/api/admin/teams", { action: "unlock-all", ids: [] });
+    setBusy("");
+    if (!res.ok) return setMsg({ kind: "error", text: res.error });
+    setMsg({ kind: "ok", text: "All login locks cleared." });
     router.refresh();
   }
 
@@ -110,7 +124,7 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
           <option value="disqualified">Disqualified</option>
           <option value="flagged">GitHub: flagged</option>
           <option value="review">GitHub: needs review</option>
-          <option value="unchecked">GitHub: not checked</option>
+          <option value="unchecked">GitHub: unchecked / not reachable</option>
         </select>
         <label className="switch" style={{ fontSize: 13.5 }}>
           <input type="checkbox" checked={showCodes} onChange={(e) => setShowCodes(e.target.checked)} />
@@ -118,8 +132,14 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
           Show codes
         </label>
         <span className="spacer" />
-        <button type="button" className="btn btn-ghost btn-sm" onClick={recheckAll} disabled={busy !== ""}>
-          {busy.startsWith("all:") ? `Checking ${busy.slice(4)}…` : "Re-check all GitHub"}
+        <button type="button" className="btn btn-ghost btn-sm" onClick={() => recheck(true)} disabled={busy !== ""}>
+          {busy.startsWith("all:") ? `Checking ${busy.slice(4)}…` : "Re-check unchecked"}
+        </button>
+        <button type="button" className="btn btn-ghost btn-sm" onClick={() => recheck(false)} disabled={busy !== ""}>
+          Re-check all GitHub
+        </button>
+        <button type="button" className="btn btn-ghost btn-sm" onClick={unlockAll} disabled={busy !== ""}>
+          Unlock all logins
         </button>
         <button type="button" className="btn btn-ghost btn-sm" onClick={exportXlsx} disabled={!teams.length}>
           Export .xlsx
