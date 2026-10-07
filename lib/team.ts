@@ -20,6 +20,7 @@ export type TeamView = {
   members: { name: string; email: string }[];
   eventStart: string;
   deadline: string;
+  videoUnlockAt: string;
   result: null | {
     rank: number | null;
     ranked: number;
@@ -90,6 +91,7 @@ export async function getTeamView(teamId: string): Promise<TeamView | null> {
     members: [...members],
     eventStart: settings.eventStart,
     deadline: settings.submissionDeadline,
+    videoUnlockAt: settings.videoUnlockAt,
     result,
   };
 }

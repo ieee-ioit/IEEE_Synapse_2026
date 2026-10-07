@@ -40,10 +40,9 @@ export default function TeamDashboard({ initial }: { initial: TeamView }) {
   const savedRepo = team.repoUrl ?? "";
   const savedVideo = team.demoVideoUrl ?? "";
 
-  // Video unlocks after hour 4 (4 hours after build starts) or if already saved
-  const videoUnlocked = Boolean(
-    savedVideo || (now != null && now >= start + 4 * 60 * 60 * 1000) || closed
-  );
+  // The server decides when video links open (setting videoUnlockAt, default 13:00 IST).
+  const videoUnlockAt = Date.parse(view.videoUnlockAt);
+  const videoUnlocked = Boolean(savedVideo || (now != null && now >= videoUnlockAt) || closed);
 
   async function saveRepo() {
     setBusy("saveRepo");
@@ -197,7 +196,7 @@ export default function TeamDashboard({ initial }: { initial: TeamView }) {
               ) : (
                 <div className="panel board-empty" style={{ padding: 12 }}>
                   <p className="form-note" style={{ margin: 0 }}>
-                    Demo video submission opens at Hour 4 (01:00 PM). Focus on your repo first!
+                    Demo video submission opens at {formatTime(view.videoUnlockAt).slice(0, 5)} IST. Focus on your repo first!
                   </p>
                 </div>
               )}
