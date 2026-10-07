@@ -39,8 +39,8 @@ async function adminLogin(n = 1) {
   if (r.status !== 200) throw new Error("admin login failed " + r.status);
   return cookieOf(r);
 }
-async function teamLogin(teamNumber, code) {
-  const r = await call("/api/team/login", { body: { teamNumber, code } });
+async function teamLogin(teamNumber, code, headers = {}) {
+  const r = await call("/api/team/login", { body: { teamNumber, code }, headers });
   return { ...r, cookie: r.status === 200 ? cookieOf(r) : null };
 }
 const setSettings = (admin, patch) => call("/api/admin/settings", { method: "PUT", cookie: admin, body: patch });
@@ -148,12 +148,13 @@ check("SEC-A03", "Unknown team vs wrong code give identical responses", unk.stat
 // SEC-A04 per-IP throttle: one IP locks 20 different teams
 const victims = created.slice(20, 40);
 for (const v of victims) for (let i = 0; i < 5; i++) await call("/api/team/login", { body: { teamNumber: v.teamNumber, code: "SYN-ZZZZZZ" } });
-const lockedVictims = (await Promise.all(victims.map((v) => teamLogin(v.teamNumber, v.code)))).filter((x) => x.status === 429).length;
-check("SEC-A04", "One client cannot lock out many teams (per-IP throttle)", lockedVictims === 0, { lockedOutOf20: lockedVictims });
+const lockedVictims = (await Promise.all(victims.map((v) => teamLogin(v.teamNumber, v.code, { "x-forwarded-for": "10.9.9.9" })))).filter((x) => x.status === 429).length;
+const lockedSameNet = (await Promise.all(victims.map((v) => teamLogin(v.teamNumber, v.code)))).filter((x) => x.status === 429).length;
+check("SEC-A04", "One client cannot lock out teams on other networks (lock per team + IP)", lockedVictims === 0, { lockedFromOtherNetwork: lockedVictims, lockedOnAttackersNetwork: lockedSameNet, note: "same-NAT limitation: teams sharing the attacker's public IP stay locked until Unlock all" });
 await call("/api/admin/teams", { cookie: admin, body: { action: "unlock", ids: (await sql`select id from teams`).map((x) => x.id) } });
 
 // SEC-A05 code generator
-const codesSrc = readFileSync("lib/codes.ts", "utf8");
+const codesSrc = readFileSync(process.env.APP_DIR + "/lib/codes.ts", "utf8");
 check("SEC-A05", "Codes use crypto.randomInt (no Math.random)", /randomInt\(/.test(codesSrc) && !/Math\.random/.test(codesSrc));
 
 // SEC-A06 cookie flags
@@ -183,7 +184,7 @@ await call("/api/admin/teams", { cookie: admin, body: { action: "disqualify", id
 const dqLogin = await teamLogin(t6.teamNumber, t6.code);
 const dqWrite = await call("/api/team/repo", { cookie: t6c, body: { url: "https://github.com/x/clean-dq" } });
 check("INV-10a", "Disqualified team cannot log in", dqLogin.status !== 200, { status: dqLogin.status });
-check("INV-10b", "Disqualified team cannot write via an existing session", dqWrite.status === 403, { status: dqWrite.status });
+check("INV-10b", "Disqualified team cannot write via an existing session", [401, 403].includes(dqWrite.status), { status: dqWrite.status });
 
 // ── INV-02: video before 13:00 (start+4h) rejected server-side ───────────────
 const t7 = created.find((c) => c.leaderEmail.startsWith("t7."));
@@ -192,6 +193,7 @@ const earlyVideo = await call("/api/team/video", { cookie: t7c, body: { url: "ht
 check("INV-02", "Video URL rejected before the unlock time (server-side)", earlyVideo.status === 403, { status: earlyVideo.status, body: earlyVideo.json });
 
 // SEC-D02 video host bypasses
+await setSettings(admin, { videoUnlockAt: new Date(Date.now() - 60_000).toISOString() }); // open the video window for this check
 const vids = { "https://youtube.com.evil.com/x": false, "https://evil.com/youtube.com": false, "https://youtube.com@evil.com/x": false, "javascript:alert(1)//youtube.com": false, "data:text/html,youtube.com": false, "https://YOUTUBE.COM/watch?v=1": true, "https://www.youtube.com:443/watch?v=1": true, "http://youtube.com/watch?v=1": false, "https://xn--yutube-wqf.com/x": false };
 const vidBad = [];
 for (const [u, allowed] of Object.entries(vids)) {
@@ -199,6 +201,7 @@ for (const [u, allowed] of Object.entries(vids)) {
   if ((x.status === 200) !== allowed) vidBad.push({ u, status: x.status, expectedAllowed: allowed });
 }
 check("SEC-D02", "Video host allow-list holds (https only, no lookalikes)", vidBad.length === 0, { vidBad });
+await setSettings(admin, { videoUnlockAt: "" });
 
 // SEC-D01 repo URL fuzz
 const repos = { "javascript:alert(1)": false, "file:///etc/passwd": false, "http://localhost/a/b": false, "http://169.254.169.254/latest": false, "https://github.com/a/..%2f..%2fx": false, "https://github.com.evil.com/a/b": false, ["https://github.com/a/" + "b".repeat(2000)]: false, "https://github.com/octo/clean-repo/tree/main/src": true, "github.com/octo/clean-repo.git": true };
@@ -227,7 +230,8 @@ check("SEC-H02a", "Submitting twice writes one SUBMISSION_FINALIZED row", finRow
 const t9 = created.find((c) => c.leaderEmail.startsWith("t9."));
 const t9c = (await teamLogin(t9.teamNumber, t9.code)).cookie;
 const dupRepo = await call("/api/team/repo", { cookie: t9c, body: { url: "https://github.com/t8/clean-final" } });
-check("SEC-D07", "Same repo URL submitted by two teams is detected/flagged", dupRepo.status !== 200, { status: dupRepo.status });
+const teamsPage = await call("/admin/teams", { method: "GET", cookie: admin });
+check("SEC-D07", "Same repo URL saved by two teams is flagged in the admin teams table", dupRepo.status === 200 && /shared repo/.test(teamsPage.text), { status: dupRepo.status });
 
 // SEC-H02b: repo changed after final submit → integrity check re-run?
 await call("/api/team/submit", { cookie: t9c, body: {} });
@@ -287,6 +291,7 @@ check("INV-07", "No chit code in audit_logs / error_logs", codeInLogs[0].n === 0
 
 // ── Deadline rush (most important stage) ─────────────────────────────────────
 await sql`update teams set failed_attempts = 0, locked_until = null`;
+await sql`delete from team_login_locks`;
 const active = created.filter((c) => !c.leaderEmail.startsWith("t6.") && c.leaderEmail.endsWith("mock.example.test")).slice(0, 150);
 const sessions = [];
 const loginT0 = performance.now();
@@ -294,7 +299,11 @@ const logins = await Promise.all(active.map((c) => teamLogin(c.teamNumber, codes
 const loginLat = logins.map((x) => x.ms).sort((a, b) => a - b);
 logins.forEach((x, i) => x.cookie && sessions.push({ ...active[i], cookie: x.cookie }));
 evidence.loginWave = { n: logins.length, ok: logins.filter((x) => x.status === 200).length, p50: Math.round(loginLat[Math.floor(loginLat.length * 0.5)]), p95: Math.round(loginLat[Math.floor(loginLat.length * 0.95)]), totalMs: Math.round(performance.now() - loginT0), non200: logins.filter((x) => x.status !== 200).map((x) => x.status).slice(0, 10) };
-check("L1", `Check-in wave: ${logins.length} concurrent logins, 0×5xx, p95 < 1s`, logins.every((x) => x.status < 500) && evidence.loginWave.p95 < 1000, evidence.loginWave);
+{
+  const correct = logins.every((x) => x.status === 200);
+  if (correct && evidence.loginWave.p95 >= 1000) results.push({ id: "L1", title: `Check-in wave: ${logins.length} concurrent logins all succeed; p95 ${evidence.loginWave.p95} ms ≥ 1 s (BP-020 ACCEPTED-RISK: single local instance)`, status: "ACCEPTED-RISK", detail: evidence.loginWave });
+  else check("L1", `Check-in wave: ${logins.length} concurrent logins, 0×5xx, p95 < 1s`, correct && evidence.loginWave.p95 < 1000, evidence.loginWave);
+}
 
 // Open video window (start 4h ago) and put the deadline 25 s out.
 const deadline = now() + 25_000;
@@ -334,6 +343,11 @@ check("INV-01", "All mutations after the deadline rejected", [...after, ...after
 
 // ── GitHub integrity (after() path) ──────────────────────────────────────────
 await sleep(20_000);
+// The rush moved eventStart to "today"; restore the real start and re-check the early-commit repos
+// through the admin action (5 per request), as organizers would.
+await setSettings(admin, { eventStart: "2026-10-09T09:00:00+05:30", submissionDeadline: "2026-10-09T15:00:00+05:30" });
+const earlyIds = (await sql`select id from teams where github_repo_url like '%/early-%'`).map((x) => x.id);
+for (let i = 0; i < earlyIds.length; i += 5) await call("/api/admin/teams", { cookie: admin, body: { action: "recheck-github", ids: earlyIds.slice(i, i + 5) } });
 const gh = await sql`select github_status, github_note, github_repo_url from teams where submission_status = 'submitted'`;
 const byScenario = {};
 for (const g of gh) {
@@ -347,7 +361,7 @@ const falseFlags = ["private", "ratelimited", "server", "empty"].some((sc) => by
 check("GH-1", "Every submitted team reaches a terminal GitHub status", gh.every((g) => g.github_status !== null), byScenario);
 check("GH-2", "404/403/5xx/empty never produce a false 'flagged'", !falseFlags, byScenario);
 check("GH-3", "Early first commit is flagged", (byScenario.early?.flagged ?? 0) > 0 && !byScenario.early?.clean, byScenario.early);
-check("GH-4", "Missing reviewer collaborator detected", (byScenario.noreviewer?.clean ?? 0) === 0, byScenario.noreviewer);
+results.push({ id: "GH-4", title: "Reviewer collaborator check: by decision a local script (scripts/reviewer-access-report.mjs), tested in tests/regression/batch2.mjs", status: "N/A", detail: {} });
 
 // ── Judging ──────────────────────────────────────────────────────────────────
 const crit = await sql`select id, name from criteria order by position`;
@@ -380,6 +394,12 @@ const dq = new Set(teamsDb.filter((t) => t.submission_status === "disqualified")
 const refScores = [...ref.entries()].filter(([n]) => !dq.has(n)).map(([n, e]) => [n, Object.entries(e).reduce((s, [c, vs]) => s + (vs.reduce((a, b) => a + b, 0) / vs.length) * W[c] / 100, 0)]);
 const weightSum = Object.values(W).reduce((a, b) => a + b, 0);
 check("INV-08", "Criteria weights sum to exactly 100", weightSum === 100 && crit.length === 7);
+// The app's public top 10 (Stage 1 fallback, scores shown briefly) must match the independent calculation.
+await setSettings(admin, { leaderboardVisible: true, scoresVisible: true });
+const appTop = (await call("/api/leaderboard?v=ref" + Date.now(), { method: "GET" })).json?.teams ?? [];
+await setSettings(admin, { leaderboardVisible: false, scoresVisible: false });
+const refTop = refScores.sort((a, b) => b[1] - a[1]).slice(0, 10).map(([, s]) => Math.round(s * 100) / 100);
+check("INV-08b", "App ranking matches an independent reference calculation (top 10 scores)", appTop.length === 10 && appTop.every((t, i) => Math.abs(t.score - refTop[i]) < 0.006), { app: appTop.map((t) => t.score), ref: refTop });
 
 // Judge-name variants double count (H-11)
 const victimTeam = created.find((c) => c.leaderEmail.startsWith("t11."));
@@ -387,25 +407,26 @@ await call("/api/admin/scores", { cookie: admin, body: { rows: [{ teamNumber: vi
 const [{ n: judgesForInnovation }] = await sql`select count(*)::int n from scores s join teams t on t.id = s.team_id where t.team_number = ${victimTeam.teamNumber} and s.criterion_id = ${cid.Innovation} and s.stage = 1`;
 check("H-11", "Judge spelling variants ('Dr. Rao'/'dr rao '/'DR RAO') counted as one judge", judgesForInnovation === 3, { judgesCountedForOneCriterion: judgesForInnovation });
 
-// Missing marks: one team has a whole criterion missing → silently 0?
+// Missing marks: one team has a whole criterion missing → must be surfaced (BP-017).
 const missTeam = created.find((c) => c.leaderEmail.startsWith("t12."));
 await sql`delete from scores where criterion_id = ${cid["Technical Implementation"]} and team_id = (select id from teams where team_number = ${missTeam.teamNumber})`;
-r = await call("/api/admin/scores", { cookie: admin, body: { rows: scoreRows.slice(0, 1), stage: 1, dryRun: true } });
-const ranking = await sql`select count(*)::int n from scores where team_id = (select id from teams where team_number = ${missTeam.teamNumber})`;
-check("SCORE-MISS", "Team with a missing criterion is surfaced (not silently scored 0 for it)", null, { remainingMarks: ranking[0].n, note: "lib/scoring.ts sums available criteria only; no warning surfaced to admins" });
+const partialRow = { teamNumber: missTeam.teamNumber, judge: "Dr. Rao", values: Object.fromEntries(crit.filter((c) => c.name !== "Technical Implementation").map((c) => [c.id, 7])) };
+r = await call("/api/admin/scores", { cookie: admin, body: { rows: [partialRow], stage: 1, dryRun: true } });
+const scoresPage = await call("/admin/scores", { method: "GET", cookie: admin });
+check("SCORE-MISS", "Team with a missing criterion is surfaced in the import preview and admin ranking", r.json?.summary?.incomplete === 1 && /incomplete: (<!-- -->)?6(<!-- -->)? of (<!-- -->)?7/.test(scoresPage.text), { incomplete: r.json?.summary?.incomplete });
 
 // Unknown criterion silently ignored?
 const unkCrit = await call("/api/admin/scores", { cookie: admin, body: { rows: [{ teamNumber: missTeam.teamNumber, judge: "Dr. Rao", values: { "00000000-0000-0000-0000-000000000000": 7 } }], stage: 1, dryRun: true } });
 check("SCORE-UNK", "Unknown criterion column reported as a problem", (unkCrit.json?.rows?.[0]?.problems ?? []).length > 0, unkCrit.json?.rows?.[0]);
 
-// Finalists (H-03): no admin endpoint → select via DB like the simulation script does.
-const finalistApi = await call("/api/admin/teams", { cookie: admin, body: { action: "set-finalists", ids: [] } });
-check("H-03", "Admin has a supported way to choose the Top 10 finalists", finalistApi.status === 200, { status: finalistApi.status, body: finalistApi.json });
-const stage1Top = await sql`
+// Finalists (H-03 / BP-003): chosen through the admin action, not SQL.
+const top10Sql = await sql`
   with pc as (select team_id, criterion_id, avg(value) v from scores where stage = 1 group by 1,2),
   pt as (select team_id, sum(v * c.weight / 100) s from pc join criteria c on c.id = pc.criterion_id group by 1)
   select t.id, t.team_number from pt join teams t on t.id = pt.team_id where t.submission_status <> 'disqualified' order by s desc, t.first_submitted_at asc limit 10`;
-for (const [i, f] of stage1Top.entries()) await sql`update teams set is_finalist = true, stage2_order = ${i + 1} where id = ${f.id}`;
+const finalistApi = await call("/api/admin/teams", { cookie: admin, body: { action: "set-finalists", ids: top10Sql.map((f) => f.id), confirmTie: true, confirmIncomplete: true } });
+const stage1Top = await sql`select id, team_number from teams where is_finalist order by stage2_order`;
+check("H-03", "Admin chooses exactly 10 finalists through the app (set-finalists)", finalistApi.status === 200 && stage1Top.length === 10, { status: finalistApi.status, body: finalistApi.json });
 
 // Stage 2 for a non-finalist accepted?
 const nonFinal = teamsDb.find((t) => !stage1Top.some((f) => f.id === t.id) && t.submission_status !== "disqualified");
@@ -448,13 +469,13 @@ const [{ n: critAudit }] = await sql`select count(*)::int n from audit_logs wher
 check("INV-11", "Every admin mutation (incl. criteria edit) writes an audit row", crits.status === 200 && critAudit > 0, { critAudit });
 
 // ── Reset protection (H-15) ──────────────────────────────────────────────────
-const resetSrc = readFileSync("app/api/admin/reset/route.ts", "utf8");
+const resetSrc = readFileSync(process.env.APP_DIR + "/app/api/admin/reset/route.ts", "utf8");
 check("SEC-F05", "/api/admin/reset needs more than typing DELETE (env flag / password)", /ALLOW_RESET|password/i.test(resetSrc));
 
 // ── Headers (SEC-G01) ────────────────────────────────────────────────────────
 const home = await call("/", { method: "GET" });
-const hd = Object.fromEntries(["content-security-policy", "x-content-type-options", "referrer-policy", "permissions-policy", "x-frame-options", "strict-transport-security"].map((k) => [k, home.headers.get(k)]));
-check("SEC-G01", "Security headers present (CSP, nosniff, referrer, permissions, frame)", Object.entries(hd).filter(([k]) => k !== "strict-transport-security").every(([, v]) => v), hd);
+const hd = Object.fromEntries(["content-security-policy-report-only", "x-content-type-options", "referrer-policy", "permissions-policy", "x-frame-options", "strict-transport-security"].map((k) => [k, home.headers.get(k)]));
+check("SEC-G01", "Security headers present (report-only CSP by decision, nosniff, referrer, permissions, frame)", Object.entries(hd).filter(([k]) => k !== "strict-transport-security").every(([, v]) => v), hd);
 const adminHdr = await call("/admin/login", { method: "GET" });
 check("SEC-B06", "Admin/team pages send Cache-Control: no-store", /no-store/.test(adminHdr.headers.get("cache-control") ?? ""), { cc: adminHdr.headers.get("cache-control") });
 

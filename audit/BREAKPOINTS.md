@@ -1,6 +1,8 @@
 # Break points
 
-Evidence comes from `node scripts/audit/run-eventday.mjs` (the full log is in `audit/results/run1.log`; the JSON is in `audit/results/*.json`, which git ignores) and from `node scripts/audit/github-scenarios.mjs`. All tests ran against the **local** production build only. Nothing touched Vercel or Supabase. All entries are **Status: OPEN**.
+> **Status, 7 Oct 2026:** BP-001 to BP-030 are FIXED and tested on local `event_module` (BP-001 also on `fix/admin-auth` for `main`), except BP-020, which is ACCEPTED-RISK. Commits and evidence are in `FIX_LOG.md`. New findings BP-031 (S1, tie-break) and BP-032 (S3) are waiting for approval.
+
+Evidence comes from `node scripts/audit/run-eventday.mjs` (the full log is in `audit/results/run1.log`; the JSON is in `audit/results/*.json`, which git ignores) and from `node scripts/audit/github-scenarios.mjs`. All tests ran against the **local** production build only. Nothing touched Vercel or Supabase. The entries below are the original 6 Oct findings; the current status is in the banner above and in FIX_LOG.md.
 
 ---
 
@@ -14,7 +16,7 @@ Evidence comes from `node scripts/audit/run-eventday.mjs` (the full log is in `a
 - **Event-day impact:** anyone can take every chit code and log in as any team (change repo or video, submit). **`origin/main` has the same page and layout code.** If teams have been imported into the production DB, the codes may be readable now. I did not test production.
 - **Decision needed:** yes. After the fix ships, should we **regenerate all codes** (and re-send emails and reprint chits) in case the production codes have already been harvested?
   Answer (FIX_ORDERS, 7 Oct): the real roster is **not yet imported** into production, so there are no codes to regenerate.
-- **Status:** FIXED on `fix/admin-auth` @ `05f8980`. Waiting for production deploy and verification.
+- **Status:** FIXED (see FIX_LOG.md). Waiting for production deploy and verification.
 
 ### BP-002: Video link is accepted before 13:00 (enforced in the UI only)
 - **Severity:** S1 · **Area:** deadline · **Found in:** Phase 4 Repo phase · **Invariant:** INV-02

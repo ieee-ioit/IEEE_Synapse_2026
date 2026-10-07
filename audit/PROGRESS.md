@@ -58,3 +58,27 @@
 ### Constraints
 * User rule: **Claude never pushes.** Give the user the commands instead.
 * Audit and test material stays local; the repo is public.
+
+## 7 Oct 2026 (later): user asked for all remaining fixes
+* Worktree `../IEEE_Synapse_2026-event` on local `event_module`. BP-001 merged from `fix/admin-auth`, plus the logs-page guard and the GitHub API seam.
+* Test DB `synapse_ev`; server on `:3200`; env in the auditenv `.env.ev`.
+* Rule learned: on Windows, **stop the server before `next build`** or the build hangs on `.next` locks (use the auditenv `build.sh`).
+
+| Batch | Result before the fix | Result after |
+| :--- | :--- | :--- |
+| Batch 1 (BP-012/021/024/019) | 3 of 17 pass | **17/17**, commits `7677d58` `82e16f1` `899da5e` |
+| Batch 2 (BP-006/007/008/009/011/023/026/028/030) | 6 of 23 pass | **23/23**, commits `71a1f51` `25e33fc` `927da11`. Migrations 004 and 005 applied twice on a populated DB (40 teams) |
+| Batch 3 (BP-002/003/004/010/017) | 2 of 19 pass | **19/19**, commits `dbfe674` `aaadc14` `d53b296` `4718f8e`. Migration 006 |
+
+**New finding (not in FIX_ORDERS, not fixed, needs approval):** `logAudit()` stores `details` double-encoded (a JSON string inside jsonb), because `JSON.stringify` is applied before `::jsonb` and postgres.js encodes it again.
+| Batch 4 (BP-005/013/014/015/016/018/022/025/027/029) | 3 of 15 pass | **15/15**, commits `5e18c97` … `104c581`. Migration 007 |
+
+### Full event-day runs (`run-eventday.mjs` on a fresh DB, after all fixes)
+* **Trial 1:** 60 PASS, 2 FAIL.
+  * SEC-D02 was a test artifact: the video window was closed by BP-002. The test now opens it first.
+  * **INV-09 is real:** the floating-point tie-break bug, recorded as BP-031.
+* **Trial 2:** 62 PASS, 1 ACCEPTED-RISK (L1, p95 1.6 s), 1 N/A (GH-4). INV-09 passed by chance.
+* **Not done yet:** the `rc-1` tag and the two final runs. Waiting for Devesh on BP-031, BP-032 and the BP-018 judging time.
+
+### Records written
+`FIX_LOG.md`, `HUMAN_CHECKS.md`, `EVENT_DAY_RUNBOOK.md`; banner added to `BREAKPOINTS.md`. Public-safe `docs/SECURITY_REVIEW_SUMMARY.md` is in the event worktree, **uncommitted**.

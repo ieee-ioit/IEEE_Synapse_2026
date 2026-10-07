@@ -18,6 +18,16 @@ const server = http.createServer(async (req, res) => {
     res.writeHead(s, { "content-type": "application/json", ...headers });
     res.end(JSON.stringify(body));
   };
+  // Reviewer-access endpoints (scripts/reviewer-access-report.mjs).
+  if (u.pathname === "/user/repository_invitations") {
+    return json(200, Number(u.searchParams.get("page") || 1) > 1 ? [] : [{ id: 1, repository: { full_name: "audit/pending-repo" } }]);
+  }
+  const repoOnly = u.pathname.match(/^\/repos\/([^/]+)\/([^/]+)$/);
+  if (repoOnly) {
+    const sc = scenario(repoOnly[2]);
+    if (sc === "private") return json(404, { message: "Not Found" });
+    return json(200, { full_name: repoOnly[1] + "/" + repoOnly[2], permissions: { push: !["noreviewer", "pending"].includes(sc), pull: true } });
+  }
   if (!m) return json(404, { message: "Not Found" });
   const [, owner, repo, what] = m;
   const sc = scenario(repo);
