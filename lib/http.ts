@@ -1,4 +1,5 @@
 import "server-only";
+import { randomUUID } from "node:crypto";
 import { NextResponse } from "next/server";
 import { getAdmin, type AdminUser } from "./session";
 
@@ -51,26 +52,41 @@ export function clientInfo(req: Request) {
 
 import { logError } from "./logger";
 
+/**
+ * Logs the full error to error_logs and returns a generic message with a short reference
+ * the organizer can search for in /admin/logs. Never sends error details to the browser.
+ */
+export async function failWithReference(err: unknown, req: Request, status = 500) {
+  const requestId = randomUUID().slice(0, 8);
+  const { ip, userAgent } = clientInfo(req);
+  let endpoint = "api";
+  try {
+    endpoint = new URL(req.url).pathname;
+  } catch {}
+  await logError(err, { endpoint, ip, userAgent, context: { requestId } });
+  return fail(status, `Something went wrong. Reference: ${requestId}`, { requestId });
+}
+
 type AdminHandler<T> = (admin: AdminUser, body: T, req: Request) => Promise<Response>;
 
 /** Wraps an admin-only JSON endpoint: auth + CSRF + error handling. */
 export function adminRoute<T>(handler: AdminHandler<T>) {
   return async (req: Request) => {
+    let admin: AdminUser | null;
     try {
-      const admin = await getAdmin();
-      if (!admin) return fail(401, "Your admin session has expired. Log in again.");
+      admin = await getAdmin();
+    } catch (err) {
+      // e.g. the database is unreachable — don't reveal anything to an unauthenticated caller.
+      return failWithReference(err, req, 503);
+    }
+    if (!admin) return fail(401, "Your admin session has expired. Log in again.");
+    try {
       const body = await readJsonBody<T>(req, MAX_BODY_BYTES);
       if (body === null) return fail(400, "Expected a JSON request from this site.");
       return await handler(admin, body, req);
     } catch (err) {
       if (err instanceof BodyTooLarge) return fail(413, "That upload is too large (max 1 MB). Split the file and try again.");
-      const { ip, userAgent } = clientInfo(req);
-      let endpoint = "admin_api";
-      try {
-        endpoint = new URL(req.url).pathname;
-      } catch {}
-      await logError(err, { endpoint, ip, userAgent });
-      return fail(500, (err as Error).message || "Something went wrong.");
+      return failWithReference(err, req);
     }
   };
 }

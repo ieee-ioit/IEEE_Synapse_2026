@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { fail, ok } from "@/lib/http";
+import { fail, failWithReference, ok } from "@/lib/http";
 import { getAdmin } from "@/lib/session";
 
 export async function GET(req: Request) {
@@ -74,7 +74,6 @@ export async function GET(req: Request) {
       logs: rows,
     });
   } catch (err) {
-    console.error("[admin logs api]", err);
-    return fail(500, (err as Error).message || "Failed to load logs.");
+    return failWithReference(err, req);
   }
 }
