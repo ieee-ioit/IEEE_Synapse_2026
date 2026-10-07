@@ -124,7 +124,7 @@ export const event = {
   // Event-day timeline (times in IST). Single day, Oct 9, 2026.
   schedule: [
     { day: "Oct 9", time: "07:00 – 07:30 AM", title: "Check-in opens", detail: "Collect team badge, verify college ID, and report to your table at AISSMS IOIT." },
-    { day: "Oct 9", time: "08:30 AM", title: "Briefing & Setup", detail: "Final logistical briefing, network setup, and repo preparation." },
+    { day: "Oct 9", time: "08:30 AM", title: "Briefing & Setup", detail: "Final logistical briefing and network setup. Create your GitHub repo only after 09:00 AM." },
     { day: "Oct 9", time: "09:00 AM", title: "Build window opens", detail: "6-hour development sprint begins. Create your repo, add the reviewer collaborator, and commit frequently." },
     { day: "Oct 9", time: "03:00 PM", title: "Submission deadline", detail: "Development ends. Submit your GitHub repo link, README.md, and demo video link." },
     { day: "Oct 9", time: "04:00 PM", title: "Judging & Live Demos", detail: "Live evaluations begin: 3 min demo + 2 min judge Q&A for top finalists." },
