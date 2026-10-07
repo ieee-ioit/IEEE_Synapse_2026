@@ -15,7 +15,7 @@ export type AdminTeam = {
   demoVideoUrl: string | null;
   isFinalist: boolean;
   stage2Order: number | null;
-  githubStatus: "clean" | "review" | "flagged" | null;
+  githubStatus: "clean" | "review" | "flagged" | "unchecked" | null;
   githubNote: string | null;
   firstCommitAt: string | null;
   githubCheckedAt: string | null;
@@ -57,7 +57,7 @@ export async function getAdminTeams(): Promise<AdminTeam[]> {
     select t.id, t.team_number, t.name, t.leader_name, t.leader_email, t.college, t.login_code_enc,
            t.github_repo_url, t.demo_video_url, t.is_finalist, t.stage2_order,
            t.github_status, t.github_note, t.first_commit_at, t.github_checked_at,
-           t.submitted_at, t.first_submitted_at, t.submission_status, coalesce(t.locked_until > now(), false) as locked,
+           t.submitted_at, t.first_submitted_at, t.submission_status, exists (select 1 from team_login_locks l where l.team_id = t.id and l.locked_until > now()) as locked,
            t.credentials_sent_at,
            coalesce(array_agg(m.name order by m.name) filter (where m.id is not null), '{}') as members
     from teams t left join members m on m.team_id = t.id

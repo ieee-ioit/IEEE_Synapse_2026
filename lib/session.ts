@@ -47,9 +47,20 @@ async function read(kind: Kind) {
   }
 }
 
+/** Short tag of the team's current login code, carried in the session cookie. */
+export const codeFingerprint = (loginCodeHash: string) => loginCodeHash.slice(0, 16);
+
+/**
+ * A team session is valid only while the team exists, isn't disqualified and still has the
+ * login code it signed in with — regenerating the code ends every older session.
+ */
 export async function getTeamSession() {
   const p = await read("team");
-  return p ? { teamId: p.sub as string } : null;
+  if (!p || typeof p.cv !== "string") return null;
+  const [t] = await db()<{ login_code_hash: string; submission_status: string }[]>`
+    select login_code_hash, submission_status from teams where id = ${p.sub as string}`;
+  if (!t || t.submission_status === "disqualified" || codeFingerprint(t.login_code_hash) !== p.cv) return null;
+  return { teamId: p.sub as string };
 }
 
 export type AdminUser = { id: string; name: string; email: string };
