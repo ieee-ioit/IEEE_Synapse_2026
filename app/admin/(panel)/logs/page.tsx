@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { db } from "@/lib/db";
 import LogsViewer from "./LogsViewer";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Logs & Audit Trail" };
 export const dynamic = "force-dynamic";
 
 export default async function LogsPage() {
+  await requireAdmin();
   const sql = db();
 
   const [
