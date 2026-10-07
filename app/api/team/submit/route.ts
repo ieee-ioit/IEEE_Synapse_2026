@@ -26,13 +26,15 @@ export async function POST(req: Request) {
         first_submitted_at = coalesce(first_submitted_at, now()),
         last_updated_at = now(),
         submission_status = 'submitted'
-      where id = ${session.teamId} and submission_status <> 'disqualified' and github_repo_url is not null
+      where id = ${session.teamId} and submission_status = 'building' and github_repo_url is not null
       returning submitted_at, team_number`;
 
     if (!row) {
-      const [t] = await sql<{ submission_status: string; github_repo_url: string | null }[]>`
-        select submission_status, github_repo_url from teams where id = ${session.teamId}`;
+      const [t] = await sql<{ submission_status: string; github_repo_url: string | null; submitted_at: Date | null }[]>`
+        select submission_status, github_repo_url, submitted_at from teams where id = ${session.teamId}`;
       if (!t) return fail(401, "Team not found.");
+      // Second click / retry: already submitted, nothing to change or log.
+      if (t.submission_status === "submitted") return ok({ submittedAt: iso(t.submitted_at), alreadySubmitted: true });
       if (t.submission_status === "disqualified") return fail(403, "This team can't submit.");
       return fail(400, "Save your GitHub repo link first before submitting.");
     }
