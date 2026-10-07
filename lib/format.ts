@@ -8,6 +8,23 @@ export function siteUrl() {
   return (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/$/, "");
 }
 
+const LOCAL_HOST = /^(localhost|127\.0\.0\.1|\[::1\]|::1|0\.0\.0\.0)$/i;
+
+/**
+ * Server-only check: in production, login links (emails, chits) must not point at localhost.
+ * A local SMTP host marks a local test run of the production build, which is allowed.
+ */
+export function siteUrlProblem(): string | null {
+  if (process.env.NODE_ENV !== "production") return null;
+  let host = "";
+  try {
+    host = new URL(siteUrl()).hostname;
+  } catch {}
+  if (host && !LOCAL_HOST.test(host)) return null;
+  if (LOCAL_HOST.test(process.env.SMTP_HOST ?? "")) return null;
+  return "NEXT_PUBLIC_SITE_URL isn't set for production, so login links would point to localhost. Set it in Vercel (Production) and redeploy before sending emails or printing chits.";
+}
+
 export function formatDateTime(isoString: string | null | undefined) {
   if (!isoString) return "—";
   return new Intl.DateTimeFormat("en-IN", {

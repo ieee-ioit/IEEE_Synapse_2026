@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { db, iso } from "@/lib/db";
+import { siteUrlProblem } from "@/lib/format";
 import { mailConfigured } from "@/lib/mail";
 import CredentialSender from "./CredentialSender";
 import { requireAdmin } from "@/lib/session";
@@ -31,6 +32,7 @@ export default async function SendCredentialsPage() {
         <Link href="/admin/print" style={{ textDecoration: "underline" }}>printed chits</Link> at check-in as the backup —
         college networks and inboxes are unreliable on the day.
       </p>
+      {siteUrlProblem() && <div className="notice admin-section">{siteUrlProblem()}</div>}
       {!mailConfigured() && (
         <div className="notice admin-section">
           Email isn&rsquo;t set up yet. Add <span className="mono">SMTP_HOST</span>, <span className="mono">SMTP_USER</span>,{" "}
@@ -38,7 +40,7 @@ export default async function SendCredentialsPage() {
           works for up to ~500 emails a day), then redeploy. Until then, use the print sheet.
         </div>
       )}
-      <CredentialSender teams={teams} enabled={mailConfigured()} />
+      <CredentialSender teams={teams} enabled={mailConfigured() && !siteUrlProblem()} />
     </>
   );
 }

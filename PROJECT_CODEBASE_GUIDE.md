@@ -346,11 +346,11 @@ node scripts/simulate-eventday.mjs
 
 | Variable | Description | Example / Format |
 | :--- | :--- | :--- |
-| `DATABASE_URL` | PostgreSQL connection string (Supabase) | `postgresql://postgres:[PASSWORD]@[HOST]:5432/postgres` |
-| `CODE_SECRET` | 32+ char secret for deriving chit hash/encryption keys | `synapse-2026-super-secure-production-secret-min32` |
-| `ADMIN_SECRET` | 32+ char secret for signing admin session cookies | `synapse-2026-admin-session-secret-min32-characters` |
-| `GITHUB_TOKEN` | GitHub Personal Access Token for checking repo commits | `ghp_xxxxxxxxxxxxxxxxxxxx` |
-| `NEXT_PUBLIC_APP_URL` | Canonical public URL of the application | `https://synapse2026.com` |
+| `DATABASE_URL` | PostgreSQL connection string (Supabase transaction pooler, port 6543) | `postgresql://postgres.[REF]:[PASSWORD]@[HOST]:6543/postgres` |
+| `CODE_SECRET` | 32+ char random secret for deriving chit hash/encryption keys | `<random, 48+ chars, never reuse an example>` |
+| `SESSION_SECRET` | 32+ char random secret for signing team and admin session cookies | `<random, 48+ chars, different from CODE_SECRET>` |
+| `GITHUB_TOKEN` | Read-only GitHub token for checking public repo commits (no write scopes) | `<fine-grained token, public repos read-only>` |
+| `NEXT_PUBLIC_SITE_URL` | Canonical public URL; used in emails, chits, canonical and og:image. Baked in at build time, so redeploy after changing it | `https://ieee-synapse-2026.vercel.app` |
 
 ---
 

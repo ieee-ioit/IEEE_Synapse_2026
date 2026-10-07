@@ -3,7 +3,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import { getAdminTeams } from "@/lib/admin-teams";
 import { event } from "@/lib/event";
-import { siteUrl } from "@/lib/format";
+import { siteUrl, siteUrlProblem } from "@/lib/format";
 import { getAdmin } from "@/lib/session";
 import PrintButton from "./PrintButton";
 
@@ -15,6 +15,7 @@ export default async function PrintPage() {
   if (!(await getAdmin())) redirect("/admin/login");
   const teams = (await getAdminTeams()).filter((t) => t.status !== "disqualified");
   const loginUrl = `${siteUrl().replace(/^https?:\/\//, "")}/team/login`;
+  const urlProblem = siteUrlProblem();
 
   return (
     <main className="print-page">
@@ -32,6 +33,7 @@ export default async function PrintPage() {
           <PrintButton />
         </div>
       </div>
+      {urlProblem && <div className="notice no-print" style={{ marginBottom: 20 }}>{urlProblem}</div>}
       <div className="print-grid">
         {teams.map((t) => (
           <div className="chit" key={t.id}>

@@ -1,5 +1,6 @@
 import { decryptCode } from "@/lib/codes";
 import { db } from "@/lib/db";
+import { siteUrlProblem } from "@/lib/format";
 import { adminRoute, fail, ok } from "@/lib/http";
 import { mailConfigured, sendCredentials } from "@/lib/mail";
 
@@ -12,6 +13,8 @@ const BATCH = 8; // small batches keep each request well inside the serverless t
  */
 export const POST = adminRoute<{ ids?: string[] }>(async (_admin, body) => {
   if (!mailConfigured()) return fail(400, "Email isn't configured. Set SMTP_HOST, SMTP_USER and SMTP_PASS.");
+  const urlProblem = siteUrlProblem();
+  if (urlProblem) return fail(400, urlProblem);
   const sql = db();
   const ids = Array.isArray(body.ids) ? body.ids.filter((id) => /^[0-9a-f-]{36}$/i.test(id)) : null;
 
