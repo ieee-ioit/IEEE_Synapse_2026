@@ -1,12 +1,20 @@
+import { compare } from "bcryptjs";
 import { revalidatePath } from "next/cache";
 import { db } from "@/lib/db";
 import { adminRoute, clientInfo, fail, ok } from "@/lib/http";
 import { logAudit } from "@/lib/logger";
 
-/** Wipes dry-run data (plan §14, step 7.5). Requires typing DELETE in the UI. */
-export const POST = adminRoute<{ scope?: string; confirm?: string }>(async (admin, body, req) => {
+/**
+ * Wipes dry-run data (plan §14, step 7.5). Three locks: the deployment must allow it
+ * (ALLOW_RESET=1, unset in production by default), the admin re-enters their password,
+ * and types DELETE.
+ */
+export const POST = adminRoute<{ scope?: string; confirm?: string; password?: string }>(async (admin, body, req) => {
+  if (process.env.ALLOW_RESET !== "1") return fail(403, "Reset is disabled on this deployment (set ALLOW_RESET=1 to enable it).");
   if (body.confirm !== "DELETE") return fail(400, 'Type "DELETE" to confirm.');
   const sql = db();
+  const [row] = await sql<{ password_hash: string }[]>`select password_hash from admins where id = ${admin.id}`;
+  if (!row || !(await compare(String(body.password ?? ""), row.password_hash))) return fail(403, "Wrong password.");
   if (body.scope === "scores") {
     await sql`delete from scores`;
   } else if (body.scope === "everything") {
