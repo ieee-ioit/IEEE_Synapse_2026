@@ -21,6 +21,18 @@ export const PUT = adminRoute<Partial<Settings>>(async (admin, body, req) => {
   }
   if (body.themeTitle !== undefined) patch.themeTitle = String(body.themeTitle).trim().slice(0, 140);
   if (body.themeDescription !== undefined) patch.themeDescription = String(body.themeDescription).trim().slice(0, 4000);
+  if (body.videoUnlockAt !== undefined) {
+    // "" resets to the default (event start + 4 h).
+    const v = String(body.videoUnlockAt).trim();
+    if (v && Number.isNaN(Date.parse(v))) return fail(400, "Invalid date for videoUnlockAt.");
+    patch.videoUnlockAt = v ? new Date(Date.parse(v)).toISOString() : "";
+  }
+  if (body.finalistCount !== undefined) {
+    const n = Number(body.finalistCount);
+    if (!Number.isInteger(n) || n < 1 || n > 50) return fail(400, "finalistCount must be a whole number from 1 to 50.");
+    patch.finalistCount = n;
+  }
+  if (body.expectedJudges !== undefined) patch.expectedJudges = String(body.expectedJudges).trim().slice(0, 500);
 
   const current = await getSettings();
   const start = patch.eventStart ?? current.eventStart;

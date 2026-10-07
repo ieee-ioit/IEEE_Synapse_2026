@@ -10,7 +10,12 @@ export type Settings = {
   themeRevealed: boolean;
   themeTitle: string;
   themeDescription: string;
+  videoUnlockAt: string; // ISO; defaults to event start + 4 h (13:00 IST)
+  finalistCount: number;
+  expectedJudges: string; // optional, comma-separated; names outside it only warn
 };
+
+const VIDEO_UNLOCK_AFTER_MS = 4 * 60 * 60 * 1000;
 
 const KEY: Record<keyof Settings, string> = {
   eventStart: "event_start_time",
@@ -20,6 +25,9 @@ const KEY: Record<keyof Settings, string> = {
   themeRevealed: "theme_revealed",
   themeTitle: "theme_title",
   themeDescription: "theme_description",
+  videoUnlockAt: "video_unlock_at",
+  finalistCount: "finalist_count",
+  expectedJudges: "expected_judges",
 };
 
 export const defaultSettings: Settings = {
@@ -30,6 +38,9 @@ export const defaultSettings: Settings = {
   themeRevealed: false,
   themeTitle: "",
   themeDescription: "",
+  videoUnlockAt: new Date(Date.parse(event.defaults.eventStart) + VIDEO_UNLOCK_AFTER_MS).toISOString(),
+  finalistCount: event.finalistCount,
+  expectedJudges: "",
 };
 
 function fromRows(rows: { key: string; value: string }[]): Settings {
@@ -40,14 +51,20 @@ function fromRows(rows: { key: string; value: string }[]): Settings {
     const v = str(k);
     return v && !Number.isNaN(Date.parse(v)) ? new Date(v).toISOString() : defaultSettings[k];
   };
+  const eventStart = date("eventStart");
+  const video = str("videoUnlockAt");
+  const count = Number(str("finalistCount"));
   return {
-    eventStart: date("eventStart"),
+    eventStart,
     submissionDeadline: date("submissionDeadline"),
     leaderboardVisible: bool("leaderboardVisible"),
     scoresVisible: bool("scoresVisible"),
     themeRevealed: bool("themeRevealed"),
     themeTitle: str("themeTitle"),
     themeDescription: str("themeDescription"),
+    videoUnlockAt: video && !Number.isNaN(Date.parse(video)) ? new Date(video).toISOString() : new Date(Date.parse(eventStart) + VIDEO_UNLOCK_AFTER_MS).toISOString(),
+    finalistCount: Number.isInteger(count) && count > 0 ? count : event.finalistCount,
+    expectedJudges: str("expectedJudges"),
   };
 }
 
