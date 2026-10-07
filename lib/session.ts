@@ -1,6 +1,7 @@
 import "server-only";
 import { jwtVerify, SignJWT } from "jose";
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import { db } from "./db";
 
 type Kind = "team" | "admin";
@@ -59,4 +60,14 @@ export async function getAdmin(): Promise<AdminUser | null> {
   if (!p) return null;
   const [admin] = await db()<AdminUser[]>`select id, name, email from admins where id = ${p.sub as string}`;
   return admin ?? null;
+}
+
+/**
+ * For admin pages: the layout's check alone doesn't stop a page from rendering,
+ * so every admin page (and admin data helper) calls this before touching data.
+ */
+export async function requireAdmin(): Promise<AdminUser> {
+  const admin = await getAdmin();
+  if (!admin) redirect("/admin/login");
+  return admin;
 }

@@ -3,11 +3,13 @@ import Link from "next/link";
 import { db, iso } from "@/lib/db";
 import { mailConfigured } from "@/lib/mail";
 import CredentialSender from "./CredentialSender";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Credentials" };
 export const dynamic = "force-dynamic";
 
 export default async function SendCredentialsPage() {
+  await requireAdmin();
   const rows = await db()<
     { id: string; team_number: number; name: string; leader_email: string; credentials_sent_at: Date | null }[]
   >`select id, team_number, name, leader_email, credentials_sent_at from teams order by team_number`;

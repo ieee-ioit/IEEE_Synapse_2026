@@ -5,11 +5,13 @@ import { formatScore, formatTime } from "@/lib/format";
 import { getRanking } from "@/lib/scoring";
 import CriteriaEditor from "./CriteriaEditor";
 import ScoreImporter from "./ScoreImporter";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Scores" };
 export const dynamic = "force-dynamic";
 
 export default async function ScoresPage() {
+  await requireAdmin();
   const sql = db();
   const [criteria, { teams: ranking }, teams, [stats]] = await Promise.all([
     getCriteria(),

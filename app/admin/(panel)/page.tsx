@@ -4,10 +4,12 @@ import { mailConfigured } from "@/lib/mail";
 import { getSettings } from "@/lib/settings";
 import DangerZone from "./DangerZone";
 import SettingsForm from "./SettingsForm";
+import { requireAdmin } from "@/lib/session";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminOverview() {
+  await requireAdmin();
   const sql = db();
   const [[k], settings] = await Promise.all([
     sql<
