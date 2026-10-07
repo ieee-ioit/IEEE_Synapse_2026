@@ -17,21 +17,44 @@ type Body = { teams?: IncomingTeam[]; dryRun?: boolean; update?: string[] };
 
 export type ImportRowStatus = "new" | "existing" | "duplicate" | "invalid";
 
-const s = (v: unknown, max = 200) => String(v ?? "").trim().slice(0, max);
+// Control characters (CR/LF, tabs, C1, line/paragraph separators) become spaces; runs collapse.
+const s = (v: unknown) =>
+  String(v ?? "")
+    .replace(/[\u0000-\u001F\u007F-\u009F\u2028\u2029]/g, " ")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+const LIMITS = { name: 120, person: 120, college: 200, email: 254 };
+const MAX_TEAM_SIZE = 4;
 
 function clean(t: IncomingTeam) {
   const n = t.teamNumber == null || (t.teamNumber as unknown) === "" ? null : Number(t.teamNumber);
+  const leaderEmail = s(t.leaderEmail).toLowerCase();
   return {
     teamNumber: n != null && Number.isInteger(n) && n > 0 && n < 1_000_000 ? n : n == null ? null : NaN,
-    name: s(t.name, 120),
+    name: s(t.name),
     leaderName: s(t.leaderName),
-    leaderEmail: s(t.leaderEmail).toLowerCase(),
+    leaderEmail,
     college: s(t.college),
     members: (Array.isArray(t.members) ? t.members : [])
       .slice(0, 12)
       .map((m) => ({ name: s(m?.name), email: s(m?.email).toLowerCase() }))
-      .filter((m) => m.name || m.email),
+      .filter((m) => (m.name || m.email) && !(leaderEmail && m.email === leaderEmail)),
   };
+}
+
+/** Why this row can't be imported, or "" if it can. */
+function problem(t: ReturnType<typeof clean>) {
+  if (!t.name) return "Missing team name";
+  if (t.name.length > LIMITS.name) return `Team name is longer than ${LIMITS.name} characters`;
+  if (!t.leaderEmail) return "Missing leader email (needed to send the login code)";
+  if (t.leaderEmail.length > LIMITS.email || !EMAIL.test(t.leaderEmail)) return `Leader email "${t.leaderEmail.slice(0, 60)}" isn't valid`;
+  if (t.leaderName.length > LIMITS.person || t.members.some((m) => m.name.length > LIMITS.person)) return `A person's name is longer than ${LIMITS.person} characters`;
+  if (t.college.length > LIMITS.college) return `College is longer than ${LIMITS.college} characters`;
+  const bad = t.members.find((m) => m.email && (m.email.length > LIMITS.email || !EMAIL.test(m.email)));
+  if (bad) return `Member email "${bad.email.slice(0, 60)}" isn't valid`;
+  if (1 + t.members.length > MAX_TEAM_SIZE) return `Team has ${1 + t.members.length} members (max ${MAX_TEAM_SIZE})`;
+  return "";
 }
 
 /**
@@ -47,9 +70,11 @@ export const POST = adminRoute<Body>(async (_admin, body, req) => {
   const updateKeys = new Set((body.update ?? []).map((k) => String(k).toLowerCase()));
 
   const run = async (sql: ReturnType<typeof db>) => {
-    const existing = await sql<{ id: string; team_number: number; key: string }[]>`
-      select id, team_number, lower(name) as key from teams`;
+    const existing = await sql<{ id: string; team_number: number; key: string; email: string }[]>`
+      select id, team_number, lower(name) as key, lower(leader_email) as email from teams`;
     const byName = new Map(existing.map((e) => [e.key, e]));
+    const byEmail = new Map(existing.filter((e) => e.email).map((e) => [e.email, e]));
+    const seenEmails = new Map<string, string>();
     const taken = new Set(existing.map((e) => e.team_number));
     const seenNames = new Set<string>();
     const fileNumbers = new Set<number>();
@@ -57,10 +82,19 @@ export const POST = adminRoute<Body>(async (_admin, body, req) => {
     const rows = teams.map((t, index) => {
       const key = t.name.toLowerCase();
       const base = { index, name: t.name, leaderName: t.leaderName, leaderEmail: t.leaderEmail, memberCount: t.members.length };
-      if (!t.name) return { ...base, status: "invalid" as ImportRowStatus, reason: "Missing team name", teamNumber: null };
+      const why = problem(t);
+      if (why) return { ...base, status: "invalid" as ImportRowStatus, reason: why, teamNumber: null };
       if (seenNames.has(key)) return { ...base, status: "duplicate" as ImportRowStatus, reason: "Appears earlier in this file", teamNumber: null };
       seenNames.add(key);
       const hit = byName.get(key);
+      const emailOwner = byEmail.get(t.leaderEmail);
+      if (emailOwner && emailOwner !== hit) {
+        return { ...base, status: "invalid" as ImportRowStatus, reason: `Leader email is already used by team #${emailOwner.team_number}`, teamNumber: null };
+      }
+      if (seenEmails.has(t.leaderEmail)) {
+        return { ...base, status: "invalid" as ImportRowStatus, reason: `Leader email is also used by "${seenEmails.get(t.leaderEmail)}" earlier in this file`, teamNumber: null };
+      }
+      seenEmails.set(t.leaderEmail, t.name);
       if (hit) return { ...base, status: "existing" as ImportRowStatus, reason: "", teamNumber: hit.team_number };
       if (Number.isNaN(t.teamNumber)) return { ...base, status: "invalid" as ImportRowStatus, reason: "Team number isn't a whole number", teamNumber: null };
       if (t.teamNumber != null && (taken.has(t.teamNumber) || fileNumbers.has(t.teamNumber))) {
