@@ -4,11 +4,13 @@ import { formatScore } from "@/lib/format";
 import { getRanking } from "@/lib/scoring";
 import { getSettings } from "@/lib/settings";
 import VisibilityToggles from "./VisibilityToggles";
+import { requireAdmin } from "@/lib/session";
 
 export const metadata: Metadata = { title: "Leaderboard" };
 export const dynamic = "force-dynamic";
 
 export default async function AdminLeaderboardPage() {
+  await requireAdmin();
   const [settings, { teams }] = await Promise.all([getSettings(), getRanking()]);
   const ranked = teams.filter((t) => t.rank != null);
 

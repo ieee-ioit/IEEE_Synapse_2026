@@ -1,6 +1,7 @@
 import "server-only";
 import { decryptCode } from "./codes";
 import { db, iso } from "./db";
+import { requireAdmin } from "./session";
 
 export type AdminTeam = {
   id: string;
@@ -27,6 +28,7 @@ export type AdminTeam = {
 };
 
 export async function getAdminTeams(): Promise<AdminTeam[]> {
+  await requireAdmin();
   const rows = await db()<
     {
       id: string;
