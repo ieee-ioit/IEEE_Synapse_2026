@@ -37,3 +37,24 @@
 3. `npm run build && npx next start`
 4. `node scripts/audit/mock-github.mjs`
 5. `node scripts/audit/run-eventday.mjs`
+
+## 7 Oct 2026: Phase 6 (approval: `FIX_ORDERS.md`, all of BP-001 to BP-030)
+
+### Batch 0 (BP-001): done, waiting on the human deploy
+* Wrote `audit/BRANCH_DIFF.md`.
+* Worktree `../IEEE_Synapse_2026-fix-admin-auth` holds branch `fix/admin-auth`, cut from `origin/main` `6abf865`.
+* Test DB `synapse_main` built from `main`'s schema. Server on `:3100`.
+* Regression test `tests/regression/bp-001-admin-auth.mjs`, 360 probes:
+  * failed on unfixed `main` (120 failures, 60 leaks);
+  * passes on the fix (0 failures, admin control OK).
+* Commit `05f8980` contains app code only. **Not pushed.** The user pushes.
+* `FIX_LOG.md` and `HUMAN_CHECKS.md` started.
+
+### Next
+1. User pushes, opens the PR, merges, and verifies production (`HUMAN_CHECKS.md` #1–3).
+2. Merge `main` into `event_module` (add the guard to `/admin/logs` too).
+3. Batch 1 on `audit/eventday-hardening`: BP-012, 021, 024, 019.
+
+### Constraints
+* User rule: **Claude never pushes.** Give the user the commands instead.
+* Audit and test material stays local; the repo is public.

@@ -13,6 +13,8 @@ Evidence comes from `node scripts/audit/run-eventday.mjs` (the full log is in `a
 - **Proposed fix:** a `requireAdmin()` helper (calls `getAdmin()`, then `redirect('/admin/login')`) as the **first line of every `(panel)` page**. Also add a guard inside `getAdminTeams()` as defence in depth. Effort **S**.
 - **Event-day impact:** anyone can take every chit code and log in as any team (change repo or video, submit). **`origin/main` has the same page and layout code.** If teams have been imported into the production DB, the codes may be readable now. I did not test production.
 - **Decision needed:** yes. After the fix ships, should we **regenerate all codes** (and re-send emails and reprint chits) in case the production codes have already been harvested?
+  Answer (FIX_ORDERS, 7 Oct): the real roster is **not yet imported** into production, so there are no codes to regenerate.
+- **Status:** FIXED on `fix/admin-auth` @ `05f8980`. Waiting for production deploy and verification.
 
 ### BP-002: Video link is accepted before 13:00 (enforced in the UI only)
 - **Severity:** S1 · **Area:** deadline · **Found in:** Phase 4 Repo phase · **Invariant:** INV-02
