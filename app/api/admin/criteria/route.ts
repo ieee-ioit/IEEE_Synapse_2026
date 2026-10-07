@@ -1,11 +1,12 @@
 import { revalidatePath } from "next/cache";
 import { getCriteria } from "@/lib/criteria";
 import { db } from "@/lib/db";
-import { adminRoute, fail, ok } from "@/lib/http";
+import { adminRoute, clientInfo, fail, ok } from "@/lib/http";
+import { logAudit } from "@/lib/logger";
 
 type Input = { criteria?: { id?: string; name?: unknown; weight?: unknown }[] };
 
-export const PUT = adminRoute<Input>(async (_admin, body) => {
+export const PUT = adminRoute<Input>(async (admin, body, req) => {
   const list = Array.isArray(body.criteria) ? body.criteria : null;
   if (!list || !list.length || list.length > 12) return fail(400, "Provide between 1 and 12 criteria.");
 
@@ -32,6 +33,17 @@ export const PUT = adminRoute<Input>(async (_admin, body) => {
       if (c.id) await sql`update criteria set name = ${c.name}, weight = ${c.weight}, position = ${c.position} where id = ${c.id}`;
       else await sql`insert into criteria (name, weight, position) values (${c.name}, ${c.weight}, ${c.position})`;
     }
+  });
+
+  const { ip, userAgent } = clientInfo(req);
+  await logAudit({
+    actorType: "admin",
+    actorId: admin.email,
+    action: "CRITERIA_UPDATED",
+    targetType: "criteria",
+    details: { criteria: clean.map((c) => ({ name: c.name, weight: c.weight })) },
+    ip,
+    userAgent,
   });
 
   revalidatePath("/rules");
