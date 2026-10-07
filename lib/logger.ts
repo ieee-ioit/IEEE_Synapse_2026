@@ -45,7 +45,7 @@ export async function logAudit(options: AuditLogOptions): Promise<void> {
         ${options.action},
         ${targetType},
         ${targetId},
-        ${details}::jsonb,
+        (${details}::text)::jsonb,
         ${ip},
         ${userAgent}
       )`;
@@ -82,7 +82,7 @@ export async function logError(err: unknown, options: ErrorLogOptions): Promise<
         ${options.endpoint},
         ${errMsg},
         ${errStack},
-        ${context}::jsonb,
+        (${context}::text)::jsonb,
         ${ip},
         ${userAgent}
       )`;

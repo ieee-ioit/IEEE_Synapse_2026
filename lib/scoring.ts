@@ -69,7 +69,7 @@ export async function getRanking({ includeDisqualified = false, stage = 1 }: { i
       where ${includeDisqualified} or t.submission_status <> 'disqualified'
       order by (t.submission_status = 'disqualified'), 
                (t.is_finalist and ${stage === 2}) desc,
-               pt.score desc nulls last,
+               round(pt.score::numeric, 6) desc nulls last, -- exact ties fall through to the tie-break, not float noise
                coalesce(t.first_submitted_at, t.submitted_at) asc nulls last, 
                t.team_number asc`,
     sql<{ n: number }[]>`select count(*)::int as n from criteria`,
