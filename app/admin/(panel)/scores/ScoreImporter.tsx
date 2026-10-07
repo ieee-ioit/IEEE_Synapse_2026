@@ -7,8 +7,17 @@ import { downloadXlsx, readFirstSheet } from "@/components/sheets";
 import type { Criterion } from "@/lib/criteria";
 
 type Payload = { sheetRow: number; teamNumber: unknown; judge: string; values: Record<string, unknown>; notes: string };
-type CheckedRow = { index: number; teamNumber: number; teamName: string; judge: string; values: unknown[]; problems: string[] };
-type Summary = { rows: number; valid: number; invalid: number; scores: number; teams: number };
+type CheckedRow = { index: number; teamNumber: number; teamName: string; judge: string; judgeName: string; values: unknown[]; problems: string[]; warnings: string[] };
+type Summary = {
+  rows: number;
+  valid: number;
+  invalid: number;
+  scores: number;
+  teams: number;
+  incomplete: number;
+  judges: { name: string; rows: number }[];
+  judgeWarnings: string[];
+};
 
 const norm = (s: string) => s.trim().toLowerCase().replace(/\s+/g, " ");
 
@@ -99,6 +108,7 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
   }
 
   const problems = preview?.rows.filter((r) => r.problems.length) ?? [];
+  const incomplete = preview?.rows.filter((r) => !r.problems.length && r.warnings.length) ?? [];
 
   return (
     <div className="stack">
@@ -155,6 +165,26 @@ export default function ScoreImporter({ criteria, teams }: { criteria: Criterion
             {preview.summary.valid} valid rows → {preview.summary.scores} scores for {preview.summary.teams} teams
             {preview.summary.invalid ? ` · ${preview.summary.invalid} rows have problems and will be skipped` : ""}
           </div>
+          <div className="form-note">
+            Judges in this file ({preview.summary.judges.length}):{" "}
+            {preview.summary.judges.map((j) => `${j.name} (${j.rows} rows)`).join(" · ") || "none"}
+          </div>
+          {preview.summary.judgeWarnings.length > 0 && (
+            <div className="notice">
+              {preview.summary.judgeWarnings.map((w) => (
+                <div key={w}>⚠ {w}</div>
+              ))}
+            </div>
+          )}
+          {incomplete.length > 0 && (
+            <div className="notice">
+              {incomplete.length} row(s) are incomplete. A criterion with no marks from any judge counts as 0 in that team's total:{" "}
+              {incomplete
+                .slice(0, 15)
+                .map((r) => `team ${r.teamNumber}${r.judgeName ? ` · ${r.judgeName}` : ""} (${r.warnings.join("; ")})`)
+                .join(", ")}
+            </div>
+          )}
           {problems.length > 0 && (
             <ul className="status-list" style={{ fontSize: 13 }}>
               {problems.slice(0, 20).map((r) => (

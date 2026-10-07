@@ -70,7 +70,7 @@ export default async function ScoresPage() {
                   <td className="num mono">
                     {t.criteriaScored}/{criteria.length}
                     {t.score != null && t.criteriaScored < criteria.length && (
-                      <span className="pill pill--warn" style={{ marginLeft: 6 }}>incomplete</span>
+                      <span className="pill pill--warn" style={{ marginLeft: 6 }}>incomplete: {t.criteriaScored} of {criteria.length} criteria</span>
                     )}
                   </td>
                   <td className="mono">{t.submittedAt ? formatTime(t.submittedAt) : "—"}</td>
