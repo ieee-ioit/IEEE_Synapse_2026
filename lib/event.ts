@@ -92,7 +92,7 @@ export const event = {
       "Theme — Build Beyond Code: Identify Problem → Design Solution → Build Functional Prototype → Demonstrate Impact.",
       "4 Tracks: AI & Intelligent Systems, Cybersecurity & Digital Trust, Social Impact & Sustainability, Open Innovation.",
       "Build from scratch in a GitHub repo during the 6-hour build window (09:00 AM – 03:00 PM). Deliverables: GitHub Repo + README.md + Demo Video link (Mandatory). No PPT required.",
-      "Add organizer reviewer collaborator (ieee-synapse-reviewer) to your repository right at initial creation for development monitoring.",
+      "Add your assigned reviewer (named in your credentials email and on your team dashboard) as a collaborator as soon as you create your repository.",
       "Two-Stage Evaluation: Stage 1 preliminary evaluation across all teams; top finalists present live (3 min demo + 2 min judge Q&A) for the podium.",
     ],
     eligibility: [
@@ -111,7 +111,7 @@ export const event = {
 
   rules: [
     "All code must be written during the 6-hour build window. Your repo's initial commit must come after 09:00 AM.",
-    "Teams must add the official reviewer collaborator (ieee-synapse-reviewer) to their GitHub repo when the repository is first created.",
+    "Teams must add their assigned reviewer (shown on the team dashboard and in the credentials email) as a collaborator when the repository is first created.",
     "Open-source libraries, frameworks, APIs, and AI coding assistants are allowed; pre-built projects are strictly prohibited.",
     "Commit early and often. Repository commit history will be reviewed to monitor development activity.",
     "Official deliverables: GitHub Repository + README.md documentation + Working Project Demo Video link (hosted on YouTube, Google Drive, Loom, or Vimeo). No PPT required.",
@@ -125,13 +125,25 @@ export const event = {
   schedule: [
     { day: "Oct 9", time: "07:00 – 07:30 AM", title: "Check-in opens", detail: "Collect team badge, verify college ID, and report to your table at AISSMS IOIT." },
     { day: "Oct 9", time: "08:30 AM", title: "Briefing & Setup", detail: "Final logistical briefing and network setup. Create your GitHub repo only after 09:00 AM." },
-    { day: "Oct 9", time: "09:00 AM", title: "Build window opens", detail: "6-hour development sprint begins. Create your repo, add the reviewer collaborator, and commit frequently." },
+    { day: "Oct 9", time: "09:00 AM", title: "Build window opens", detail: "6-hour development sprint begins. Create your repo, add your assigned reviewer as a collaborator, and commit frequently." },
     { day: "Oct 9", time: "03:00 PM", title: "Submission deadline", detail: "Development ends. Submit your GitHub repo link, README.md, and demo video link." },
     { day: "Oct 9", time: "04:00 PM", title: "Judging & Live Demos", detail: "Live evaluations begin: 3 min demo + 2 min judge Q&A for top finalists." },
     { day: "Oct 9", time: "05:30 PM", title: "Results & Valedictory", detail: "Winner announcements and prize distribution." },
   ],
 
-  reviewerGithub: "ieee-synapse-reviewer",
+  // GitHub accounts of the organizer reviewers. Each team gets one, round-robin by team number.
+  reviewers: [
+    "Keshav-137",
+    "nibble007",
+    "Dev-43",
+    "Sharvil1509",
+    "JunedH09",
+    "Keya-Nagar25",
+    "samikshachingunde576-netizen",
+    "AdityaSurse",
+    "introvolentvow77",
+    "harshalarmorikar121-cloud",
+  ],
   codePrefix: "SYN",
   teamNumberStart: 101,
   finalistCount: 10,
@@ -145,3 +157,10 @@ export const event = {
 };
 
 export type EventConfig = typeof event;
+
+/** The organizer reviewer (GitHub username) a team adds as a collaborator. Fixed by team number. */
+export function reviewerFor(teamNumber: number) {
+  const list = event.reviewers;
+  const i = (((teamNumber - event.teamNumberStart) % list.length) + list.length) % list.length;
+  return { username: list[i], url: `https://github.com/${list[i]}` };
+}
