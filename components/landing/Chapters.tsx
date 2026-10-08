@@ -13,16 +13,14 @@ const dates = { start: event.defaults.eventStart, deadline: event.defaults.submi
 const dateLine = formatDateRange(event.defaults.eventStart, event.defaults.eventStart); // single-day event
 const closeLabel = formatCloseTime(event.registrationCloseAt, event.timezone);
 
-/** Register and WhatsApp before the event; team login and leaderboard during and after. `content` tags the placement in the UTM. */
+/**
+ * Team login before and during the event (registrations are closed and teams log in at check-in),
+ * plus WhatsApp before the event and the leaderboard during and after. `content` tags the placement in the UTM.
+ */
 function actions(content: string): { register: [Action, Action]; whatsapp: [Action, Action] } {
   return {
     register: [
-      {
-        label: hero.primaryCta,
-        href: trackedUrl(event.registerUrl, event.utm.register, content),
-        external: true,
-        pending: "Registration link coming soon",
-      },
+      { label: "Team Login", href: "/team/login" },
       { label: "Team Login", href: "/team/login" },
     ],
     whatsapp: [

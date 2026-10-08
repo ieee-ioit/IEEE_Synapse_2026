@@ -1,10 +1,7 @@
 import type { Cta } from "@/components/SiteHeader";
-import { event } from "./event";
 import type { Phase } from "./settings";
 
-/** Header CTA: drive registrations before the event, send teams to their login after. */
-export function headerCta(phase: Phase): Cta {
-  return phase === "pre"
-    ? { label: "Registrations Closed", href: event.registerUrl, external: true }
-    : { label: "Team Login", href: "/team/login" };
+/** Header CTA: registrations are closed, so teams go to their login before and during the event. */
+export function headerCta(_phase: Phase): Cta {
+  return { label: "Team Login", href: "/team/login" };
 }
