@@ -5,7 +5,7 @@ import { api } from "@/components/api";
 import { formatClock, formatLong, useNow } from "@/components/Countdown";
 import { Sparkle } from "@/components/icons";
 import { useLiveVersion } from "@/components/useLiveVersion";
-import { event } from "@/lib/event";
+import { event, reviewerFor } from "@/lib/event";
 import { formatDateTime, formatScore, formatTime } from "@/lib/format";
 import type { TeamView } from "@/lib/team";
 
@@ -33,6 +33,7 @@ export default function TeamDashboard({ initial }: { initial: TeamView }) {
   }, [version]);
 
   const { team, result } = view;
+  const reviewer = reviewerFor(team.teamNumber);
   const start = Date.parse(view.eventStart);
   const deadline = Date.parse(view.deadline);
   const closed = now != null && now >= deadline;
@@ -159,7 +160,11 @@ export default function TeamDashboard({ initial }: { initial: TeamView }) {
                 </button>
               </div>
               <p className="form-note" style={{ marginTop: 4 }}>
-                Add <span className="code-chip">{event.reviewerGithub}</span> as collaborator on GitHub.
+                Your reviewer:{" "}
+                <a href={reviewer.url} target="_blank" rel="noopener noreferrer" className="code-chip">
+                  @{reviewer.username}
+                </a>{" "}
+                — add them as a collaborator on your GitHub repo as soon as you create it.
               </p>
             </div>
 

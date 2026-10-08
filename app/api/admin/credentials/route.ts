@@ -15,12 +15,14 @@ type T = { id: string; team_number: number; name: string; leader_name: string; l
  * sending, un-stamped if the send fails), so two admins sending at once never email
  * the same leader twice, and re-running never double-sends.
  */
-export const POST = adminRoute<{ ids?: string[] }>(async (admin, body, req) => {
+export const POST = adminRoute<{ ids?: string[]; skip?: number[] }>(async (admin, body, req) => {
   if (!mailConfigured()) return fail(400, "Email isn't configured. Set SMTP_HOST, SMTP_USER and SMTP_PASS.");
   const urlProblem = siteUrlProblem();
   if (urlProblem) return fail(400, urlProblem);
   const sql = db();
   const ids = Array.isArray(body.ids) ? body.ids.filter((id) => /^[0-9a-f-]{36}$/i.test(id)) : null;
+  // Teams that already failed in this run, so one bad batch can't stop the rest from being sent.
+  const skip = Array.isArray(body.skip) ? body.skip.filter((n) => Number.isInteger(n)).slice(0, 1000) : [];
 
   // Explicit ids = a deliberate resend; otherwise the next unsent teams.
   const batch = ids
@@ -32,6 +34,7 @@ export const POST = adminRoute<{ ids?: string[] }>(async (admin, body, req) => {
     : await sql<T[]>`
         update teams set credentials_sent_at = now()
         where id in (select id from teams where credentials_sent_at is null and leader_email <> ''
+                     and not (team_number = any(${skip}::int[]))
                      order by team_number limit ${BATCH} for update skip locked)
         returning id, team_number, name, leader_name, leader_email, login_code_enc`;
   batch.sort((a, b) => a.team_number - b.team_number);

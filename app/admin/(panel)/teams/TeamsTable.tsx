@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import { api } from "@/components/api";
 import { downloadXlsx } from "@/components/sheets";
 import type { AdminTeam } from "@/lib/admin-teams";
+import { reviewerFor } from "@/lib/event";
 import { formatDateTime } from "@/lib/format";
 
 const GH_PILL = { clean: "pill--ok", review: "pill--warn", flagged: "pill--bad", unchecked: "pill--idle" } as const;
@@ -25,7 +26,7 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase();
     return teams.filter((t) => {
-      if (q && !`${t.teamNumber} ${t.name} ${t.leaderName} ${t.leaderEmail}`.toLowerCase().includes(q)) return false;
+      if (q && !`${t.teamNumber} ${t.name} ${t.leaderName} ${t.leaderEmail} ${reviewerFor(t.teamNumber).username}`.toLowerCase().includes(q)) return false;
       switch (filter) {
         case "all":
           return true;
@@ -104,6 +105,7 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
           "Leader Name": t.leaderName,
           "Leader Email": t.leaderEmail,
           College: t.college,
+          "Reviewer GitHub": reviewerFor(t.teamNumber).url,
           Members: t.members.join(", "),
           "Login Code": t.code ?? "",
           Repo: t.repoUrl ?? "",
@@ -122,7 +124,7 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
   return (
     <>
       <div className="toolbar">
-        <input className="input input--sm" placeholder="Search number, team or leader" value={query} onChange={(e) => setQuery(e.target.value)} />
+        <input className="input input--sm" placeholder="Search number, team, leader or reviewer" value={query} onChange={(e) => setQuery(e.target.value)} />
         <select className="input input--sm" style={{ maxWidth: 190 }} value={filter} onChange={(e) => setFilter(e.target.value as Filter)}>
           <option value="all">All teams ({teams.length})</option>
           <option value="building">Building</option>
@@ -186,7 +188,7 @@ export default function TeamsTable({ teams }: { teams: AdminTeam[] }) {
                   <td style={{ minWidth: 200 }}>
                     <div style={{ fontWeight: 500 }}>{t.name}</div>
                     <div className="muted" style={{ fontSize: 12.5 }}>
-                      {t.leaderName || "—"} · {t.leaderEmail || "no email"} · {t.members.length + 1} people
+                      {t.leaderName || "—"} · {t.leaderEmail || "no email"} · {t.members.length + 1} people · reviewer @{reviewerFor(t.teamNumber).username}
                     </div>
                   </td>
                   <td className="nowrap">
