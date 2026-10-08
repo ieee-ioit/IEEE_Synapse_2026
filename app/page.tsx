@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Analytics from "@/components/landing/Analytics";
 import { Chapters, LandingFooter, StickyBar } from "@/components/landing/Chapters";
-import { trackedUrl } from "@/components/landing/content";
 import GoldenHours from "@/components/landing/GoldenHours";
 import Horizon from "@/components/landing/Horizon";
 import PhaseLink from "@/components/landing/PhaseLink";
@@ -24,12 +23,7 @@ export default function Home() {
             <PhaseLink
               start={event.defaults.eventStart}
               deadline={event.defaults.submissionDeadline}
-              pre={{
-                label: "Registrations Closed",
-                href: trackedUrl(event.registerUrl, event.utm.register, "header"),
-                external: true,
-                pending: "Registrations Closed",
-              }}
+              pre={{ label: "Team Login", href: "/team/login" }}
               live={{ label: "Team Login", href: "/team/login" }}
               className="btn btn-solid header-cta"
             />

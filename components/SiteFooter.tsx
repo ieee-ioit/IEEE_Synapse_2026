@@ -9,9 +9,7 @@ export default function SiteFooter({ dates }: { dates?: string }) {
         {dates ? ` · ${dates}` : ""} · {event.venue}
       </span>
       <nav aria-label="Footer">
-        <a href={event.registerUrl} target="_blank" rel="noopener noreferrer">
-          Register
-        </a>
+        <Link href="/team/login">Team Login</Link>
         <a href={event.whatsappUrl} target="_blank" rel="noopener noreferrer">
           WhatsApp
         </a>
