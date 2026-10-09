@@ -24,7 +24,7 @@ export function db(): Sql {
   const isSupabase = /supabase\.(co|com)/.test(url);
   globalForDb.__sql = postgres(url, {
     prepare: false, // required by the transaction pooler
-    max: 3,
+    max: 10, // admin pages run up to 9 queries in parallel; 3 made them queue and hang behind the pooler
     idle_timeout: 20,
     connect_timeout: 8,
     ssl: isSupabase && !/sslmode=/.test(url) ? "require" : undefined,
