@@ -40,5 +40,6 @@ export default function Countdown({ start, deadline, fallback }: { start: string
   const e = Date.parse(deadline);
   if (now < s) return <span>Starts in {formatLong(s - now)}</span>;
   if (now < e) return <span>Live now · submissions close in {formatClock(e - now)}</span>;
+  if (now < e + 10 * 60 * 1000) return <span>Buffer time · submissions close in {formatClock(e + 10 * 60 * 1000 - now)}</span>;
   return <span>Submissions closed · results soon</span>;
 }

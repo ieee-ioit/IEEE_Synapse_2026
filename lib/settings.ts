@@ -103,6 +103,6 @@ export type Phase = "pre" | "live" | "closed";
 
 export function phaseOf(s: Pick<Settings, "eventStart" | "submissionDeadline">, now = Date.now()): Phase {
   if (now < Date.parse(s.eventStart)) return "pre";
-  if (now < Date.parse(s.submissionDeadline)) return "live";
+  if (now < Date.parse(s.submissionDeadline) + 10 * 60 * 1000) return "live";
   return "closed";
 }

@@ -17,7 +17,8 @@ export async function POST(req: Request) {
     if ((await readJsonBody(req)) === null) return fail(400, "Bad request.");
 
     const { submissionDeadline } = await getSettings();
-    if (Date.now() >= Date.parse(submissionDeadline)) return fail(403, "The submission deadline has passed.");
+    const bufferDeadline = Date.parse(submissionDeadline) + 10 * 60 * 1000;
+    if (Date.now() >= bufferDeadline) return fail(403, "The submission deadline has passed.");
 
     const sql = db();
     const [row] = await sql<{ submitted_at: Date; team_number: number }[]>`

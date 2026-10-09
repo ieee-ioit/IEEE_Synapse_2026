@@ -36,7 +36,8 @@ export default function TeamDashboard({ initial }: { initial: TeamView }) {
   const reviewer = reviewerFor(team.teamNumber);
   const start = Date.parse(view.eventStart);
   const deadline = Date.parse(view.deadline);
-  const closed = now != null && now >= deadline;
+  const bufferDeadline = deadline + 10 * 60 * 1000;
+  const closed = now != null && now >= bufferDeadline;
   const locked = team.status === "disqualified" || closed;
   const savedRepo = team.repoUrl ?? "";
   const savedVideo = team.demoVideoUrl ?? "";
@@ -86,6 +87,9 @@ export default function TeamDashboard({ initial }: { initial: TeamView }) {
       clockValue = formatLong(start - now);
     } else if (now < deadline) {
       clockValue = formatClock(deadline - now);
+    } else if (now < bufferDeadline) {
+      clockLabel = "Buffer time ends in";
+      clockValue = formatClock(bufferDeadline - now);
     } else {
       clockLabel = "Submissions";
       clockValue = "Closed";

@@ -17,7 +17,8 @@ export async function POST(req: Request) {
     if (!parsed) return fail(400, "Paste the repo link, like https://github.com/your-team/project.");
 
     const { submissionDeadline } = await getSettings();
-    if (Date.now() >= Date.parse(submissionDeadline)) return fail(403, "The submission deadline has passed.");
+    const bufferDeadline = Date.parse(submissionDeadline) + 10 * 60 * 1000;
+    if (Date.now() >= bufferDeadline) return fail(403, "The submission deadline has passed.");
 
     const sql = db();
     const rows = await sql`

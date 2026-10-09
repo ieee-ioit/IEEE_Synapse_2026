@@ -35,7 +35,8 @@ export async function POST(req: Request) {
     }
 
     const { submissionDeadline, videoUnlockAt } = await getSettings();
-    if (Date.now() >= Date.parse(submissionDeadline)) return fail(403, "The submission deadline has passed.");
+    const bufferDeadline = Date.parse(submissionDeadline) + 10 * 60 * 1000;
+    if (Date.now() >= bufferDeadline) return fail(403, "The submission deadline has passed.");
     if (Date.now() < Date.parse(videoUnlockAt)) {
       return fail(403, `Demo video links open at ${formatTime(videoUnlockAt).slice(0, 5)} IST. Focus on your repo until then.`);
     }

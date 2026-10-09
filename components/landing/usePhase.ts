@@ -15,7 +15,7 @@ export function usePhase(start: string, deadline: string): Phase {
     const e = Date.parse(deadline);
     const read = (): Phase => {
       const now = Date.now();
-      return now < s ? "pre" : now < e ? "live" : "closed";
+      return now < s ? "pre" : now < e + 10 * 60 * 1000 ? "live" : "closed";
     };
     setPhase(read());
     const id = setInterval(() => setPhase(read()), 30_000);
