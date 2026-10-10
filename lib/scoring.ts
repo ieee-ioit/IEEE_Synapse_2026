@@ -21,7 +21,7 @@ export type RankedTeam = {
 
 /**
  * team_score = Σ (average judge score for criterion × criterion weight %)
- * Ranks: highest score first, ties broken by earlier first_submitted_at (or submitted_at).
+ * Ranks: highest score first. Exact score ties receive the same rank position.
  * Unscored teams are listed after ranked ones with rank = null.
  */
 export async function getRanking({ includeDisqualified = false, stage = 1 }: { includeDisqualified?: boolean; stage?: number } = {}): Promise<{
@@ -79,6 +79,10 @@ export async function getRanking({ includeDisqualified = false, stage = 1 }: { i
   const critMap = new Map(critList.map((c) => [c.id, c]));
 
   let next = 1;
+  let currentRank = 1;
+  let previousScore: number | null = null;
+  let previousIsFinalist: boolean | null = null;
+
   const teams: RankedTeam[] = rows.map((r) => {
     const scoredList = (r.criteria_data || []).map((cd) => {
       const c = critMap.get(cd.criterionId);
@@ -90,9 +94,29 @@ export async function getRanking({ includeDisqualified = false, stage = 1 }: { i
       };
     });
 
+    let rank = null;
+    if (r.score != null && r.submission_status !== "disqualified") {
+      const roundedScore = Math.round(r.score * 1000000) / 1000000;
+      const isFinalist = Boolean(r.is_finalist);
+      
+      if (
+        previousScore !== null &&
+        roundedScore === previousScore &&
+        (stage !== 2 || previousIsFinalist === isFinalist)
+      ) {
+        rank = currentRank;
+      } else {
+        currentRank = next;
+        rank = currentRank;
+      }
+      previousScore = roundedScore;
+      previousIsFinalist = isFinalist;
+      next++;
+    }
+
     return {
       id: r.id,
-      rank: r.score != null && r.submission_status !== "disqualified" ? next++ : null,
+      rank,
       teamNumber: r.team_number,
       name: r.name,
       status: r.submission_status,

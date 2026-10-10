@@ -260,7 +260,7 @@ async function runSimulation() {
     ),
     ranked as (
       select t.id, t.team_number, t.name, pt.score,
-             rank() over (order by pt.score desc, t.first_submitted_at asc) as rk
+             rank() over (order by round(pt.score::numeric, 6) desc) as rk
       from teams t join per_team pt on pt.team_id = t.id
     )
     select * from ranked where id = ${nonFinalistTeam.id}`;
