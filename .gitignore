@@ -10,3 +10,10 @@ next-env.d.ts
 npm-debug.log*
 .DS_Store
 .dist/
+
+# Sensitive event data, marks, attendee info, and spreadsheets
+Registration_docs/
+*.xlsx
+*.csv
+!mock_unstop_100_teams.csv
+*.bak
