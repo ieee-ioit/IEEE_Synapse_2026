@@ -44,7 +44,7 @@ function pick<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const teams: any[] = [];
+const teams: Record<string, string>[] = [];
 const usedEmails = new Set<string>();
 
 for (let i = 1; i <= 100; i++) {

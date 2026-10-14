@@ -11,7 +11,9 @@
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "db:setup": "node scripts/db-setup.mjs",
-    "admin:create": "node scripts/create-admin.mjs"
+    "db:test": "node scripts/test-conn.mjs",
+    "admin:create": "node scripts/create-admin.mjs",
+    "export:collaborators": "node scripts/export-collaborators.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.117.2",
