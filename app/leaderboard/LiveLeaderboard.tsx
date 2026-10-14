@@ -167,7 +167,7 @@ export default function LiveLeaderboard() {
                           {formatScore(t.score ?? null)}
                           <small>/10</small>
                           <div className="score-bar" aria-hidden="true">
-                            <span style={{ width: `${((t.score ?? 0) / 10) * 100}%` }} />
+                            <span style={{ width: `${Math.min(100, Math.max(0, ((t.score ?? 0) / 10) * 100))}%` }} />
                           </div>
                         </>
                       ) : (
@@ -177,9 +177,14 @@ export default function LiveLeaderboard() {
                       )}
                     </div>
                     <div className="board-status">
+                      {t.repoUrl && (
+                        <a href={t.repoUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, textDecoration: "underline" }}>
+                          Repo
+                        </a>
+                      )}
                       {t.demoVideoUrl && (
                         <a href={t.demoVideoUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: 13, textDecoration: "underline" }}>
-                          Watch video
+                          Demo video
                         </a>
                       )}
                     </div>
