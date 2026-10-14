@@ -22,6 +22,15 @@ export interface ErrorLogOptions {
   userAgent?: string;
 }
 
+function safeJson(val: unknown): string {
+  if (!val) return "{}";
+  try {
+    return JSON.stringify(val);
+  } catch {
+    return JSON.stringify({ serialization_error: "Object could not be serialized to JSON" });
+  }
+}
+
 /**
  * Persists an administrative or system event to audit_logs.
  * Non-blocking: logs any DB failure to console without throwing.
@@ -32,7 +41,7 @@ export async function logAudit(options: AuditLogOptions): Promise<void> {
     const actorId = options.actorId != null ? String(options.actorId) : "";
     const targetType = options.targetType || "";
     const targetId = options.targetId != null ? String(options.targetId) : "";
-    const details = options.details ? JSON.stringify(options.details) : "{}";
+    const details = safeJson(options.details);
     const ip = (options.ip || "").slice(0, 64);
     const userAgent = (options.userAgent || "").slice(0, 300);
 
@@ -70,7 +79,7 @@ export async function logError(err: unknown, options: ErrorLogOptions): Promise<
   try {
     const sql = db();
     const level = options.level || "error";
-    const context = options.context ? JSON.stringify(options.context) : "{}";
+    const context = safeJson(options.context);
     const ip = (options.ip || "").slice(0, 64);
     const userAgent = (options.userAgent || "").slice(0, 300);
 
