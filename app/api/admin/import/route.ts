@@ -53,6 +53,13 @@ function problem(t: ReturnType<typeof clean>) {
   if (t.college.length > LIMITS.college) return `College is longer than ${LIMITS.college} characters`;
   const bad = t.members.find((m) => m.email && (m.email.length > LIMITS.email || !EMAIL.test(m.email)));
   if (bad) return `Member email "${bad.email.slice(0, 60)}" isn't valid`;
+  const memberEmails = new Set<string>();
+  for (const m of t.members) {
+    if (m.email) {
+      if (memberEmails.has(m.email)) return `Member email "${m.email.slice(0, 60)}" is duplicated within the team`;
+      memberEmails.add(m.email);
+    }
+  }
   if (1 + t.members.length > MAX_TEAM_SIZE) return `Team has ${1 + t.members.length} members (max ${MAX_TEAM_SIZE})`;
   return "";
 }
